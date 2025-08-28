@@ -1,0 +1,356 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Institute of Polar Research [NIPR]
+# collaborator_url: http://www.nipr.ac.jp/
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: syo
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:30:18
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+SYO 1993  2    42.93
+SYO 1993  3    44.23
+SYO 1993  4    47.04
+SYO 1993  5    51.22
+SYO 1993  6    55.24
+SYO 1993  7    59.08
+SYO 1993  8    63.37
+SYO 1993  9    67.59
+SYO 1993 10    68.62
+SYO 1993 11    61.41
+SYO 1993 12    53.23
+SYO 1994  1    48.14
+SYO 1994  2    44.35
+SYO 1994  3    43.64
+SYO 1994  4    46.13
+SYO 1994  5    49.92
+SYO 1994  6    53.88
+SYO 1994  7    58.54
+SYO 1994  8    63.14
+SYO 1994  9    66.65
+SYO 1994 10    68.72
+SYO 1994 11    65.32
+SYO 1994 12    55.32
+SYO 1995  1    47.36
+SYO 1995  2    45.43
+SYO 1995  3    45.66
+SYO 1995  4    48.19
+SYO 1995  5    51.29
+SYO 1995  6    53.62
+SYO 1995  7    57.59
+SYO 1995  8    61.97
+SYO 1995  9    67.38
+SYO 1995 10    70.90
+SYO 1995 11    66.99
+SYO 1995 12    55.92
+SYO 1996  1    48.21
+SYO 1996  2    47.11
+SYO 1996  3    46.51
+SYO 1996  4    47.02
+SYO 1996  5    49.35
+SYO 1996  6    52.94
+SYO 1996  7    56.70
+SYO 1996  8    60.91
+SYO 1996  9    64.24
+SYO 1996 10    63.45
+SYO 1996 11    57.95
+SYO 1996 12    50.10
+SYO 1997  1    44.96
+SYO 1997  2    43.54
+SYO 1997  3    44.27
+SYO 1997  4    45.91
+SYO 1997  5    49.46
+SYO 1997  6    54.06
+SYO 1997  7    57.82
+SYO 1997  8    61.68
+SYO 1997  9    64.31
+SYO 1997 10    65.13
+SYO 1997 11    62.45
+SYO 1997 12    56.18
+SYO 1998  1    50.76
+SYO 1998  2    47.76
+SYO 1998  3    46.92
+SYO 1998  4    48.16
+SYO 1998  5    53.08
+SYO 1998  6    59.24
+SYO 1998  7    64.22
+SYO 1998  8    69.53
+SYO 1998  9    71.66
+SYO 1998 10    69.12
+SYO 1998 11    61.67
+SYO 1998 12    52.62
+SYO 1999  1    45.33
+SYO 1999  2    42.79
+SYO 1999  3    43.07
+SYO 1999  4    45.51
+SYO 1999  5    49.52
+SYO 1999  6    53.20
+SYO 1999  7    57.75
+SYO 1999  8    62.23
+SYO 1999  9    66.58
+SYO 1999 10    68.95
+SYO 1999 11    63.07
+SYO 1999 12    54.12
+SYO 2000  1    46.42
+SYO 2000  2    42.54
+SYO 2000  3    42.07
+SYO 2000  4    44.11
+SYO 2000  5    48.29
+SYO 2000  6    51.79
+SYO 2000  7    56.13
+SYO 2000  8    60.90
+SYO 2000  9    61.77
+SYO 2000 10    59.32
+SYO 2000 11    54.73
+SYO 2000 12    46.46
+SYO 2001  1    41.06
+SYO 2001  2    41.29
+SYO 2001  3    42.78
+SYO 2001  4    45.12
+SYO 2001  5    48.34
+SYO 2001  6    52.73
+SYO 2001  7    57.17
+SYO 2001  8    60.92
+SYO 2001  9    64.42
+SYO 2001 10    63.68
+SYO 2001 11    58.06
+SYO 2001 12    50.24
+SYO 2002  1    44.48
+SYO 2002  2    42.39
+SYO 2002  3    43.05
+SYO 2002  4    46.47
+SYO 2002  5    50.68
+SYO 2002  6    55.14
+SYO 2002  7    59.11
+SYO 2002  8    62.78
+SYO 2002  9    66.94
+SYO 2002 10    67.78
+SYO 2002 11    61.80
+SYO 2002 12    52.15
+SYO 2003  1    45.37
+SYO 2003  2    43.94
+SYO 2003  3    45.73
+SYO 2003  4    47.02
+SYO 2003  5    49.70
+SYO 2003  6    53.27
+SYO 2003  7    56.64
+SYO 2003  8    62.19
+SYO 2003  9    65.05
+SYO 2003 10    62.34
+SYO 2003 11    56.06
+SYO 2003 12    47.05
+SYO 2004  1    41.41
+SYO 2004  2    40.94
+SYO 2004  3    41.56
+SYO 2004  4    44.00
+SYO 2004  5    48.53
+SYO 2004  6    52.60
+SYO 2004  7    57.05
+SYO 2004  8    61.14
+SYO 2004  9    63.67
+SYO 2004 10    64.53
+SYO 2004 11    60.19
+SYO 2004 12    52.46
+SYO 2005  1    45.26
+SYO 2005  2    42.73
+SYO 2005  3    43.26
+SYO 2005  4    45.40
+SYO 2005  5    49.59
+SYO 2005  6    53.92
+SYO 2005  7    58.05
+SYO 2005  8    61.49
+SYO 2005  9    64.01
+SYO 2005 10    65.31
+SYO 2005 11    61.07
+SYO 2005 12    51.20
+SYO 2006  1    43.14
+SYO 2006  2    40.51
+SYO 2006  3    40.67
+SYO 2006  4    42.39
+SYO 2006  5    45.38
+SYO 2006  6    48.49
+SYO 2006  7    52.52
+SYO 2006  8    56.53
+SYO 2006  9    58.30
+SYO 2006 10    57.56
+SYO 2006 11    53.42
+SYO 2006 12    46.20
+SYO 2007  1    42.50
+SYO 2007  2    42.64
+SYO 2007  3    43.41
+SYO 2007  4    45.74
+SYO 2007  5    49.05
+SYO 2007  6    53.43
+SYO 2007  7    57.71
+SYO 2007  8    60.77
+SYO 2007  9    63.55
+SYO 2007 10    66.63
+SYO 2007 11    64.71
+SYO 2007 12    52.23
+SYO 2008  1    42.33
+SYO 2008  2    41.52
+SYO 2008  3    42.42
+SYO 2008  4    44.91
+SYO 2008  5    48.96
+SYO 2008  6    52.90
+SYO 2008  7    56.98
+SYO 2008  8    60.50
+SYO 2008  9    60.83
+SYO 2008 10    58.87
+SYO 2008 11    53.13
+SYO 2008 12    45.26
+SYO 2009  1    40.90
+SYO 2009  2    40.65
+SYO 2009  3    41.45
+SYO 2009  4    42.91
+SYO 2009  5    47.21
+SYO 2009  6    52.04
+SYO 2009  7    54.83
+SYO 2009  8    57.68
+SYO 2009  9    59.19
+SYO 2009 10    56.96
+SYO 2009 11    51.07
+SYO 2009 12    45.00
+SYO 2010  1    40.88
+SYO 2010  2    39.91
+SYO 2010  3    41.05
+SYO 2010  4    43.31
+SYO 2010  5    46.49
+SYO 2010  6    50.75
+SYO 2010  7    55.48
+SYO 2010  8    59.54
+SYO 2010  9    62.68
+SYO 2010 10    64.23
+SYO 2010 11    59.67
+SYO 2010 12    51.15
+SYO 2011  1    43.42
+SYO 2011  2    40.54
+SYO 2011  3    41.02
+SYO 2011  4    43.56
+SYO 2011  5    47.26
+SYO 2011  6    49.86
+SYO 2011  7    53.44
+SYO 2011  8    57.91
+SYO 2011  9    60.53
+SYO 2011 10    61.17
+SYO 2011 11    57.24
+SYO 2011 12    48.75
+SYO 2012  1    43.04
+SYO 2012  2    41.64
+SYO 2012  3    41.65
+SYO 2012  4    44.20
+SYO 2012  5    47.72
+SYO 2012  6    51.37
+SYO 2012  7    54.94
+SYO 2012  8    57.76
+SYO 2012  9    61.02
+SYO 2012 10    62.04
+SYO 2012 11    58.34
+SYO 2012 12    50.05
+SYO 2013  1    42.24
+SYO 2013  2    40.57
+SYO 2013  3    42.78
+SYO 2013  4    45.04
+SYO 2013  5    48.06
+SYO 2013  6    52.33
+SYO 2013  7    55.92
+SYO 2013  8    59.12
+SYO 2013  9    60.58
+SYO 2013 10    59.43
+SYO 2013 11    53.63
+SYO 2013 12    44.89
+SYO 2014  1    40.02
+SYO 2014  2    38.75
+SYO 2014  3    40.20
+SYO 2014  4    43.86
+SYO 2014  5    47.68
+SYO 2014  6    51.59
+SYO 2014  7    55.76
+SYO 2014  8    59.48
+SYO 2014  9    60.57
+SYO 2014 10    58.71
+SYO 2014 11    52.56
+SYO 2014 12    45.19
+SYO 2015  1    40.91
+SYO 2015  2    40.13
+SYO 2015  3    41.41
+SYO 2015  4    43.59
+SYO 2015  5    47.45
+SYO 2015  6    51.88
+SYO 2015  7    55.58
+SYO 2015  8    59.03
+SYO 2015  9    60.88
+SYO 2015 10    59.73
+SYO 2015 11    53.99
+SYO 2015 12    46.52
+SYO 2016  1    42.58
+SYO 2016  2    43.81
+SYO 2016  3    45.14
+SYO 2016  4    47.49
+SYO 2016  5    51.91
+SYO 2016  6    55.25
+SYO 2016  7    57.91
+SYO 2016  8    60.40
+SYO 2016  9    61.83
+SYO 2016 10    60.70
+SYO 2016 11    54.36
+SYO 2016 12    45.11

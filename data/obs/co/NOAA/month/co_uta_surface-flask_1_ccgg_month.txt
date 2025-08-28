@@ -1,0 +1,353 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Beth Anderson/ NWS Cooperative Observer [NWS
+# collaborator_name: COOP]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: uta
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:30:20
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+UTA 1993  5   140.11
+UTA 1993  6   119.54
+UTA 1993  7   101.05
+UTA 1993  8   106.33
+UTA 1993  9   112.63
+UTA 1993 10   116.19
+UTA 1993 11   122.31
+UTA 1993 12   123.00
+UTA 1994  1   134.63
+UTA 1994  2   157.66
+UTA 1994  3   163.98
+UTA 1994  4   150.97
+UTA 1994  5   141.54
+UTA 1994  6   123.74
+UTA 1994  7   118.42
+UTA 1994  8   132.63
+UTA 1994  9   137.07
+UTA 1994 10   129.06
+UTA 1994 11   128.60
+UTA 1994 12   141.46
+UTA 1995  1   148.11
+UTA 1995  2   147.39
+UTA 1995  3   157.16
+UTA 1995  4   158.81
+UTA 1995  5   138.34
+UTA 1995  6   117.25
+UTA 1995  7   112.96
+UTA 1995  8   110.86
+UTA 1995  9   111.63
+UTA 1995 10   115.48
+UTA 1995 11   117.66
+UTA 1995 12   125.66
+UTA 1996  1   143.30
+UTA 1996  2   157.77
+UTA 1996  3   158.23
+UTA 1996  4   153.43
+UTA 1996  5   142.39
+UTA 1996  6   127.16
+UTA 1996  7   116.15
+UTA 1996  8   113.74
+UTA 1996  9   116.29
+UTA 1996 10   122.87
+UTA 1996 11   124.21
+UTA 1996 12   126.43
+UTA 1997  1   139.84
+UTA 1997  2   151.08
+UTA 1997  3   159.12
+UTA 1997  4   161.48
+UTA 1997  5   141.53
+UTA 1997  6   115.17
+UTA 1997  7    95.18
+UTA 1997  8    88.73
+UTA 1997  9    99.04
+UTA 1997 10   117.17
+UTA 1997 11   129.23
+UTA 1997 12   138.04
+UTA 1998  1   152.46
+UTA 1998  2   161.41
+UTA 1998  3   165.78
+UTA 1998  4   165.99
+UTA 1998  5   151.21
+UTA 1998  6   131.12
+UTA 1998  7   116.32
+UTA 1998  8   105.61
+UTA 1998  9   122.16
+UTA 1998 10   156.67
+UTA 1998 11   151.97
+UTA 1998 12   142.79
+UTA 1999  1   149.75
+UTA 1999  2   157.52
+UTA 1999  3   162.58
+UTA 1999  4   154.64
+UTA 1999  5   139.91
+UTA 1999  6   126.89
+UTA 1999  7   109.52
+UTA 1999  8   103.97
+UTA 1999  9   108.74
+UTA 1999 10   107.44
+UTA 1999 11   116.60
+UTA 1999 12   128.23
+UTA 2000  1   123.90
+UTA 2000  2   133.67
+UTA 2000  3   148.56
+UTA 2000  4   148.10
+UTA 2000  5   130.56
+UTA 2000  6   105.48
+UTA 2000  7   102.94
+UTA 2000  8   104.47
+UTA 2000  9   106.90
+UTA 2000 10   110.76
+UTA 2000 11   115.73
+UTA 2000 12   129.84
+UTA 2001  1   137.49
+UTA 2001  2   136.62
+UTA 2001  3   142.72
+UTA 2001  4   145.91
+UTA 2001  5   127.21
+UTA 2001  6   108.55
+UTA 2001  7   103.27
+UTA 2001  8   105.11
+UTA 2001  9   104.93
+UTA 2001 10   104.80
+UTA 2001 11   113.48
+UTA 2001 12   124.50
+UTA 2002  1   134.10
+UTA 2002  2   148.20
+UTA 2002  3   147.53
+UTA 2002  4   138.16
+UTA 2002  5   135.77
+UTA 2002  6   123.66
+UTA 2002  7   110.72
+UTA 2002  8   117.92
+UTA 2002  9   133.39
+UTA 2002 10   144.22
+UTA 2002 11   144.10
+UTA 2002 12   137.90
+UTA 2003  1   129.06
+UTA 2003  2   139.16
+UTA 2003  3   152.19
+UTA 2003  4   154.38
+UTA 2003  5   156.93
+UTA 2003  6   151.04
+UTA 2003  7   123.09
+UTA 2003  8    97.97
+UTA 2003  9   104.75
+UTA 2003 10   126.07
+UTA 2003 11   137.01
+UTA 2003 12   133.52
+UTA 2004  1   139.12
+UTA 2004  2   150.41
+UTA 2004  3   145.45
+UTA 2004  4   149.56
+UTA 2004  5   142.17
+UTA 2004  6   118.96
+UTA 2004  7   106.45
+UTA 2004  8   100.82
+UTA 2004  9   105.05
+UTA 2004 10   113.35
+UTA 2004 11   115.39
+UTA 2004 12   119.37
+UTA 2005  1   132.78
+UTA 2005  2   145.08
+UTA 2005  3   154.65
+UTA 2005  4   152.58
+UTA 2005  5   138.23
+UTA 2005  6   118.97
+UTA 2005  7   102.01
+UTA 2005  8    99.21
+UTA 2005  9   106.09
+UTA 2005 10   111.51
+UTA 2005 11   124.28
+UTA 2005 12   133.46
+UTA 2006  1   129.25
+UTA 2006  2   145.99
+UTA 2006  3   158.02
+UTA 2006  4   142.91
+UTA 2006  5   127.79
+UTA 2006  6   119.53
+UTA 2006  7   112.08
+UTA 2006  8   106.45
+UTA 2006  9   104.19
+UTA 2006 10   101.52
+UTA 2006 11   107.90
+UTA 2006 12   124.69
+UTA 2007  1   140.94
+UTA 2007  2   143.42
+UTA 2007  3   137.98
+UTA 2007  4   144.81
+UTA 2007  5   137.87
+UTA 2007  6   125.06
+UTA 2007  7   117.17
+UTA 2007  8   108.10
+UTA 2007  9   108.05
+UTA 2007 10   110.29
+UTA 2007 11   113.94
+UTA 2007 12   125.66
+UTA 2008  1   140.93
+UTA 2008  2   142.51
+UTA 2008  3   139.96
+UTA 2008  4   140.72
+UTA 2008  5   131.08
+UTA 2008  6   122.92
+UTA 2008  7   128.05
+UTA 2008  8   117.45
+UTA 2008  9   104.11
+UTA 2008 10   102.56
+UTA 2008 11   101.06
+UTA 2008 12   106.71
+UTA 2009  1   118.41
+UTA 2009  2   131.81
+UTA 2009  3   138.81
+UTA 2009  4   133.04
+UTA 2009  5   122.06
+UTA 2009  6   110.25
+UTA 2009  7   101.69
+UTA 2009  8    99.41
+UTA 2009  9    96.49
+UTA 2009 10    97.91
+UTA 2009 11   108.21
+UTA 2009 12   120.50
+UTA 2010  1   130.69
+UTA 2010  2   139.56
+UTA 2010  3   146.69
+UTA 2010  4   139.70
+UTA 2010  5   124.48
+UTA 2010  6   114.49
+UTA 2010  7    97.91
+UTA 2010  8    97.65
+UTA 2010  9   110.40
+UTA 2010 10   115.04
+UTA 2010 11   112.94
+UTA 2010 12   113.97
+UTA 2011  1   121.62
+UTA 2011  2   127.34
+UTA 2011  3   134.24
+UTA 2011  4   135.08
+UTA 2011  5   133.06
+UTA 2011  6   114.72
+UTA 2011  7    93.36
+UTA 2011  8    97.63
+UTA 2011  9   102.66
+UTA 2011 10   104.07
+UTA 2011 11   111.42
+UTA 2011 12   116.91
+UTA 2012  1   120.21
+UTA 2012  2   131.42
+UTA 2012  3   131.63
+UTA 2012  4   122.11
+UTA 2012  5   119.48
+UTA 2012  6   106.40
+UTA 2012  7    93.48
+UTA 2012  8    94.21
+UTA 2012  9   104.96
+UTA 2012 10   107.16
+UTA 2012 11   106.18
+UTA 2012 12   120.74
+UTA 2013  1   137.80
+UTA 2013  2   134.32
+UTA 2013  3   129.64
+UTA 2013  4   133.53
+UTA 2013  5   124.49
+UTA 2013  6   114.55
+UTA 2013  7   107.42
+UTA 2013  8    89.88
+UTA 2013  9    92.69
+UTA 2013 10   103.91
+UTA 2013 11   105.70
+UTA 2013 12   111.52
+UTA 2014  1   122.51
+UTA 2014  2   126.63
+UTA 2014  3   133.97
+UTA 2014  4   138.66
+UTA 2014  5   126.85
+UTA 2014  6   107.29
+UTA 2014  7    93.02
+UTA 2014  8    93.23
+UTA 2014  9    97.50
+UTA 2014 10   101.03
+UTA 2014 11   104.92
+UTA 2014 12   113.96
+UTA 2015  1   121.19
+UTA 2015  2   120.72
+UTA 2015  3   131.75
+UTA 2015  4   139.32
+UTA 2015  5   121.31
+UTA 2015  6   106.11
+UTA 2015  7    97.03
+UTA 2015  8    90.28
+UTA 2015  9    94.15
+UTA 2015 10   102.17
+UTA 2015 11   113.10
+UTA 2015 12   120.87
+UTA 2016  1   127.08
+UTA 2016  2   130.57
+UTA 2016  3   133.40
+UTA 2016  4   132.81
+UTA 2016  5   118.58
+UTA 2016  6    97.10
+UTA 2016  7   103.70
+UTA 2016  8   116.90
+UTA 2016  9   102.80
+UTA 2016 10    95.42
+UTA 2016 11   103.42
+UTA 2016 12   111.95

@@ -1,0 +1,66 @@
+/* DATA DESCRIPTION:
+Citation:	Bock, Michael; Schmitt, Jochen; Beck, Jonas; Seth, Barbara; Chappellaz, Jérôme A; Fischer, Hubertus (2017): Stable isotopic methane (dD(CH4)) records of ice core EDC. PANGAEA, https://doi.org/10.1594/PANGAEA.873916, 
+	In supplement to: Bock, M et al. (2017): Glacial/interglacial wetland, biomass burning, and geologic methane emissions constrained by dual stable isotopic CH4 ice core records. Proceedings of the National Academy of Sciences, 201613883, https://doi.org/10.1073/pnas.1613883114
+Coverage:	LATITUDE: -75.100000 * LONGITUDE: 123.350000
+	DATE/TIME START: 1993-01-01T00:00:00 * DATE/TIME END: 2004-12-31T00:00:00
+	MINIMUM DEPTH, ice/snow: 1614.68 m * MAXIMUM DEPTH, ice/snow: 2807.06 m
+Event(s):	EDC (EPICA Dome C) (URI: https://en.wikipedia.org/wiki/Dome_C) * LATITUDE: -75.100000 * LONGITUDE: 123.350000 * DATE/TIME START: 1993-01-01T00:00:00 * DATE/TIME END: 2004-12-31T00:00:00 * ELEVATION: 3233.0 m * Recovery: 3300 m * LOCATION: Dome C, Antarctica * CAMPAIGN: Dome C * METHOD/DEVICE: Ice drill (ICEDRILL) * COMMENT: Drill site is 56 km from the site of a previous Dome C core that provided records extending into the last glacial period, and 560 km from the site of the Vostok cores. The completion of the Dome C core was delayed when the first drilling became stuck at 788 m in 1999 (EDC96).
+Comment:	All data are free of krypton interference during the mass spectrometric analysis. dD(CH4) data are measured using the system described in:
+	Bock, M., J. Schmitt, J. Beck, R. Schneider, H. Fischer, "Improving accuracy and precision of ice core dD(CH4) analyses using methane pre-pyrolysis and hydrogen post-pyrolysis trapping and subsequent chromatographic separation", Atmospheric Measurement Techniques, 7, 1999-2012, 2014, doi:10.5194/amt-7-1999-2014
+Parameter(s):	DEPTH, ice/snow [m] (Depth ice/snow) * GEOCODE * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock)
+	Gas age [ka BP] (Gas age) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * COMMENT: AICC2012, BP = 1950
+	δ Deuterium, methane [‰ SMOW] (δD CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Bock et al. (2014) (URI: https://doi.org/10.5194/amt-7-1999-2014) * COMMENT: measured, with respect to Vienna Standard Mean Ocean Water (VSMOW)
+	δ Deuterium, methane, standard deviation [±] (δD CH4 std dev) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Bock et al. (2014) (URI: https://doi.org/10.5194/amt-7-1999-2014) * COMMENT: dD(CH4) error (1-sigma standard deviation of reference air in per mil)
+	Gravitational settling [‰] (Grav sett) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: see supporting information of Bock et al. (2017)
+	δ Deuterium, methane [‰ SMOW] (δD CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: corrected for gravitational settling in the firn, with respect to Vienna Standard Mean Ocean Water (VSMOW)
+License:	Creative Commons Attribution-NoDerivs 3.0 Unported (CC-BY-ND-3.0)
+Size:	235 data points
+*/
+Depth ice/snow [m]	Gas age [ka BP] (AICC2012, BP = 1950)	δD CH4 [‰ SMOW] (measured, with respect to Vie...)	δD CH4 std dev [±] (dD(CH4) error (1-sigma standa...)	Grav sett [‰] (see supporting information of...)	δD CH4 [‰ SMOW] (corrected for gravitational s...)
+1614.68	120.616	-88.9	1.2	0.52	-89.4
+1633.72	122.127	-89.6	1.2	0.52	-90.1
+1672.18	125.128	-85.6	1.2	0.52	-86.2
+1685.95	126.325	-94.1	1.2	0.52	-94.6
+1707.98	127.846	-86.3	2.6	0.54	-86.8
+1751.99	130.878	-59.1	2.6	0.53	-59.7
+1771.22	133.026	-64.8	2.6	0.49	-65.3
+1799.35	137.743	-60.8	2.6	0.42	-61.2
+1809.77	140.002	-69.2	2.6	0.41	-69.6
+1826.17	143.600	-67.4	2.6	0.43	-67.9
+1853.67	149.432	-65.6	2.6	0.44	-66.0
+1864.77	151.485	-63.5	2.6	0.44	-63.9
+2659.66	371.610	-87.9	1.9	0.40	-88.3
+2669.56	376.971	-88.8	1.7	0.41	-89.2
+2676.16	380.267	-90.3	1.9	0.44	-90.7
+2679.46	381.854	-93.6	2.0	0.45	-94.0
+2680.56	382.376	-84.9	2.3	0.45	-85.4
+2684.96	384.603	-98.4	2.3	0.46	-98.9
+2686.07	385.183	-80.9	1.5	0.47	-81.4
+2691.56	387.736	-84.8	1.7	0.48	-85.3
+2694.86	389.796	-99.8	2.0	0.45	-100.3
+2701.46	393.309	-82.5	2.6	0.48	-83.0
+2708.06	395.984	-90.7	1.7	0.50	-91.2
+2714.66	398.538	-84.8	2.3	0.51	-85.3
+2725.66	402.360	-90.7	2.6	0.51	-91.2
+2734.46	405.294	-95.4	2.3	0.52	-95.9
+2742.08	407.863	-90.9	1.9	0.52	-91.4
+2742.23	407.914	-93.3	1.9	0.52	-93.8
+2746.63	409.477	-88.1	1.5	0.51	-88.6
+2749.88	410.743	-87.7	1.3	0.49	-88.2
+2750.88	411.149	-91.7	2.1	0.49	-92.2
+2751.03	411.210	-90.7	2.3	0.49	-91.2
+2757.48	413.999	-91.9	2.2	0.48	-92.4
+2757.63	414.063	-88.5	2.2	0.48	-89.0
+2758.66	414.506	-88.3	2.0	0.49	-88.8
+2767.46	418.570	-89.3	2.3	0.49	-89.8
+2772.88	421.354	-83.3	1.9	0.49	-83.8
+2773.03	421.434	-77.6	2.6	0.49	-78.1
+2778.46	424.615	-81.1	2.0	0.49	-81.6
+2780.66	425.847	-75.5	2.0	0.49	-76.0
+2790.56	435.628	-65.7	1.9	0.41	-66.1
+2794.96	441.927	-66.8	2.6	0.40	-67.2
+2796.06	443.525	-77.8	2.0	0.40	-78.2
+2800.46	448.902	-78.3	2.3	0.42	-78.7
+2801.29	449.731	-75.6	2.2	0.42	-76.0
+2804.86	453.134	-94.0	2.0	0.43	-94.4
+2807.06	455.318	-85.2	2.0	0.41	-85.6

@@ -1,0 +1,133 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Ministry of Foreign Affairs and Environment
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: goz
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:39
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+GOZ 1993 10   134.48
+GOZ 1993 11   139.93
+GOZ 1993 12   165.82
+GOZ 1994  1   178.43
+GOZ 1994  2   180.08
+GOZ 1994  3   196.90
+GOZ 1994  4   197.89
+GOZ 1994  5   173.91
+GOZ 1994  6   174.48
+GOZ 1994  7   177.39
+GOZ 1994  8   158.06
+GOZ 1994  9   154.31
+GOZ 1994 10   150.32
+GOZ 1994 11   156.96
+GOZ 1994 12   185.93
+GOZ 1995  1   215.60
+GOZ 1995  2   208.01
+GOZ 1995  3   188.26
+GOZ 1995  4   191.64
+GOZ 1995  5   185.06
+GOZ 1995  6   162.76
+GOZ 1995  7   144.56
+GOZ 1995  8   119.68
+GOZ 1995  9   119.62
+GOZ 1995 10   150.30
+GOZ 1995 11   143.53
+GOZ 1995 12   128.25
+GOZ 1996  1   156.76
+GOZ 1996  2   187.28
+GOZ 1996  3   187.77
+GOZ 1996  4   180.54
+GOZ 1996  5   172.83
+GOZ 1996  6   169.69
+GOZ 1996  7   167.95
+GOZ 1996  8   155.89
+GOZ 1996  9   139.08
+GOZ 1996 10   145.41
+GOZ 1996 11   139.14
+GOZ 1996 12   116.44
+GOZ 1997  1   174.43
+GOZ 1997  2   218.95
+GOZ 1997  3   195.59
+GOZ 1997  4   194.50
+GOZ 1997  5   196.29
+GOZ 1997  6   170.58
+GOZ 1997  7   163.82
+GOZ 1997  8   160.29
+GOZ 1997  9   146.73
+GOZ 1997 10   164.93
+GOZ 1997 11   186.05
+GOZ 1997 12   196.62
+GOZ 1998  1   198.47
+GOZ 1998  2   199.77
+GOZ 1998  3   204.02
+GOZ 1998  4   216.27
+GOZ 1998  5   230.74
+GOZ 1998  6   195.97
+GOZ 1998  7   148.26
+GOZ 1998  8   153.50
+GOZ 1998  9   167.46
+GOZ 1998 10   167.20
+GOZ 1998 11   165.64
+GOZ 1998 12   163.78
+GOZ 1999  1   172.21
+GOZ 1999  2   191.31

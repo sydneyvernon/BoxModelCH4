@@ -1,0 +1,391 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: University of Guam/Marine Laboratory [UOG]
+# collaborator_url: http://www.uog.edu/marinelab
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: gmi
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:37
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+GMI 1989 10    80.11
+GMI 1989 11    79.60
+GMI 1989 12    82.24
+GMI 1990  1   103.44
+GMI 1990  2   121.46
+GMI 1990  3   117.21
+GMI 1990  4   113.41
+GMI 1990  5   101.89
+GMI 1990  6    83.39
+GMI 1990  7    73.79
+GMI 1990  8    87.16
+GMI 1990  9   100.60
+GMI 1990 10    94.79
+GMI 1990 11    91.81
+GMI 1990 12   108.82
+GMI 1991  1   146.44
+GMI 1991  2   157.27
+GMI 1991  3   135.81
+GMI 1991  4   118.90
+GMI 1991  5   107.54
+GMI 1991  6    87.05
+GMI 1991  7    79.99
+GMI 1991  8    98.48
+GMI 1991  9    99.39
+GMI 1991 10   100.47
+GMI 1991 11   110.73
+GMI 1991 12   113.48
+GMI 1992  1   113.35
+GMI 1992  2   124.73
+GMI 1992  3   137.09
+GMI 1992  4   127.08
+GMI 1992  5   112.96
+GMI 1992  6    88.93
+GMI 1992  7    72.90
+GMI 1992  8    82.00
+GMI 1992  9    90.87
+GMI 1992 10    90.78
+GMI 1992 11   100.49
+GMI 1992 12   117.33
+GMI 1993  1   125.97
+GMI 1993  2   122.32
+GMI 1993  3   109.51
+GMI 1993  4    98.57
+GMI 1993  5    87.12
+GMI 1993  6    72.57
+GMI 1993  7    65.24
+GMI 1993  8    67.24
+GMI 1993  9    75.64
+GMI 1993 10    86.41
+GMI 1993 11    97.39
+GMI 1993 12   104.29
+GMI 1994  1   106.90
+GMI 1994  2   111.28
+GMI 1994  3   121.63
+GMI 1994  4   117.41
+GMI 1994  5    94.80
+GMI 1994  6    80.46
+GMI 1994  7    76.14
+GMI 1994  8    68.87
+GMI 1994  9    77.50
+GMI 1994 10   107.70
+GMI 1994 11   109.50
+GMI 1994 12   104.94
+GMI 1995  1   128.88
+GMI 1995  2   140.60
+GMI 1995  3   135.74
+GMI 1995  4   131.44
+GMI 1995  5   109.42
+GMI 1995  6    83.63
+GMI 1995  7    73.23
+GMI 1995  8    68.42
+GMI 1995  9    78.06
+GMI 1995 10    95.80
+GMI 1995 11    91.09
+GMI 1995 12    85.78
+GMI 1996  1   101.88
+GMI 1996  2   121.47
+GMI 1996  3   124.51
+GMI 1996  4   103.60
+GMI 1996  5    85.42
+GMI 1996  6    81.78
+GMI 1996  7    73.13
+GMI 1996  8    66.59
+GMI 1996  9    71.86
+GMI 1996 10    83.12
+GMI 1996 11    91.99
+GMI 1996 12   103.09
+GMI 1997  1   105.24
+GMI 1997  2   107.58
+GMI 1997  3   123.32
+GMI 1997  4   123.21
+GMI 1997  5   103.51
+GMI 1997  6    81.31
+GMI 1997  7    74.66
+GMI 1997  8    88.22
+GMI 1997  9    95.66
+GMI 1997 10    92.50
+GMI 1997 11   100.85
+GMI 1997 12   113.97
+GMI 1998  1   126.78
+GMI 1998  2   130.21
+GMI 1998  3   125.18
+GMI 1998  4   122.86
+GMI 1998  5   113.65
+GMI 1998  6    92.85
+GMI 1998  7    74.88
+GMI 1998  8    68.97
+GMI 1998  9    73.68
+GMI 1998 10    84.74
+GMI 1998 11    95.54
+GMI 1998 12   101.33
+GMI 1999  1   103.80
+GMI 1999  2    96.84
+GMI 1999  3   103.61
+GMI 1999  4   113.33
+GMI 1999  5    93.82
+GMI 1999  6    74.51
+GMI 1999  7    67.50
+GMI 1999  8    67.22
+GMI 1999  9    68.40
+GMI 1999 10    73.09
+GMI 1999 11    81.63
+GMI 1999 12    92.65
+GMI 2000  1    98.80
+GMI 2000  2    91.67
+GMI 2000  3    97.10
+GMI 2000  4   103.08
+GMI 2000  5    88.94
+GMI 2000  6    73.77
+GMI 2000  7    65.74
+GMI 2000  8    63.33
+GMI 2000  9    65.25
+GMI 2000 10    73.52
+GMI 2000 11    78.71
+GMI 2000 12    79.66
+GMI 2001  1    88.19
+GMI 2001  2    98.67
+GMI 2001  3   111.71
+GMI 2001  4   109.37
+GMI 2001  5    88.12
+GMI 2001  6    73.68
+GMI 2001  7    69.20
+GMI 2001  8    79.91
+GMI 2001  9    87.37
+GMI 2001 10    82.94
+GMI 2001 11    77.77
+GMI 2001 12    95.36
+GMI 2002  1   112.70
+GMI 2002  2   106.14
+GMI 2002  3   112.43
+GMI 2002  4   114.10
+GMI 2002  5    90.38
+GMI 2002  6    77.99
+GMI 2002  7    75.35
+GMI 2002  8    81.68
+GMI 2002  9    91.11
+GMI 2002 10    98.61
+GMI 2002 11   101.83
+GMI 2002 12   105.30
+GMI 2003  1   120.55
+GMI 2003  2   121.25
+GMI 2003  3   107.27
+GMI 2003  4   108.23
+GMI 2003  5   104.77
+GMI 2003  6    88.91
+GMI 2003  7    76.23
+GMI 2003  8    69.18
+GMI 2003  9    68.74
+GMI 2003 10    84.94
+GMI 2003 11    96.67
+GMI 2003 12    92.66
+GMI 2004  1   117.49
+GMI 2004  2   138.04
+GMI 2004  3   124.35
+GMI 2004  4   106.50
+GMI 2004  5    93.44
+GMI 2004  6    83.98
+GMI 2004  7    80.57
+GMI 2004  8    73.37
+GMI 2004  9    69.91
+GMI 2004 10    81.14
+GMI 2004 11    91.53
+GMI 2004 12   109.14
+GMI 2005  1   135.73
+GMI 2005  2   133.28
+GMI 2005  3   121.30
+GMI 2005  4   110.79
+GMI 2005  5    92.38
+GMI 2005  6    78.60
+GMI 2005  7    70.88
+GMI 2005  8    71.94
+GMI 2005  9    81.72
+GMI 2005 10    88.36
+GMI 2005 11    88.95
+GMI 2005 12    90.74
+GMI 2006  1   100.12
+GMI 2006  2   113.41
+GMI 2006  3   118.27
+GMI 2006  4   111.97
+GMI 2006  5    93.53
+GMI 2006  6    77.47
+GMI 2006  7    75.21
+GMI 2006  8    76.40
+GMI 2006  9    92.09
+GMI 2006 10   107.58
+GMI 2006 11   100.25
+GMI 2006 12   100.20
+GMI 2007  1   108.83
+GMI 2007  3   131.02
+GMI 2007  4   112.42
+GMI 2007  5    90.61
+GMI 2007  6    78.55
+GMI 2007  7    67.29
+GMI 2007  8    61.86
+GMI 2007  9    67.08
+GMI 2007 10    77.26
+GMI 2007 11    91.19
+GMI 2007 12   108.06
+GMI 2008  5   100.65
+GMI 2008  6    82.01
+GMI 2008  7    78.50
+GMI 2008  8    69.43
+GMI 2008  9    66.91
+GMI 2008 10    74.32
+GMI 2008 11    80.64
+GMI 2008 12    93.47
+GMI 2009  1    91.79
+GMI 2009  2    99.12
+GMI 2009  3   116.76
+GMI 2009  4   104.06
+GMI 2009  5    89.31
+GMI 2009  6    78.75
+GMI 2009  7    72.68
+GMI 2009  8    77.10
+GMI 2009  9    76.31
+GMI 2009 10    75.87
+GMI 2009 11    76.74
+GMI 2009 12    84.52
+GMI 2010  1   108.31
+GMI 2010  2   117.81
+GMI 2010  3   115.24
+GMI 2010  4   118.50
+GMI 2010  5    97.58
+GMI 2010  6    71.98
+GMI 2010  7    63.70
+GMI 2010  8    62.89
+GMI 2010  9    65.81
+GMI 2010 10    69.30
+GMI 2010 11    84.28
+GMI 2010 12    90.90
+GMI 2011  1    89.95
+GMI 2011  2    98.13
+GMI 2011  3    96.16
+GMI 2011  4    91.30
+GMI 2011  5    84.01
+GMI 2011  6    73.65
+GMI 2011  7    64.29
+GMI 2011  8    61.03
+GMI 2011  9    66.78
+GMI 2011 10    71.49
+GMI 2011 11    79.89
+GMI 2011 12    99.26
+GMI 2012  1   111.70
+GMI 2012  2    98.90
+GMI 2012  3   102.43
+GMI 2012  4   112.05
+GMI 2012  5    89.70
+GMI 2012  6    71.80
+GMI 2012  7    71.38
+GMI 2012  8    83.19
+GMI 2012  9    93.38
+GMI 2012 10    97.58
+GMI 2012 11   107.13
+GMI 2012 12   108.75
+GMI 2013  1   110.62
+GMI 2013  2   106.24
+GMI 2013  3   101.78
+GMI 2013  4   105.71
+GMI 2013  5    86.77
+GMI 2013  6    69.91
+GMI 2013  7    66.32
+GMI 2013  8    61.38
+GMI 2013  9    73.17
+GMI 2013 10    89.72
+GMI 2013 11    86.27
+GMI 2013 12    83.60
+GMI 2014  1    90.33
+GMI 2014  2   104.36
+GMI 2014  3   109.88
+GMI 2014  4    97.11
+GMI 2014  5    88.53
+GMI 2014  6    75.21
+GMI 2014  7    66.37
+GMI 2014  8    68.73
+GMI 2014  9    82.74
+GMI 2014 10    90.12
+GMI 2014 11    80.58
+GMI 2014 12    83.69
+GMI 2015  1   103.83
+GMI 2015  2   119.00
+GMI 2015  3   105.70
+GMI 2015  4    88.14
+GMI 2015  5    88.29
+GMI 2015  6    80.14
+GMI 2015  7    78.45
+GMI 2015  8    99.49
+GMI 2015  9    99.35
+GMI 2015 10    88.77
+GMI 2015 11    91.65
+GMI 2015 12    92.93
+GMI 2016  1    93.05
+GMI 2016  2    97.64
+GMI 2016  3   102.22
+GMI 2016  4   100.20
+GMI 2016  5    91.91
+GMI 2016  6    84.33
+GMI 2016  7    75.14
+GMI 2016  8    65.62
+GMI 2016  9    60.93
+GMI 2016 10    68.76
+GMI 2016 11    83.94
+GMI 2016 12    92.07

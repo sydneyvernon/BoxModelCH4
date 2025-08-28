@@ -1,0 +1,482 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that GML receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: GML should be informed at the outset of the nature of this work.  
+# comment: If the GML data are essential to the work, or if an important 
+# comment: result or conclusion depends on the GML data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the GML data should be sent to GML
+# comment: for review before they are submitted for publication so we can
+# comment: ensure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: U.S. Fish and Wildlife Service [USFWS]
+# collaborator_url: http://midway.fws.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the GML data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: mid
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2020-07-24 11:32:11
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+MID 1985  8  1665.47
+MID 1985  9  1691.21
+MID 1985 10  1716.39
+MID 1985 11  1719.85
+MID 1985 12  1714.27
+MID 1986  1  1724.04
+MID 1986  2  1736.00
+MID 1986  3  1724.03
+MID 1986  4  1713.30
+MID 1986  5  1724.09
+MID 1986  6  1712.61
+MID 1986  7  1690.15
+MID 1986  8  1692.07
+MID 1986  9  1721.25
+MID 1986 10  1733.73
+MID 1986 11  1735.31
+MID 1986 12  1746.25
+MID 1987  1  1749.81
+MID 1987  2  1743.21
+MID 1987  3  1746.48
+MID 1987  4  1754.91
+MID 1987  5  1748.28
+MID 1987  6  1730.15
+MID 1987  7  1710.24
+MID 1987  8  1713.09
+MID 1987  9  1737.15
+MID 1987 10  1753.38
+MID 1987 11  1748.10
+MID 1987 12  1744.98
+MID 1988  1  1754.33
+MID 1988  2  1757.61
+MID 1988  3  1744.78
+MID 1988  4  1742.62
+MID 1988  5  1735.86
+MID 1988  6  1721.02
+MID 1988  7  1710.97
+MID 1988  8  1707.59
+MID 1988  9  1733.74
+MID 1988 10  1747.26
+MID 1988 11  1747.25
+MID 1988 12  1748.73
+MID 1989  1  1745.44
+MID 1989  2  1753.49
+MID 1989  3  1767.47
+MID 1989  4  1764.81
+MID 1989  5  1750.52
+MID 1989  6  1734.20
+MID 1989  7  1715.78
+MID 1989  8  1722.98
+MID 1989  9  1751.38
+MID 1989 10  1760.61
+MID 1989 11  1760.73
+MID 1989 12  1773.36
+MID 1990  1  1777.10
+MID 1990  2  1778.64
+MID 1990  3  1783.32
+MID 1990  4  1781.66
+MID 1990  5  1766.42
+MID 1990  6  1739.70
+MID 1990  7  1728.34
+MID 1990  8  1731.93
+MID 1990  9  1744.93
+MID 1990 10  1771.23
+MID 1990 11  1785.73
+MID 1990 12  1775.35
+MID 1991  1  1779.58
+MID 1991  2  1794.29
+MID 1991  3  1792.59
+MID 1991  4  1791.32
+MID 1991  5  1783.90
+MID 1991  6  1759.01
+MID 1991  7  1739.87
+MID 1991  8  1728.09
+MID 1991  9  1750.88
+MID 1991 10  1790.37
+MID 1991 11  1796.17
+MID 1991 12  1791.49
+MID 1992  1  1796.86
+MID 1992  2  1801.12
+MID 1992  3  1800.64
+MID 1992  4  1796.41
+MID 1992  5  1784.51
+MID 1992  6  1763.73
+MID 1992  7  1747.34
+MID 1992  8  1741.86
+MID 1992  9  1757.38
+MID 1992 10  1778.03
+MID 1992 11  1783.45
+MID 1992 12  1789.61
+MID 1993  1  1795.18
+MID 1993  2  1791.17
+MID 1993  3  1784.35
+MID 1993  4  1786.30
+MID 1993  5  1786.52
+MID 1993  6  1770.23
+MID 1993  7  1740.68
+MID 1993  8  1743.35
+MID 1993  9  1782.97
+MID 1993 10  1802.52
+MID 1993 11  1799.11
+MID 1993 12  1801.35
+MID 1994  1  1804.35
+MID 1994  2  1804.44
+MID 1994  3  1802.95
+MID 1994  4  1803.88
+MID 1994  5  1798.62
+MID 1994  6  1774.95
+MID 1994  7  1750.41
+MID 1994  8  1744.46
+MID 1994  9  1766.06
+MID 1994 10  1793.85
+MID 1994 11  1793.63
+MID 1994 12  1793.50
+MID 1995  1  1805.63
+MID 1995  2  1806.79
+MID 1995  3  1806.62
+MID 1995  4  1811.74
+MID 1995  5  1805.91
+MID 1995  6  1783.12
+MID 1995  7  1767.26
+MID 1995  8  1764.46
+MID 1995  9  1774.22
+MID 1995 10  1794.67
+MID 1995 11  1809.05
+MID 1995 12  1814.71
+MID 1996  1  1821.59
+MID 1996  2  1826.53
+MID 1996  3  1823.47
+MID 1996  4  1808.36
+MID 1996  5  1791.17
+MID 1996  6  1772.34
+MID 1996  7  1754.48
+MID 1996  8  1754.01
+MID 1996  9  1784.59
+MID 1996 10  1812.92
+MID 1996 11  1810.19
+MID 1996 12  1811.74
+MID 1997  1  1821.58
+MID 1997  2  1813.85
+MID 1997  3  1818.54
+MID 1997  4  1824.32
+MID 1997  5  1797.32
+MID 1997  6  1771.28
+MID 1997  7  1762.52
+MID 1997  8  1761.23
+MID 1997  9  1790.70
+MID 1997 10  1809.79
+MID 1997 11  1814.11
+MID 1997 12  1823.02
+MID 1998  1  1822.59
+MID 1998  2  1817.87
+MID 1998  3  1817.19
+MID 1998  4  1815.73
+MID 1998  5  1809.04
+MID 1998  6  1797.04
+MID 1998  7  1775.46
+MID 1998  8  1763.35
+MID 1998  9  1782.57
+MID 1998 10  1815.51
+MID 1998 11  1826.33
+MID 1998 12  1830.25
+MID 1999  1  1825.72
+MID 1999  2  1812.42
+MID 1999  3  1818.73
+MID 1999  4  1830.32
+MID 1999  5  1818.83
+MID 1999  6  1794.82
+MID 1999  7  1778.29
+MID 1999  8  1779.06
+MID 1999  9  1791.03
+MID 1999 10  1807.68
+MID 1999 11  1821.04
+MID 1999 12  1826.52
+MID 2000  1  1823.54
+MID 2000  2  1820.20
+MID 2000  3  1819.30
+MID 2000  4  1815.42
+MID 2000  5  1810.75
+MID 2000  6  1799.07
+MID 2000  7  1775.97
+MID 2000  8  1771.54
+MID 2000  9  1800.87
+MID 2000 10  1815.95
+MID 2000 11  1816.75
+MID 2000 12  1822.57
+MID 2001  1  1823.59
+MID 2001  2  1824.06
+MID 2001  3  1827.92
+MID 2001  4  1831.73
+MID 2001  5  1816.53
+MID 2001  6  1793.42
+MID 2001  7  1776.96
+MID 2001  8  1772.34
+MID 2001  9  1795.09
+MID 2001 10  1818.45
+MID 2001 11  1824.61
+MID 2001 12  1821.99
+MID 2002  1  1818.83
+MID 2002  2  1812.90
+MID 2002  3  1822.23
+MID 2002  4  1833.18
+MID 2002  5  1816.85
+MID 2002  6  1784.49
+MID 2002  7  1770.27
+MID 2002  8  1779.56
+MID 2002  9  1804.38
+MID 2002 10  1830.16
+MID 2002 11  1834.28
+MID 2002 12  1832.53
+MID 2003  1  1839.74
+MID 2003  2  1841.94
+MID 2003  3  1838.52
+MID 2003  4  1830.70
+MID 2003  5  1818.17
+MID 2003  6  1801.94
+MID 2003  7  1799.83
+MID 2003  8  1806.53
+MID 2003  9  1819.14
+MID 2003 10  1833.18
+MID 2003 11  1838.71
+MID 2003 12  1844.48
+MID 2004  1  1852.88
+MID 2004  2  1851.34
+MID 2004  3  1840.83
+MID 2004  4  1831.80
+MID 2004  5  1822.52
+MID 2004  6  1806.36
+MID 2004  7  1782.02
+MID 2004  8  1773.40
+MID 2004  9  1796.85
+MID 2004 10  1826.38
+MID 2004 11  1828.54
+MID 2004 12  1826.59
+MID 2005  1  1834.80
+MID 2005  2  1843.99
+MID 2005  3  1845.15
+MID 2005  4  1837.08
+MID 2005  5  1821.91
+MID 2005  6  1797.51
+MID 2005  7  1777.40
+MID 2005  8  1780.07
+MID 2005  9  1795.40
+MID 2005 10  1820.58
+MID 2005 11  1829.44
+MID 2005 12  1825.30
+MID 2006  1  1837.90
+MID 2006  2  1840.53
+MID 2006  3  1833.46
+MID 2006  4  1829.66
+MID 2006  5  1812.09
+MID 2006  6  1787.89
+MID 2006  7  1776.32
+MID 2006  8  1776.44
+MID 2006  9  1806.92
+MID 2006 10  1835.64
+MID 2006 11  1830.14
+MID 2006 12  1832.51
+MID 2007  1  1843.31
+MID 2007  2  1836.88
+MID 2007  3  1837.54
+MID 2007  4  1838.91
+MID 2007  5  1821.82
+MID 2007  6  1804.01
+MID 2007  7  1793.49
+MID 2007  8  1794.41
+MID 2007  9  1808.13
+MID 2007 10  1826.84
+MID 2007 11  1840.07
+MID 2007 12  1837.94
+MID 2008  1  1842.27
+MID 2008  2  1846.82
+MID 2008  3  1841.12
+MID 2008  4  1837.22
+MID 2008  5  1830.02
+MID 2008  6  1813.49
+MID 2008  7  1800.98
+MID 2008  8  1803.58
+MID 2008  9  1823.70
+MID 2008 10  1842.15
+MID 2008 11  1849.74
+MID 2008 12  1854.47
+MID 2009  1  1854.60
+MID 2009  2  1846.76
+MID 2009  3  1840.47
+MID 2009  4  1845.63
+MID 2009  5  1846.23
+MID 2009  6  1824.07
+MID 2009  7  1805.69
+MID 2009  8  1811.12
+MID 2009  9  1836.65
+MID 2009 10  1853.73
+MID 2009 11  1851.09
+MID 2009 12  1855.90
+MID 2010  1  1870.70
+MID 2010  2  1871.43
+MID 2010  3  1861.71
+MID 2010  4  1856.68
+MID 2010  5  1837.53
+MID 2010  6  1811.98
+MID 2010  7  1801.98
+MID 2010  8  1807.10
+MID 2010  9  1823.62
+MID 2010 10  1844.75
+MID 2010 11  1851.21
+MID 2010 12  1847.30
+MID 2011  1  1855.11
+MID 2011  2  1862.99
+MID 2011  3  1861.31
+MID 2011  4  1856.81
+MID 2011  5  1845.54
+MID 2011  6  1826.87
+MID 2011  7  1807.93
+MID 2011  8  1808.48
+MID 2011  9  1829.06
+MID 2011 10  1847.40
+MID 2011 11  1851.92
+MID 2011 12  1855.37
+MID 2012  1  1864.60
+MID 2012  2  1868.70
+MID 2012  3  1872.34
+MID 2012  4  1857.82
+MID 2012  5  1828.75
+MID 2012  6  1815.51
+MID 2012  7  1813.36
+MID 2012  8  1816.89
+MID 2012  9  1845.26
+MID 2012 10  1862.81
+MID 2012 11  1855.46
+MID 2012 12  1860.00
+MID 2013  1  1872.36
+MID 2013  2  1869.56
+MID 2013  3  1871.18
+MID 2013  4  1879.71
+MID 2013  5  1863.15
+MID 2013  6  1837.78
+MID 2013  7  1819.99
+MID 2013  8  1824.81
+MID 2013  9  1849.14
+MID 2013 10  1866.14
+MID 2013 11  1869.96
+MID 2013 12  1866.23
+MID 2014  1  1881.74
+MID 2014  2  1891.51
+MID 2014  3  1882.52
+MID 2014  4  1877.16
+MID 2014  5  1874.47
+MID 2014  6  1849.26
+MID 2014  7  1823.31
+MID 2014  8  1829.50
+MID 2014  9  1863.80
+MID 2014 10  1878.02
+MID 2014 11  1885.80
+MID 2014 12  1898.91
+MID 2015  1  1899.42
+MID 2015  2  1897.17
+MID 2015  3  1900.69
+MID 2015  4  1896.62
+MID 2015  5  1878.87
+MID 2015  6  1863.07
+MID 2015  7  1846.20
+MID 2015  8  1843.71
+MID 2015  9  1869.89
+MID 2015 10  1893.94
+MID 2015 11  1899.45
+MID 2015 12  1900.94
+MID 2016  1  1903.77
+MID 2016  2  1913.16
+MID 2016  3  1915.24
+MID 2016  4  1901.37
+MID 2016  5  1892.30
+MID 2016  6  1877.88
+MID 2016  7  1849.19
+MID 2016  8  1840.69
+MID 2016  9  1864.50
+MID 2016 10  1890.91
+MID 2016 11  1899.81
+MID 2016 12  1905.04
+MID 2017  1  1905.69
+MID 2017  2  1912.36
+MID 2017  3  1913.86
+MID 2017  4  1901.84
+MID 2017  5  1900.19
+MID 2017  6  1884.68
+MID 2017  7  1852.52
+MID 2017  8  1850.09
+MID 2017  9  1892.28
+MID 2017 10  1914.95
+MID 2017 11  1913.96
+MID 2017 12  1921.19
+MID 2018  1  1919.37
+MID 2018  2  1914.59
+MID 2018  3  1919.69
+MID 2018  4  1924.20
+MID 2018  5  1910.28
+MID 2018  6  1879.39
+MID 2018  7  1864.36
+MID 2018  8  1871.93
+MID 2018  9  1890.84
+MID 2018 10  1911.79
+MID 2018 11  1924.44
+MID 2018 12  1925.06
+MID 2019  1  1919.70
+MID 2019  2  1919.98
+MID 2019  3  1923.54
+MID 2019  4  1927.91
+MID 2019  5  1923.57
+MID 2019  6  1898.80
+MID 2019  7  1874.72
+MID 2019  8  1872.47
+MID 2019  9  1894.99
+MID 2019 10  1915.28
+MID 2019 11  1929.00
+MID 2019 12  1933.25

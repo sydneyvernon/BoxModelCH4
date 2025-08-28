@@ -1,0 +1,156 @@
+# number_of_header_lines: 84
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Chinese Academy of Meteorological Sciences
+# collaborator_name: (CAMS) and Beijing Meteorological Bureau
+# collaborator_name: (BMB), China Meteorological Administration
+# collaborator_name: (CMA) [CMA]
+# collaborator_comment: Lingxi ZHOU, Ph.D., Prof.
+# collaborator_comment: 
+# collaborator_comment: PI for Greenhouse Gases & Related Tracers
+# collaborator_comment: Chinese Academy of Meteorological Sciences
+# collaborator_comment: (CAMS)
+# collaborator_comment: China Meteorological Administration (CMA)
+# collaborator_comment: 
+# collaborator_comment: 46 Zhongguancun Nandajie
+# collaborator_comment: Beijing 100081, China
+# collaborator_comment: Tel:     86-10-5899-5279 (o)
+# collaborator_comment: Fax:     86-10-6217-6414 (o)
+# collaborator_comment: E-mail:zhoulx@cams.cma.gov.cn
+# collaborator_comment: zhoulx2007@gmail.com
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: sdz
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:30:10
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+SDZ 2009  9   180.95
+SDZ 2009 10   428.73
+SDZ 2009 11   521.04
+SDZ 2009 12   320.61
+SDZ 2010  1   243.94
+SDZ 2010  2   164.38
+SDZ 2010  3   166.74
+SDZ 2010  4   179.60
+SDZ 2010  5   548.93
+SDZ 2010  6  1550.14
+SDZ 2010  7  1600.26
+SDZ 2010  8   386.39
+SDZ 2010  9   152.47
+SDZ 2010 10   626.19
+SDZ 2010 11   546.58
+SDZ 2010 12   135.63
+SDZ 2011  1   124.95
+SDZ 2011  2   271.87
+SDZ 2011  3   369.71
+SDZ 2011  4   225.54
+SDZ 2011  5   148.29
+SDZ 2011  6   361.47
+SDZ 2011  7   599.18
+SDZ 2011  8   390.33
+SDZ 2011  9   128.46
+SDZ 2011 10   567.56
+SDZ 2011 11   567.30
+SDZ 2011 12   102.52
+SDZ 2012  1   171.88
+SDZ 2012  2   532.90
+SDZ 2012  3   608.22
+SDZ 2012  4   240.82
+SDZ 2012  5   158.93
+SDZ 2012  6   399.73
+SDZ 2012  7   411.48
+SDZ 2012  8   271.50
+SDZ 2012  9   217.50
+SDZ 2012 10   168.70
+SDZ 2012 11   247.22
+SDZ 2012 12   466.86
+SDZ 2013  1   329.28
+SDZ 2013  2   127.37
+SDZ 2013  3   160.59
+SDZ 2013  4   199.18
+SDZ 2013  5   125.02
+SDZ 2013  6   150.53
+SDZ 2013  7   327.41
+SDZ 2013  8   393.39
+SDZ 2013  9   446.27
+SDZ 2013 10   315.39
+SDZ 2013 11   102.06
+SDZ 2013 12   145.45
+SDZ 2014  1   681.30
+SDZ 2014  2   700.44
+SDZ 2014  3   221.13
+SDZ 2014  4   297.85
+SDZ 2014  5   359.53
+SDZ 2014  6   382.81
+SDZ 2014  7   810.24
+SDZ 2014  8   604.41
+SDZ 2014  9   187.72
+SDZ 2014 10   305.42
+SDZ 2014 11   273.14
+SDZ 2014 12   113.85
+SDZ 2015  1   152.16
+SDZ 2015  2   261.71
+SDZ 2015  3   451.36
+SDZ 2015  4   411.46
+SDZ 2015  5   166.95
+SDZ 2015  6   220.65
+SDZ 2015  7   491.91
+SDZ 2015  8   515.26

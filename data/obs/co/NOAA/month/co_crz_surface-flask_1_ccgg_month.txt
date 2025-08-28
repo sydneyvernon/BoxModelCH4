@@ -1,0 +1,326 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Centre des Faibles Radioactivities/TAAF [LSCE]
+# collaborator_url: www.lsce.cea.fr/
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: crz
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:35
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+CRZ 1995  1    48.02
+CRZ 1995  2    46.15
+CRZ 1995  3    47.16
+CRZ 1995  4    50.96
+CRZ 1995  5    53.41
+CRZ 1995  6    55.31
+CRZ 1995  7    59.58
+CRZ 1995  8    65.86
+CRZ 1995  9    70.75
+CRZ 1995 10    72.45
+CRZ 1995 11    69.60
+CRZ 1995 12    62.80
+CRZ 1996  1    55.69
+CRZ 1996  2    50.42
+CRZ 1996  3    48.51
+CRZ 1996  4    49.02
+CRZ 1996  5    51.17
+CRZ 1996  6    56.32
+CRZ 1996  7    58.86
+CRZ 1996  8    59.78
+CRZ 1996  9    62.47
+CRZ 1996 10    64.80
+CRZ 1996 11    62.68
+CRZ 1996 12    54.72
+CRZ 1997  1    47.28
+CRZ 1997  2    45.89
+CRZ 1997  3    50.05
+CRZ 1997  4    53.49
+CRZ 1997  5    54.81
+CRZ 1997  6    60.28
+CRZ 1997  7    65.13
+CRZ 1997  8    65.91
+CRZ 1997  9    68.99
+CRZ 1997 10    70.82
+CRZ 1997 11    67.46
+CRZ 1997 12    61.36
+CRZ 1998  1    56.04
+CRZ 1998  2    50.85
+CRZ 1998  3    48.17
+CRZ 1998  4    51.30
+CRZ 1998  5    55.33
+CRZ 1998  6    58.99
+CRZ 1998  7    64.59
+CRZ 1998  8    70.25
+CRZ 1998  9    72.19
+CRZ 1998 10    71.73
+CRZ 1998 11    67.39
+CRZ 1998 12    57.54
+CRZ 1999  1    48.84
+CRZ 1999  2    45.26
+CRZ 1999  3    46.05
+CRZ 1999  4    48.30
+CRZ 1999  5    51.32
+CRZ 1999  6    55.40
+CRZ 1999 12    58.84
+CRZ 2000  1    55.33
+CRZ 2000  2    50.33
+CRZ 2000  3    47.66
+CRZ 2000  4    48.31
+CRZ 2000  5    50.53
+CRZ 2000  6    53.02
+CRZ 2000  7    57.95
+CRZ 2000  8    63.49
+CRZ 2000  9    66.34
+CRZ 2000 10    65.49
+CRZ 2000 11    60.56
+CRZ 2000 12    53.88
+CRZ 2001  1    47.66
+CRZ 2001  2    46.68
+CRZ 2001  3    48.03
+CRZ 2001  4    49.54
+CRZ 2001  5    53.57
+CRZ 2001  6    57.27
+CRZ 2001  7    60.86
+CRZ 2001  8    65.33
+CRZ 2001  9    68.02
+CRZ 2001 10    67.10
+CRZ 2001 11    63.07
+CRZ 2002  2    48.32
+CRZ 2002  3    47.73
+CRZ 2002  4    50.12
+CRZ 2002  5    53.89
+CRZ 2002  6    58.01
+CRZ 2002  7    62.12
+CRZ 2002  8    68.69
+CRZ 2002  9    75.33
+CRZ 2002 10    75.12
+CRZ 2002 11    69.95
+CRZ 2002 12    63.07
+CRZ 2003  1    56.71
+CRZ 2003  2    51.29
+CRZ 2003  3    48.79
+CRZ 2003  4    50.39
+CRZ 2003  5    52.36
+CRZ 2003  6    56.24
+CRZ 2003  7    60.88
+CRZ 2003  8    65.94
+CRZ 2003  9    70.10
+CRZ 2003 10    67.70
+CRZ 2003 11    59.73
+CRZ 2003 12    52.44
+CRZ 2004  1    49.59
+CRZ 2004  2    46.74
+CRZ 2004  3    44.60
+CRZ 2004  4    47.13
+CRZ 2004  5    51.07
+CRZ 2004  6    54.72
+CRZ 2004  7    58.62
+CRZ 2004  8    62.95
+CRZ 2004  9    66.50
+CRZ 2004 10    67.60
+CRZ 2004 11    62.59
+CRZ 2004 12    55.01
+CRZ 2005  1    47.76
+CRZ 2005  2    43.40
+CRZ 2005  3    44.01
+CRZ 2005  4    46.76
+CRZ 2005  5    50.54
+CRZ 2005  6    55.15
+CRZ 2005  7    59.07
+CRZ 2005  8    61.83
+CRZ 2005  9    64.25
+CRZ 2005 10    66.24
+CRZ 2005 11    63.16
+CRZ 2005 12    55.70
+CRZ 2006  1    48.06
+CRZ 2006  2    44.99
+CRZ 2006  3    44.60
+CRZ 2006  4    45.82
+CRZ 2006  5    48.74
+CRZ 2006  6    50.95
+CRZ 2006  7    54.55
+CRZ 2006  8    58.76
+CRZ 2006  9    61.64
+CRZ 2006 10    62.78
+CRZ 2006 11    58.31
+CRZ 2006 12    52.06
+CRZ 2007  1    48.11
+CRZ 2007  2    45.14
+CRZ 2007  3    44.53
+CRZ 2007  4    47.64
+CRZ 2007  5    51.48
+CRZ 2007  6    54.45
+CRZ 2007  7    58.08
+CRZ 2007  8    62.14
+CRZ 2007  9    64.91
+CRZ 2007 10    66.64
+CRZ 2007 11    64.32
+CRZ 2007 12    55.72
+CRZ 2008  1    47.60
+CRZ 2008  2    44.18
+CRZ 2008  3    43.00
+CRZ 2008  4    45.11
+CRZ 2008  5    50.42
+CRZ 2008  6    55.35
+CRZ 2008  7    57.66
+CRZ 2008  8    60.35
+CRZ 2008  9    62.45
+CRZ 2008 10    61.06
+CRZ 2008 11    55.29
+CRZ 2008 12    47.97
+CRZ 2009  1    43.89
+CRZ 2009  2    42.19
+CRZ 2009  3    41.70
+CRZ 2009  4    43.66
+CRZ 2009  5    47.79
+CRZ 2009  6    52.51
+CRZ 2009  7    56.05
+CRZ 2009  8    58.64
+CRZ 2009  9    60.10
+CRZ 2009 10    59.04
+CRZ 2009 11    54.01
+CRZ 2009 12    48.20
+CRZ 2010  1    43.67
+CRZ 2010  2    41.36
+CRZ 2010  3    42.29
+CRZ 2010  4    44.65
+CRZ 2010  5    48.00
+CRZ 2010  6    52.07
+CRZ 2010  7    57.19
+CRZ 2010  8    62.03
+CRZ 2010  9    64.27
+CRZ 2010 10    66.44
+CRZ 2010 11    65.18
+CRZ 2010 12    57.71
+CRZ 2011  1    48.20
+CRZ 2011  2    43.60
+CRZ 2011  3    43.51
+CRZ 2011  4    45.86
+CRZ 2011  5    48.71
+CRZ 2011  6    50.91
+CRZ 2011  7    54.65
+CRZ 2011  8    58.83
+CRZ 2011  9    61.29
+CRZ 2011 10    61.92
+CRZ 2011 11    57.42
+CRZ 2011 12    50.19
+CRZ 2012  1    44.63
+CRZ 2012  2    42.21
+CRZ 2012  3    42.50
+CRZ 2012  4    45.47
+CRZ 2012  5    48.74
+CRZ 2012  6    51.76
+CRZ 2012  7    56.30
+CRZ 2012  8    59.24
+CRZ 2012  9    60.92
+CRZ 2012 10    61.24
+CRZ 2012 11    58.01
+CRZ 2012 12    50.75
+CRZ 2013  1    44.59
+CRZ 2013  2    42.80
+CRZ 2013  3    42.58
+CRZ 2013  4    44.69
+CRZ 2013  5    48.67
+CRZ 2013  6    52.82
+CRZ 2013  7    56.69
+CRZ 2013  8    59.63
+CRZ 2013  9    60.61
+CRZ 2013 10    58.59
+CRZ 2013 11    54.38
+CRZ 2013 12    48.55
+CRZ 2014  1    43.20
+CRZ 2014  2    41.23
+CRZ 2014  3    43.88
+CRZ 2014  4    47.47
+CRZ 2014  5    49.11
+CRZ 2014  6    52.83
+CRZ 2014  7    58.01
+CRZ 2014  8    60.67
+CRZ 2014  9    61.07
+CRZ 2014 10    59.42
+CRZ 2014 11    54.02
+CRZ 2014 12    47.61
+CRZ 2015  1    43.91
+CRZ 2015  2    42.29
+CRZ 2015  3    44.67
+CRZ 2015  4    47.18
+CRZ 2015  5    48.96
+CRZ 2015  6    53.55
+CRZ 2015  7    56.30
+CRZ 2015  8    59.01
+CRZ 2015  9    61.08
+CRZ 2015 10    60.02
+CRZ 2015 11    57.04
+CRZ 2015 12    52.09
+CRZ 2016  1    47.57
+CRZ 2016  2    45.97
+CRZ 2016  3    46.74
+CRZ 2016  4    48.54
+CRZ 2016  5    50.86
+CRZ 2016  6    54.99
+CRZ 2016  7    59.77
+CRZ 2016  8    62.31
+CRZ 2016  9    63.41
+CRZ 2016 10    61.97
+CRZ 2016 11    56.36
+CRZ 2016 12    50.08

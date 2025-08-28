@@ -1,0 +1,198 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Bureau of Meteorology and Geophysics [BMG]
+# collaborator_comment: DHL account#: 540377880
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: bkt
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:27
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BKT 2004  1   171.65
+BKT 2004  2   188.44
+BKT 2004  3   161.83
+BKT 2004  4   133.57
+BKT 2004  5   104.31
+BKT 2004  6    79.73
+BKT 2004  7    93.54
+BKT 2004  8   115.81
+BKT 2004  9   157.68
+BKT 2004 10   196.13
+BKT 2004 11   154.79
+BKT 2004 12   154.40
+BKT 2005  4   122.30
+BKT 2005  5   104.63
+BKT 2005  6    96.12
+BKT 2005  7    92.38
+BKT 2005  8   132.61
+BKT 2005  9   135.80
+BKT 2005 10   108.27
+BKT 2005 11   102.33
+BKT 2005 12   111.60
+BKT 2006  1   154.79
+BKT 2006  2   191.15
+BKT 2006  3   141.21
+BKT 2006  4    96.43
+BKT 2006  5   113.78
+BKT 2006  6   141.02
+BKT 2006  7   140.16
+BKT 2006  8   153.92
+BKT 2006 12   150.23
+BKT 2007  1   168.20
+BKT 2007  2   187.88
+BKT 2007  3   138.30
+BKT 2007  4    92.75
+BKT 2007  5   100.10
+BKT 2007  6   123.29
+BKT 2007  7   130.72
+BKT 2007  8   129.02
+BKT 2007  9   130.32
+BKT 2007 10   123.77
+BKT 2007 11   109.54
+BKT 2007 12   118.40
+BKT 2008  1   164.17
+BKT 2008  2   193.85
+BKT 2008  3   139.41
+BKT 2008  4   103.71
+BKT 2008  5   136.85
+BKT 2008  6   125.71
+BKT 2008  7   126.78
+BKT 2008  8   146.24
+BKT 2008  9   114.47
+BKT 2008 10   108.32
+BKT 2008 11   103.91
+BKT 2008 12   122.78
+BKT 2009  1   199.65
+BKT 2009  2   200.57
+BKT 2009  3   147.33
+BKT 2009  4   105.94
+BKT 2009  5   117.19
+BKT 2009  6   149.48
+BKT 2009  7   156.07
+BKT 2009  8   143.47
+BKT 2009  9   118.66
+BKT 2009 10   131.81
+BKT 2009 11   142.59
+BKT 2009 12   135.63
+BKT 2010  1   143.17
+BKT 2010  2   157.59
+BKT 2010  3   137.73
+BKT 2010  4   112.82
+BKT 2010  5   114.47
+BKT 2010  6    96.08
+BKT 2010  7    89.09
+BKT 2010  8   111.43
+BKT 2010  9   111.81
+BKT 2010 10   100.16
+BKT 2010 11   103.59
+BKT 2010 12   103.30
+BKT 2011  1   138.25
+BKT 2011  2   190.50
+BKT 2011  3   165.93
+BKT 2013  1    71.91
+BKT 2013  2   146.07
+BKT 2013  3   161.50
+BKT 2013  4   117.51
+BKT 2013  5    83.61
+BKT 2013  6    81.63
+BKT 2013  7    94.81
+BKT 2013  8   114.82
+BKT 2013  9   109.67
+BKT 2013 10   105.03
+BKT 2013 11   131.77
+BKT 2013 12    83.76
+BKT 2014  1   194.52
+BKT 2014  2   700.63
+BKT 2014  3   646.44
+BKT 2014  4   163.89
+BKT 2014  5    99.69
+BKT 2014  6   110.81
+BKT 2014  7    85.97
+BKT 2014  8   111.40
+BKT 2014  9   162.32
+BKT 2014 10   186.98
+BKT 2014 11   139.92
+BKT 2014 12   112.14
+BKT 2015  1   172.78
+BKT 2015  2   201.84
+BKT 2015  3   165.99
+BKT 2015  4   128.26
+BKT 2015  5   119.73
+BKT 2015  6   110.49
+BKT 2015  7   116.00
+BKT 2015  8   208.66
+BKT 2015  9   339.43
+BKT 2015 10   334.24
+BKT 2015 11   199.20
+BKT 2015 12   117.06
+BKT 2016  1   153.75
+BKT 2016  2   179.70
+BKT 2016  3   158.58
+BKT 2016  4   148.40
+BKT 2016  5   125.05
+BKT 2016  6    88.32
+BKT 2016  7    87.85
+BKT 2016  8    91.93
+BKT 2016  9    84.15
+BKT 2016 10    84.80
+BKT 2016 11    92.13
+BKT 2016 12   101.62

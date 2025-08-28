@@ -1,0 +1,150 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Central University, Taiwan [NCU]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: dsi
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:36
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+DSI 2010  3   266.69
+DSI 2010  4   250.39
+DSI 2010  5   188.34
+DSI 2010  6   108.70
+DSI 2010  7    81.12
+DSI 2010  8    86.77
+DSI 2010  9   101.28
+DSI 2010 10   215.92
+DSI 2010 11   290.74
+DSI 2010 12   246.70
+DSI 2011  1   287.83
+DSI 2011  2   317.24
+DSI 2011  3   288.26
+DSI 2011  4   248.37
+DSI 2011  5   141.20
+DSI 2011  6    88.66
+DSI 2011  7    95.46
+DSI 2011  8    91.13
+DSI 2011  9   119.71
+DSI 2011 10   221.31
+DSI 2011 11   275.42
+DSI 2011 12   252.32
+DSI 2012  1   279.18
+DSI 2012  2   274.05
+DSI 2012  3   198.91
+DSI 2012  4   161.84
+DSI 2012  5   173.09
+DSI 2012  6   159.15
+DSI 2012  7   105.82
+DSI 2012  8   105.99
+DSI 2012  9   149.75
+DSI 2012 10   169.10
+DSI 2012 11   221.94
+DSI 2012 12   280.09
+DSI 2013  1   228.98
+DSI 2013  2   177.71
+DSI 2013  3   244.04
+DSI 2013  4   230.95
+DSI 2013  5   143.58
+DSI 2013  6   166.96
+DSI 2013  7   132.23
+DSI 2013  8    91.81
+DSI 2013  9   145.86
+DSI 2013 10   169.31
+DSI 2013 11   213.81
+DSI 2013 12   280.53
+DSI 2014  1   247.86
+DSI 2014  2   223.49
+DSI 2014  3   237.82
+DSI 2014  4   224.82
+DSI 2014  5   145.42
+DSI 2014  6    90.94
+DSI 2014  7    97.97
+DSI 2014  8   137.79
+DSI 2014  9   214.03
+DSI 2014 10   206.40
+DSI 2014 11   180.22
+DSI 2014 12   275.32
+DSI 2015  1   363.79
+DSI 2015  2   311.93
+DSI 2015  3   227.73
+DSI 2015  4   205.73
+DSI 2015  5   152.37
+DSI 2015  6   114.20
+DSI 2015  7   129.21
+DSI 2015  8   117.17
+DSI 2015  9   166.04
+DSI 2015 10   195.47
+DSI 2015 11   208.42
+DSI 2015 12   279.09
+DSI 2016  1   306.04
+DSI 2016  2   264.86
+DSI 2016  3   230.25
+DSI 2016  4   174.85
+DSI 2016  5   147.83
+DSI 2016  6   114.15
+DSI 2016  7    88.33
+DSI 2016  8   126.52
+DSI 2016  9   156.89
+DSI 2016 10   174.39
+DSI 2016 11   180.83
+DSI 2016 12   207.33

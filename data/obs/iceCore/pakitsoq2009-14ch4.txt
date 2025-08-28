@@ -1,0 +1,238 @@
+Pakitsoq Greenland Younger Dryas-Preboreal 14CH4 Data
+----------------------------------------------------------------------- 
+               World Data Center for Paleoclimatology, Boulder 
+                                  and 
+                     NOAA Paleoclimatology Program 
+----------------------------------------------------------------------- 
+NOTE: PLEASE CITE ORIGINAL REFERENCE WHEN USING THIS DATA!!!!! 
+
+
+NAME OF DATA SET: Pakitsoq Greenland Younger Dryas-Preboreal 14CH4 Data 
+LAST UPDATE: 10/2011 (Original receipt by WDC Paleo) 
+CONTRIBUTORS: Petrenko, V.V., A.M. Smith, E.J. Brook, D. Lowe, 
+K. Riedel, G. Brailsford, Q. Hua, H. Schaefer, N. Reeh, 
+R.F. Weiss, D. Etheridge, and J.P. Severinghaus 
+IGBP PAGES/WDCA CONTRIBUTION SERIES NUMBER: 2011-136 
+
+WDC PALEO CONTRIBUTION SERIES CITATION: 
+Petrenko, V.V., et al. 2011. 
+Pakitsoq Greenland Younger Dryas-Preboreal 14CH4 Data.  
+IGBP PAGES/World Data Center for Paleoclimatology 
+Data Contribution Series # 2011-136. 
+NOAA/NCDC Paleoclimatology Program, Boulder CO, USA. 
+
+
+ORIGINAL REFERENCE: 
+Petrenko, V.V., A.M. Smith, E.J. Brook, D. Lowe, K. Riedel, 
+G. Brailsford, Q. Hua, H. Schaefer, N. Reeh, R.F. Weiss, 
+D. Etheridge, and J.P. Severinghaus. 2009. 
+14CH4 Measurements in Greenland Ice: Investigating Last Glacial 
+Termination CH4 Sources. 
+Science, Vol. 324, pp. 506-508, 24 April 2009.
+10.1126/science.1168909
+
+ABSTRACT: 
+The cause of a large increase of atmospheric methane concentration 
+during the Younger Dryas-Preboreal abrupt climatic transition 
+(~11,600 years ago) has been the subject of much debate. 
+The carbon-14 (14C) content of methane (14CH4) should distinguish 
+between wetland and clathrate contributions to this increase. 
+We present measurements of 14CH4 in glacial ice, targeting this 
+transition, performed by using ice samples obtained from an 
+ablation site in west Greenland.  Measured 14CH4 values were 
+higher than predicted under any scenario. Sample 14CH4 appears 
+to be elevated by direct cosmogenic 14C production in ice. 
+14C of CO was measured to better understand this process 
+and correct the sample 14CH4. Corrected results suggest that 
+wetland sources were likely responsible for the majority 
+of the Younger Dryas–Preboreal CH4 rise.
+
+
+ADDITIONAL REFERENCES: 
+Brook, E.J., S. Harder, J. Severinghaus, E.J. Steig, 
+and C.M. Sucher. 2000. 
+On the origin and timing of rapid changes in atmospheric methane 
+during the last glacial period.  
+Global Biogeochem. Cycles 14, 559-572.
+
+Lal, D., K. Nishiizumi, and J.R. Arnold. 1987. 
+In-situ cosmogenic H-3, C-14, and Be-10 for determining 
+the net accumulation and ablation rates of ice sheets. 
+J.Geophys. Res., 92 (B6), 4947-4952   
+
+Petrenko, V.V., J.P. Severinghaus, E.J. Brook, J. Mühle, 
+M. Headly, C. Harth, H. Schaefer, N. Reeh, R. Weiss, 
+D.C. Lowe, and A.M. Smith. 2008a. 
+A novel method for obtaining very large ancient air samples 
+from ablating glacial ice for analyses of methane radiocarbon. 
+Journal of Glaciology 54, 233-44.
+
+Petrenko, V.V., A.M. Smith, G. Brailsford, K. Riedel, Q. Hua, 
+D. Lowe, J.P. Severinghaus, V. Levchenko, T. Bromley, R. Moss, 
+J. Muhle, and E.J. Brook, 2008b. 
+A new method for analyzing C-14 of methane in ancient air 
+extracted from glacial ice. 
+Radiocarbon 50, 53-73.
+
+Van Der Kemp, W., C. Alderliesten, K. Van Der Borg, A. De Jong, 
+R. Lamers, J. Oerlemans, M. Thomassen, and R. Van De Wal, R. 2002. 
+In situ produced C-14 by cosmic ray muons in ablating Antarctic ice. 
+Tellus B 54, 186-192. 
+
+
+
+GEOGRAPHIC REGION: Greenland  
+PERIOD OF RECORD: 
+
+FUNDING SOURCES: 
+US National Science Foundation (NSF) grants OPP0221470 
+and OPP0221410, Packard Fellowship, American Chemical Society 
+grant PRF 42551-AC2, ANSTO Cosmogenic Climate Archives 
+of the Southern Hemisphere project, New Zealand Foundation 
+of Science and Technology (contract C01X0703), Australian 
+Climate Change Science Program. 
+
+
+
+DESCRIPTION: 
+14C measurements in large-volume ice samples from 
+Pakitsoq, West Greenland. This data set contains measurements 
+of 14C of methane made on ancient air extracted from large-volume 
+glacial ice samples spanning the Younger Dryas - Preboreal climatic 
+transition about 11,600 years ago. The data set also contains 
+supporting measurements of 14C of carbon monoxide and 14C 
+of carbon dioxide. 
+
+The measurements were made to test the hypothesis that catastrophic 
+destabilization of marine methane clathrates caused the methane 
+increase at the end of the Younger Dryas. The results suggested 
+little to no change in 14CH4 over the time of the methane increase, 
+arguing against major clathrate involvement.
+
+The ice samples were collected between Jul 1 and Aug 15, 2005. 
+
+INSTRUMENT AND METHOD DESCRIPTION
+The field and analytical system for determinations of 14CH4 
+in large-volume glacial ice samples have been described in 
+(Petrenko et al., 2008a; Petrenko et al., 2008b; 
+Petrenko et al., 2009). This system involves the melt-extraction 
+of occluded air from very large volumes of glacial ice or at the 
+sampling / ice coring site. Briefly, the present field system 
+consists of a large chemically polished aluminum vacuum melting tank 
+(~670 L internal volume) and a series vacuum and transfer pumps. 
+The ice is loaded into the tank, and the headspace is evacuated 
+and flushed 3x with either ultra-high purity (UHP) air, nitrogen 
+or argon. The ice is then melted, releasing the ancient air into 
+the headspace. The air is then extracted from the tank by clean 
+diaphragm transfer pumps and stored in electropolished stainless 
+steel canisters for further laboratory handling and analyses. 
+In the laboratory, the air is first processed through a system 
+that converts either CH4 or CO to CO2, and captures this CO2 
+for further handling. In the case of CH4 processing, H2O, CO2, 
+N2O and other condensibles are first removed by a series of traps 
+at liquid nitrogen temperature. CO is then quantitatively oxidized 
+to CO2 by the Sofonocat reagent and subsequently removed by further 
+cryotraps. CH4 is then combusted to CO2 by passing the air through 
+a 800°C furnace containing platinized quartz wool. The CH4-derived 
+CO2 is then captured. This CO2 is then converted to graphite over 
+ultra-high-purity iron powder and subsequently measured for 14C 
+by AMS. The combined procedural 14CH4 blank for all steps of 
+sampling handling was determined to be 0.75 ± 0.38 pMC, 
+on the basis of 72 processed blank and standard samples 
+(Petrenko et al., 2008b). For CO analyses, the sample handling 
+is very similar except that the air bypasses Sofnocat, 
+and the furnace temperature is reduced from 800 to 150°C. 
+This allows for complete combustion of CO while CH4 passes 
+through unaffected. CO2 derived from CO was diluted with 14-C 
+free CO2 to increase the carbon mass to allow for a 14C measurement.
+For sample 14CO2 measurements, CO2 was extracted cryogenically 
+from ~0.5 L of air.
+
+DATA COLLECTION AND PROCESSING
+The 14CH4 data are corrected the procedural blank. Where indicated, 
+14CH4 data are also corrected for cosmogenic 14C production in ice. 
+For 14CO, corrections are applied for ambient air inclusion 
+and processing blank.  For 14CO2, processing blank corrections 
+are applied where indicated. 
+
+Sampling Location, Pakitsoq, Greenland: 69.43050°N, 50.25330°W, 350m 
+
+
+
+DATA: 
+The tables below contain data from a study that performed measurements 
+of 14CH4 on large-volume samples of glacial ice from an ice margin site 
+called Pakitsoq in West Greenland. As-measured data, as well as data 
+corrected for cosmogenic 14CH4 production in ice are shown. The amount 
+of cosmogenic 14CH4 was estimated based on measurements of cosmogenic 
+14CO in the samples (Table 2) Maximum expected 14CH4 values are based 
+on sample age and the assumption that 14C of CH4 is equal to 14C of 
+contemporaneous atmospheric CO2. 
+
+
+1. Table 1
+      Sample       Mean gas age, yr BP    Max.PossAirAgeRange    14CH4 measured,pMC  MaxExpect14CH4     CH4ppb             ExpectedCH4ppb         14CH4corr.For14C      Corrected 14CH4, age-corrected
+Younger Dryas 1        11637  ±  75           11560  -  11739        35.42  ±  1.21       28.52      524.1  ±  1.85        519.92  ±  11.1         28.64  ±  1.23         170.4  ±  50.3
+Younger Dryas 2        11631  ±  73           11551  -  11739         35.1  ±  1.19       28.57     527.16  ±  1.58        519.92  ±  11.1         28.45  ±  1.21         161.8  ±  49.2
+YD-PB Transition 1     11480  ±  15           11416  -  11587         34.4  ±  1.05       28.7       659.1  ±  2.1         670.07  ±  20.28        28.28  ±  1.07         134.1  ±  43
+YD-PB Transition 2     11470  ±  15           11418  -  11559        33.72  ±  1.04       28.74     678.62  ±  2.43        687.23  ±  19.46        28.96  ±  1.05         159.8  ±  42
+Preboreal 1            11364  ±  109          11293  -  11416        32.11  ±  1          28.86     768.49  ±  2.03        757.04  ±  12.14         26.1  ±  1.02          32.1  ±  40.4
+Preboreal 2            11354  ±  132          11312  -  11435        33.66  ±  1.03       28.94     760.26  ±  2.61        748.09  ±  12.1         28.16  ±  1.05         112.2  ±  41.6
+
+
+
+
+2. Table 2
+Variations in the total methane source (Qtotal) and the fossil fraction of the methane source (Qfossil) during the
+Younger Dryas - Preboreal transition as derived from 14CH4 data
+
+
+Periods compared                         ChangeQtot     ChangeQfossil Q=0YD        QChangeQfossil; assume Qfossil = 45 Tg/y for YD
+Younger Dryas (141 Tg/yr) -> YD-PB Trans.   +43         -7     -    +11            -5     -    +13
+Younger Dryas -> Preboreal                  +63         +6     -    +23           +16     -    +34
+
+
+
+
+
+3. Table 3
+C-14 of CO measured in Pakitsoq large-volume ancient air samples. Modeled cosmogenic 14CO 
+is based on estimates of cosmic ray intensities at the Pakitsoq site and production rates 
+of 14C by neutrons and muons with depth. 
+
+Sample             [COppb       Meas14CO,diluted    Inferred14COundil.  Determined14COcosmo        Modeled14COcosmo, molecules per g ice 
+Younger Dryas 1       671        71.8  ±  1.0          394.9  ±  23.5           2.1  -  7.5            9.5
+Younger Dryas 2       584        49.1  ±  0.6          444.6  ±  28.3           0.0  -  4.9           9.4
+YD-PB Transition 1    636        78.7  ±  0.6          431.2  ±  25.1           3.0  -  7.8           10.7
+YD-PB Transition 2    736        69.3  ±  1.1          381.5  ±  22.9           2.3  -  7.2            8.6
+Preboreal 1           567        83.4  ±  0.9          477.2  ±  28.4           3.5  -  8.1           12.3
+Preboreal 2           879        71.7  ±  0.7          367.9  ±  21.2           2.8  -  8.9           11.2
+
+
+
+
+
+4. Table 4
+Measurements of CO2 and 14CO2 in Pakitsoq large-volume air samples
+"Blank CO2…" and "Modern CO2…" are synthetic samples used to assess the procedural blank from CO2 extractions from air at SIO
+"SIO modern …" and "SIO dead …" are aliquots of pure CO2 from tanks that were used to make up the
+ "Modern CO2…" and "Blank CO2 …" samples
+
+Sample             MeasCO2air   14CO2,pMC,corrANSTO     14CO2,pMCcorrSIO       Expected14CO2,pMC,based on sample age
+Younger Dryas 1       110          68.45  ±  0.63         71.18  ±  2.75       28.52
+Younger Dryas 2       131          71.69  ±  0.75         74.04  ±  2.33       28.57
+YD - PB Transition    163          71.95  ±  0.98         73.85  ±  2.71       28.63
+YD - PB Transition    209          72.35  ±  0.77         73.85  ±  2.14       28.68
+Preboreal 1           155          65.47  ±  0.67         67.30  ±  2.53       28.86
+Preboreal 2           215          75.85  ±  0.72         77.36  ±  2.15       28.94
+Blank CO2 mix #1                   -0.04  ±  0.20
+Modern CO2 mix #1                 105.16  ±  1.34
+Modern CO2 mix #2                 103.71  ±  1.45
+Blank CO2 mix #2                    0.16  ±  0.22
+SIO modern CO2                    106.71  ±  1.19
+SIO modern CO2                    107.64  ±  1.20
+SIO dead CO2                        0.13  ±  0.14
+SIO dead CO2                        0.11  ±  0.15
+
+
+

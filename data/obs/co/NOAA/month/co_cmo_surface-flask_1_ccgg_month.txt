@@ -1,0 +1,144 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Oregon Graduate Institute of Science and
+# collaborator_name: Technology [OGIST]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: cmo
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:35
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+CMO 1992  1   165.94
+CMO 1992  2   166.62
+CMO 1992  3   168.35
+CMO 1992  4   173.95
+CMO 1992  5   158.52
+CMO 1992  6   116.44
+CMO 1992  7    97.63
+CMO 1992  8   101.16
+CMO 1992  9   105.50
+CMO 1992 10   114.20
+CMO 1992 11   128.77
+CMO 1992 12   155.15
+CMO 1993  1   181.86
+CMO 1993  2   175.99
+CMO 1993  3   159.19
+CMO 1993  4   164.18
+CMO 1993  5   153.76
+CMO 1993  6   115.42
+CMO 1993  7    93.03
+CMO 1993  8   103.25
+CMO 1993  9   127.32
+CMO 1993 10   150.27
+CMO 1993 11   158.74
+CMO 1993 12   151.82
+CMO 1994  1   167.65
+CMO 1994  2   188.49
+CMO 1994  3   181.64
+CMO 1994  4   172.16
+CMO 1994  5   155.71
+CMO 1994  6   115.63
+CMO 1994  7    92.76
+CMO 1994  8   115.29
+CMO 1994  9   160.19
+CMO 1994 10   188.96
+CMO 1994 11   195.09
+CMO 1994 12   186.21
+CMO 1995  1   197.02
+CMO 1995  2   197.38
+CMO 1995  3   173.65
+CMO 1995  4   168.35
+CMO 1995  5   155.03
+CMO 1995  6   113.31
+CMO 1995  7    95.73
+CMO 1995  8   110.61
+CMO 1995  9   125.36
+CMO 1995 10   127.01
+CMO 1995 11   141.63
+CMO 1995 12   162.76
+CMO 1996  1   180.21
+CMO 1996  2   178.47
+CMO 1996  3   163.05
+CMO 1996  4   160.52
+CMO 1996  5   153.40
+CMO 1996  6   120.01
+CMO 1996  7    93.93
+CMO 1996  8   105.99
+CMO 1996  9   119.42
+CMO 1996 10   131.98
+CMO 1996 11   148.25
+CMO 1996 12   156.11
+CMO 1997  1   160.89
+CMO 1997  2   164.81
+CMO 1997  3   165.80
+CMO 1997  4   163.12
+CMO 1997  5   137.95
+CMO 1997  6   102.28
+CMO 1997  7    91.58
+CMO 1997  8    90.46
+CMO 1997  9    90.59
+CMO 1997 10   124.10
+CMO 1997 11   152.69
+CMO 1997 12   159.85
+CMO 1998  1   175.63
+CMO 1998  2   181.34
+CMO 1998  3   172.91

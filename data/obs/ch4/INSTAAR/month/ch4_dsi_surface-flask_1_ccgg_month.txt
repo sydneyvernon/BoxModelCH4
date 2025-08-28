@@ -1,0 +1,183 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that GML receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: GML should be informed at the outset of the nature of this work.  
+# comment: If the GML data are essential to the work, or if an important 
+# comment: result or conclusion depends on the GML data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the GML data should be sent to GML
+# comment: for review before they are submitted for publication so we can
+# comment: ensure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Central University, Taiwan [NCU]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the GML data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: dsi
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2020-07-24 11:31:42
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+DSI 2010  3  1884.72
+DSI 2010  4  1883.26
+DSI 2010  5  1876.65
+DSI 2010  6  1821.97
+DSI 2010  7  1776.52
+DSI 2010  8  1787.40
+DSI 2010  9  1811.96
+DSI 2010 10  1871.10
+DSI 2010 11  1908.10
+DSI 2010 12  1896.97
+DSI 2011  1  1901.51
+DSI 2011  2  1904.52
+DSI 2011  3  1902.48
+DSI 2011  4  1885.31
+DSI 2011  5  1821.11
+DSI 2011  6  1798.05
+DSI 2011  7  1806.56
+DSI 2011  8  1816.20
+DSI 2011  9  1862.63
+DSI 2011 10  1889.87
+DSI 2011 11  1880.24
+DSI 2011 12  1891.48
+DSI 2012  1  1904.32
+DSI 2012  2  1887.09
+DSI 2012  3  1868.52
+DSI 2012  4  1852.24
+DSI 2012  5  1850.05
+DSI 2012  6  1838.47
+DSI 2012  7  1799.24
+DSI 2012  8  1799.51
+DSI 2012  9  1849.50
+DSI 2012 10  1881.76
+DSI 2012 11  1903.85
+DSI 2012 12  1911.71
+DSI 2013  1  1888.49
+DSI 2013  2  1878.80
+DSI 2013  3  1910.59
+DSI 2013  4  1893.96
+DSI 2013  5  1820.87
+DSI 2013  6  1805.54
+DSI 2013  7  1815.13
+DSI 2013  8  1835.93
+DSI 2013  9  1875.46
+DSI 2013 10  1892.89
+DSI 2013 11  1906.25
+DSI 2013 12  1927.81
+DSI 2014  1  1919.53
+DSI 2014  2  1903.64
+DSI 2014  3  1910.82
+DSI 2014  4  1904.54
+DSI 2014  5  1850.15
+DSI 2014  6  1822.97
+DSI 2014  7  1826.13
+DSI 2014  8  1849.41
+DSI 2014  9  1916.96
+DSI 2014 10  1925.77
+DSI 2014 11  1908.05
+DSI 2014 12  1935.88
+DSI 2015  1  1956.44
+DSI 2015  2  1944.21
+DSI 2015  3  1921.63
+DSI 2015  4  1897.06
+DSI 2015  5  1845.13
+DSI 2015  6  1831.19
+DSI 2015  7  1838.85
+DSI 2015  8  1837.89
+DSI 2015  9  1886.70
+DSI 2015 10  1913.60
+DSI 2015 11  1916.27
+DSI 2015 12  1953.78
+DSI 2016  1  1964.97
+DSI 2016  2  1941.95
+DSI 2016  3  1922.45
+DSI 2016  4  1885.64
+DSI 2016  5  1870.43
+DSI 2016  6  1850.33
+DSI 2016  7  1827.05
+DSI 2016 11  1928.57
+DSI 2016 12  1941.72
+DSI 2017  1  1944.79
+DSI 2017  2  1939.52
+DSI 2017  3  1935.56
+DSI 2017  4  1902.42
+DSI 2017  5  1869.36
+DSI 2017  6  1841.95
+DSI 2017  7  1843.60
+DSI 2017  8  1855.19
+DSI 2017  9  1883.03
+DSI 2017 10  1922.06
+DSI 2017 11  1938.70
+DSI 2017 12  1949.31
+DSI 2018  1  1952.29
+DSI 2018  2  1943.47
+DSI 2018  3  1952.57
+DSI 2018  4  1939.07
+DSI 2018  5  1878.89
+DSI 2018  6  1844.07
+DSI 2018  7  1864.70
+DSI 2018  8  1901.33
+DSI 2018  9  1933.78
+DSI 2018 10  1965.83
+DSI 2018 11  1953.44
+DSI 2018 12  1954.65
+DSI 2019  1  1979.26
+DSI 2019  2  1947.03
+DSI 2019  3  1925.36
+DSI 2019  4  1920.73
+DSI 2019  5  1882.74
+DSI 2019  6  1863.83
+DSI 2019  7  1860.31
+DSI 2019  8  1877.58
+DSI 2019  9  1944.33
+DSI 2019 10  1985.34
+DSI 2019 11  1968.68
+DSI 2019 12  1945.37

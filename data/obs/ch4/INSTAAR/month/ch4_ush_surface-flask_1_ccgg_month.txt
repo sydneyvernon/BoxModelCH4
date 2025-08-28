@@ -1,0 +1,337 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that GML receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: GML should be informed at the outset of the nature of this work.  
+# comment: If the GML data are essential to the work, or if an important 
+# comment: result or conclusion depends on the GML data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the GML data should be sent to GML
+# comment: for review before they are submitted for publication so we can
+# comment: ensure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Servicio Meteorologico Nacional [SMN]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the GML data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: ush
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2020-07-24 11:33:09
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+USH 1994  9  1709.39
+USH 1994 10  1707.18
+USH 1994 11  1704.46
+USH 1994 12  1699.99
+USH 1995  1  1692.81
+USH 1995  2  1685.08
+USH 1995  6  1703.67
+USH 1995  7  1710.96
+USH 1995  8  1720.87
+USH 1995  9  1721.97
+USH 1995 10  1714.47
+USH 1995 11  1709.60
+USH 1995 12  1704.97
+USH 1996  1  1698.14
+USH 1996  2  1690.19
+USH 1996  3  1687.14
+USH 1996  4  1689.88
+USH 1996  5  1696.67
+USH 1996  6  1705.10
+USH 1996  7  1710.05
+USH 1996  8  1713.18
+USH 1996  9  1715.50
+USH 1996 10  1713.82
+USH 1996 11  1708.98
+USH 1997  5  1703.62
+USH 1997  6  1711.77
+USH 1997  7  1718.00
+USH 1997  8  1721.95
+USH 1997  9  1722.31
+USH 1997 10  1720.59
+USH 1998  2  1698.65
+USH 1998  3  1697.69
+USH 1998  4  1697.87
+USH 1998  5  1703.89
+USH 1998  6  1715.33
+USH 1998  7  1724.55
+USH 1998  8  1730.24
+USH 1998  9  1733.59
+USH 1998 10  1732.98
+USH 1998 11  1729.09
+USH 1998 12  1721.17
+USH 1999  1  1712.61
+USH 1999  2  1708.31
+USH 1999  3  1709.87
+USH 1999  4  1715.74
+USH 1999  5  1722.22
+USH 1999  6  1730.14
+USH 1999  7  1735.00
+USH 1999  8  1738.23
+USH 1999  9  1741.32
+USH 1999 10  1739.60
+USH 1999 11  1734.82
+USH 1999 12  1727.82
+USH 2000  1  1719.16
+USH 2000  2  1713.32
+USH 2000  3  1712.72
+USH 2000  4  1716.43
+USH 2000  5  1723.42
+USH 2000  6  1732.14
+USH 2000  7  1738.05
+USH 2000  8  1741.33
+USH 2000  9  1742.57
+USH 2000 10  1740.67
+USH 2000 11  1734.61
+USH 2000 12  1726.62
+USH 2001  1  1717.16
+USH 2001  2  1711.04
+USH 2001  3  1710.68
+USH 2001  4  1713.93
+USH 2001  5  1720.56
+USH 2001  6  1729.54
+USH 2001 11  1733.13
+USH 2001 12  1726.67
+USH 2002  1  1717.42
+USH 2002  2  1711.75
+USH 2002  6  1731.05
+USH 2002  7  1739.22
+USH 2002  8  1744.48
+USH 2002  9  1745.14
+USH 2002 10  1743.22
+USH 2002 11  1738.26
+USH 2002 12  1730.87
+USH 2003  1  1721.95
+USH 2003  2  1715.15
+USH 2003  3  1713.17
+USH 2003  4  1717.43
+USH 2003  5  1725.21
+USH 2003  6  1731.31
+USH 2004  2  1714.01
+USH 2004  3  1712.69
+USH 2004  4  1717.49
+USH 2004  8  1741.02
+USH 2004  9  1741.90
+USH 2004 10  1740.53
+USH 2004 11  1735.19
+USH 2004 12  1727.60
+USH 2005  1  1719.11
+USH 2005  2  1711.35
+USH 2005  3  1709.03
+USH 2005  4  1713.71
+USH 2005  5  1719.95
+USH 2005  9  1740.02
+USH 2005 10  1739.03
+USH 2005 11  1735.09
+USH 2005 12  1727.88
+USH 2006  1  1719.72
+USH 2006  2  1713.39
+USH 2006  3  1711.42
+USH 2006  4  1713.34
+USH 2006  5  1719.66
+USH 2006  6  1728.52
+USH 2006  7  1734.11
+USH 2006  8  1738.36
+USH 2006  9  1740.13
+USH 2006 10  1737.91
+USH 2006 11  1735.19
+USH 2006 12  1727.97
+USH 2007  1  1714.58
+USH 2007  2  1710.04
+USH 2007  3  1714.34
+USH 2007  4  1719.28
+USH 2007  5  1725.14
+USH 2007  6  1733.71
+USH 2007  7  1741.20
+USH 2007  8  1747.50
+USH 2007  9  1750.29
+USH 2007 10  1748.95
+USH 2007 11  1745.14
+USH 2007 12  1738.26
+USH 2008  1  1728.50
+USH 2008  2  1722.91
+USH 2008  3  1723.76
+USH 2008  4  1728.08
+USH 2008  5  1733.79
+USH 2008  6  1740.42
+USH 2008  7  1748.11
+USH 2008  8  1753.12
+USH 2008  9  1755.08
+USH 2008 10  1754.55
+USH 2008 11  1748.77
+USH 2008 12  1740.50
+USH 2009  1  1731.62
+USH 2009  2  1725.89
+USH 2009  3  1725.03
+USH 2009  4  1729.04
+USH 2009  5  1736.94
+USH 2009  6  1745.37
+USH 2009  7  1753.58
+USH 2009  8  1758.44
+USH 2009  9  1760.04
+USH 2009 10  1758.91
+USH 2009 11  1754.78
+USH 2009 12  1746.49
+USH 2010  1  1737.39
+USH 2010  2  1732.02
+USH 2010  3  1732.87
+USH 2010  4  1737.50
+USH 2010  5  1743.55
+USH 2010  6  1753.52
+USH 2010  7  1760.91
+USH 2010  8  1764.71
+USH 2010  9  1766.44
+USH 2010 10  1764.81
+USH 2010 11  1761.84
+USH 2010 12  1755.24
+USH 2011  1  1744.98
+USH 2011  2  1739.74
+USH 2011  3  1740.20
+USH 2011  4  1744.14
+USH 2011  5  1751.99
+USH 2011  6  1759.68
+USH 2011  7  1765.13
+USH 2011  8  1770.85
+USH 2011  9  1773.52
+USH 2011 10  1772.42
+USH 2011 11  1767.20
+USH 2011 12  1756.21
+USH 2012  1  1746.98
+USH 2012  2  1743.66
+USH 2012  3  1744.38
+USH 2012  4  1748.43
+USH 2012  5  1755.32
+USH 2012  6  1762.47
+USH 2012  7  1769.40
+USH 2012  8  1774.91
+USH 2012  9  1776.55
+USH 2012 10  1775.77
+USH 2012 11  1771.80
+USH 2012 12  1764.42
+USH 2013  1  1754.74
+USH 2013  2  1747.61
+USH 2013  3  1747.76
+USH 2013  4  1753.00
+USH 2013  5  1759.46
+USH 2013  6  1766.69
+USH 2013  7  1774.05
+USH 2013  8  1779.70
+USH 2013  9  1782.02
+USH 2013 10  1781.25
+USH 2013 11  1776.35
+USH 2013 12  1767.89
+USH 2014  1  1757.86
+USH 2014  2  1752.56
+USH 2014  3  1754.44
+USH 2014  4  1760.08
+USH 2014  5  1768.22
+USH 2014  6  1777.53
+USH 2014  7  1785.51
+USH 2014  8  1790.85
+USH 2014  9  1792.88
+USH 2014 10  1791.74
+USH 2014 11  1788.09
+USH 2014 12  1780.75
+USH 2015  1  1771.63
+USH 2015  2  1766.27
+USH 2015  3  1767.17
+USH 2015  4  1772.64
+USH 2015  5  1778.84
+USH 2015  6  1785.81
+USH 2015  7  1794.53
+USH 2015  8  1801.23
+USH 2015  9  1803.42
+USH 2015 10  1801.67
+USH 2015 11  1797.04
+USH 2015 12  1788.80
+USH 2016  1  1780.79
+USH 2016  6  1794.60
+USH 2016  7  1801.66
+USH 2016  8  1807.15
+USH 2016  9  1808.68
+USH 2016 10  1806.23
+USH 2016 11  1800.32
+USH 2016 12  1791.26
+USH 2017  1  1783.19
+USH 2017  2  1778.18
+USH 2017  3  1778.90
+USH 2017  4  1784.71
+USH 2017  5  1792.02
+USH 2017  6  1800.74
+USH 2017  7  1809.42
+USH 2017  8  1815.29
+USH 2017  9  1816.92
+USH 2017 10  1816.41
+USH 2017 11  1811.89
+USH 2017 12  1803.60
+USH 2018  1  1794.61
+USH 2018  2  1789.48
+USH 2018  3  1790.18
+USH 2018  4  1796.44
+USH 2018  5  1807.86
+USH 2018  6  1815.60
+USH 2018  7  1819.71
+USH 2018  8  1825.34
+USH 2018  9  1828.21
+USH 2018 10  1826.47
+USH 2018 11  1821.05
+USH 2018 12  1812.84
+USH 2019  1  1803.26
+USH 2019  2  1797.95
+USH 2019  3  1798.75
+USH 2019  4  1802.91
+USH 2019  5  1808.69
+USH 2019  6  1816.30
+USH 2019  7  1825.71
+USH 2019  8  1832.28
+USH 2019  9  1833.88
+USH 2019 10  1832.43
+USH 2019 11  1827.43
+USH 2019 12  1819.59

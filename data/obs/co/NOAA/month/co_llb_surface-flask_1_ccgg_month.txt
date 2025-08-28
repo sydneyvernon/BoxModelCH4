@@ -1,0 +1,125 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO CCGG (Individual Flasks)
+# contact_name: Paul C Novelli
+# contact_telephone: (303) 497-6974
+# contact_email: Paul.C.Novelli@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Environment Canada [EC]
+# collaborator_url: http://www.msc-smc.ec.gc.ca/aqrb/index_e.cfm
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: llb
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2017-07-28 11:29:48
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+LLB 2008  1   184.88
+LLB 2008  2   192.73
+LLB 2008  3   183.57
+LLB 2008  4   164.81
+LLB 2008  5   147.98
+LLB 2008  6   123.64
+LLB 2008  7   116.07
+LLB 2008  8   114.74
+LLB 2008  9   103.28
+LLB 2008 10   125.32
+LLB 2008 11   145.64
+LLB 2008 12   140.66
+LLB 2009  1   152.08
+LLB 2009  2   164.27
+LLB 2009  3   170.53
+LLB 2009  4   160.89
+LLB 2009  5   138.24
+LLB 2009  6   112.74
+LLB 2009  7   101.69
+LLB 2009  8   110.42
+LLB 2009  9   106.62
+LLB 2009 10   109.44
+LLB 2010  5   136.47
+LLB 2010  6   117.63
+LLB 2010  7   124.38
+LLB 2010  8   136.09
+LLB 2010  9   123.79
+LLB 2010 10   121.19
+LLB 2010 11   127.57
+LLB 2010 12   125.93
+LLB 2011  1   130.56
+LLB 2011  2   149.89
+LLB 2011  3   163.55
+LLB 2011  4   153.67
+LLB 2011  5   143.70
+LLB 2011  6   125.28
+LLB 2011  7   109.60
+LLB 2011  8   107.43
+LLB 2011  9    96.57
+LLB 2011 10   111.43
+LLB 2011 11   144.71
+LLB 2011 12   147.50
+LLB 2012  1   151.64
+LLB 2012  2   162.29
+LLB 2012  3   154.75
+LLB 2012  4   151.34
+LLB 2012  5   138.54
+LLB 2012  6   123.81
+LLB 2012  7   130.88
+LLB 2012  8   144.15
+LLB 2012  9   152.17
+LLB 2012 10   146.11
+LLB 2012 11   139.34
+LLB 2012 12   152.46
+LLB 2013  1   161.21
+LLB 2013  2   168.58
