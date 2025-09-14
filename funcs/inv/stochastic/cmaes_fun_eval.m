@@ -28,6 +28,8 @@ if (nSV > 1)
         parfor k = 1:size(stateVector,2)
             % Break up the state vector
             [emsParams] = disassembleStateVector(stateVector(:,k),fun_param.emsParams);
+            % emsParams.forcings(:,end) = fun_param.params.step(fun_param.St,emsParams.stepChange); %% new addition -- bug fix??
+
             % Evaluate the function
             if fun_param.use_log
                 p_post(1,k) = fun_param.p_prior(emsParams,fun_param) + fun_param.p_like(emsParams,fun_param);
@@ -39,6 +41,8 @@ if (nSV > 1)
         for k = 1:size(stateVector,2)
             % Break up the state vector
             [emsParams] = disassembleStateVector(stateVector(:,k),fun_param.emsParams);
+            % emsParams.forcings(:,end) = fun_param.params.step(fun_param.St,emsParams.stepChange); %% new addition -- bug fix??
+
             % Evaluate the function
             if fun_param.use_log
                 p_post(1,k) = fun_param.p_prior(emsParams,fun_param) + fun_param.p_like(emsParams,fun_param);

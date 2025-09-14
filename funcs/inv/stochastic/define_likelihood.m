@@ -39,6 +39,12 @@ mu    = obs.ch4_NH;
 sig   = obs.ch4_NH_err;
 ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_ch4_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
+% dD NH (normal)
+y     = out.nh_dD;
+mu    = obs.dD_NH;
+sig   = obs.dD_NH_err;
+ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
+p_dD_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % CH4 (normal)
 y     = out.sh_ch4;
 mu    = obs.ch4;
@@ -83,7 +89,7 @@ ind  = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_cl = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 
 %%% Construct the full likelihood distribution
-likeli = [p_ch4_NH, p_ch4, p_d13c, p_dD, p_d14c];
+likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c];
 %likeli = [p_ch4, p_d13c, p_dD, p_d14c, p_oh, p_tau, p_cl];
 
 % % Diagnostic

@@ -19,7 +19,7 @@
 %%% =  ( 3): E  = Error.
 %%% =======================================================================
 
-function [ xO, yO, E ] = BlockAverage_AltError(x,y,p,nD,varargin)
+function [ xO, yO, E ] = BlockAverage_AltError(x,y,p,nD,varargin)  % p=ones in most cases here
 % Initialize matricies
 xO = [x(1) : nD/10 : x(end)]'; 
 yO = zeros(size(xO));

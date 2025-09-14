@@ -28,6 +28,7 @@ function [ out ] = boxModel_wrapper(params,St,emsParams)
 IC = emsParams.IC;
 
 %%% Convert ICs to the form needed for the box model
+% not using V... need to correct
 IC(3)  =  IC(1) * (1 +  IC(3)/1000);
 IC(4)  =  IC(2) * (1 +  IC(4)/1000);
 IC(5)  =  IC(1) * (1 +  IC(5)/1000);
@@ -45,6 +46,9 @@ IC(20) = IC(14) * (1 + IC(20)/1000);
 IC(21) = IC(21) / params.n_air*1d9 * 1d5;
 IC(22) = IC(22) / params.n_air*1d9 * 1d5;
 
+% update stepChange
+emsParams.forcings(:,end) = params.step(St,emsParams.stepChange);
+
 %%% Get the emissions
 ch4_ems    = getCH4ems(St,params,emsParams);             % CH4 (Tg/yr)
 ch4c13_ems = get13CH4ems(St,params,emsParams,ch4_ems);   % d13C (permil)
@@ -52,9 +56,6 @@ ch4c14_ems = get14CH4ems(St,params,emsParams,ch4_ems);   % d14C (permil)
 ch3D_ems   = get12CH3Dems(St,params,emsParams,ch4_ems);  % dD (permil)
 oh_ems     = getOHems(St,params,emsParams);              % OH (Tg/yr)
 co_ems     = getCOems(St,params,emsParams);              % CO (Tg/yr)
-
-%%% Build the step function
-emsParams.forcings(:,end) = params.step(St,emsParams.stepChange);
 
 %%% Other sources/sinks
 % Strat-trop exchange

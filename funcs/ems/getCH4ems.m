@@ -1,7 +1,6 @@
 %%% =======================================================================
 %%% = getCH4ems.m
-%%% = Alex Turner
-%%% = 04/12/2016
+%%% =
 %%% =----------------------------------------------------------------------
 %%% = NOTES
 %%% =  ( 1): Create the methane emissions and puts them onto our temporal 
@@ -61,15 +60,16 @@ if const_ems || caseA
 end
 if caseB || caseC
     % Surface temperature
-    sTemp   = emsParams.forcings(:,6) .* params.sTemp ./ params.sTempN;
-    iceVolN = emsParams.forcings(:,5);
+    sTemp   = emsParams.forcings(:,3) .* params.sTemp ./ params.sTempN;
+    iceVolN = emsParams.forcings(:,2);
     veg     = 1 - iceVolN;
     % Fraction of emissions in the NH
     frac_nh = 0.4;      % Fraction of emissions in the NH
     % Emissions
     ems_wet_tropical = emsParams.amp_wet_tropical .* emsParams.Q10_tropical .^ ( (sTemp + emsParams.soilOffset)/10 );
     ems_wet_boreal   = veg .* emsParams.amp_wet_boreal   .* emsParams.Q10_boreal .^ ( (sTemp + emsParams.soilOffset)/10 );
-    %ems_fossil = emsParams.base_fossil + emsParams.amp_fossil .* params.iceVolN;  % here
+    %ems_fossil = emsParams.base_fossil + emsParams.amp_fossil .*
+    %params.iceVolN;  % why commented??
     %ems_fire   = emsParams.base_fire   + emsParams.amp_fire   .* params.veg;
     % Additional perturbations
     e_WT = zeros(length(St),1);

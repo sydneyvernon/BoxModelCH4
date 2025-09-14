@@ -102,8 +102,8 @@ reread.dir   = dataDir;
 
 %%% My choice
 caseName = 'caseBa';
-add_name = [caseName '_alexparams'];
-add_name_inv = ['cmaes_best_useNH' ''];
+add_name = 'newplots'; %[caseName 'newplots'];
+add_name_inv = ['cmaes_best_NHdD' ''];
 
 %%% Other options and flags
 % General flags
@@ -151,13 +151,15 @@ fprintf('\n *** LOADING THE OBSERVATIONS *** \n');
 % - "lat":  Latitude of the NOAA site
 try % Add a try-catch statement in case the user hasn't downloaded the data
     ch4_NH_obs  = getCH4_NH(dataDir,reread);       % CH4 observations, Greenland (ppb)
+    dD_NH_obs  = getdD_NH(dataDir,reread);       % deltaD observations, Greenland (permil)
     ch4_obs  = getCH4(dataDir,reread);          % CH4 observations, Antarctica (ppb)
     d13c_obs = getd13C(dataDir,reread);         % delta13C observations (permil)
     dD_obs   = getdD(dataDir,reread);           % deltaD observations (permil)
     d14c_obs = getd14C(dataDir,reread);         % delta14C observations (permil)
 catch % Some data is missing, set the observation structures to NaN
     try % Try just leaving out d14c
-        ch4_NH_obs  = getCH4_NH(dataDir,reread); 
+        ch4_NH_obs  = getCH4_NH(dataDir,reread);
+        dD_NH_obs  = getdD_NH(dataDir,reread);
         ch4_obs  = getCH4(dataDir,reread);      % CH4 observations (ppb)
         d13c_obs = getd13C(dataDir,reread);     % delta13C observations (permil)
         dD_obs   = getdD(dataDir,reread);       % deltaD observations (permil)
@@ -165,6 +167,7 @@ catch % Some data is missing, set the observation structures to NaN
     catch
         try % Try leaving out dD and d14C
             ch4_NH_obs  = getCH4_NH(dataDir,reread); 
+            dD_NH_obs  = getdD_NH(dataDir,reread);
             ch4_obs  = getCH4(dataDir,reread);  % CH4 observations (ppb)
             d13c_obs = getd13C(dataDir,reread); % delta13C observations (permil)
             dD_obs   = NaN;
@@ -172,6 +175,7 @@ catch % Some data is missing, set the observation structures to NaN
         catch
             fprintf(' * UNABLE TO READ OBSERVATIONS!\n');
             ch4_NH_obs  = NaN; 
+            dD_NH_obs = NaN;
             ch4_obs  = NaN;
             d13c_obs = NaN;
             dD_obs   = NaN;
@@ -185,7 +189,7 @@ end
 % - NH/SH CH4    obs & err (ppb)
 % - NH/SH CH4C13 obs & err (permil)
 % - NH/SH CO     obs & err (ppb)
-obs = makeObs(St,tAvg,ch4_NH_obs,ch4_obs,d13c_obs,dD_obs,d14c_obs,reread); % last flag is for including CH4_NH
+obs = makeObs(St,tAvg,ch4_NH_obs,dD_NH_obs,ch4_obs,d13c_obs,dD_obs,d14c_obs,reread);
 
 %%% Also store these in the params structure
 params.obs = obs;
@@ -314,15 +318,17 @@ emsParams.base_OH      = base_OH;
 emsParams.base_tauTS   = base_tauTS;
 emsParams.base_AN      = base_AN;
 emsParams.base_CL      = base_CL;
-emsParams.forcings     = [params.eccent, params.obliq, params.precess, params.insol_NH, params.iceVolN, params.sTempN,   stepFun];
-emsParams.WT_scalings  = [     eccentWT,      obliqWT,      precessWT,         insolWT,          iceWT,        tempWT,    stepWT]';
-emsParams.WTB_scalings = [    eccentWTB,     obliqWTB,     precessWTB,        insolWTB,         iceWTB,       tempWTB,   stepWTB]';
-emsParams.FF_scalings  = [     eccentFF,      obliqFF,      precessFF,         insolFF,          iceFF,        tempFF,    stepFF]';
-emsParams.BB_scalings  = [     eccentBB,      obliqBB,      precessBB,         insolBB,          iceBB,        tempBB,    stepBB]';
-emsParams.OH_scalings  = [     eccentOH,      obliqOH,      precessOH,         insolOH,          iceOH,        tempOH,    stepOH]';
-emsParams.tau_scalings = [  eccenttauTS,   obliqtauTS,   precesstauTS,      insoltauTS,       icetauTS,     temptauTS, steptauTS]';
-emsParams.AN_scalings  = [     eccentAN,      obliqAN,      precessAN,         insolAN,          iceAN,        tempAN,    stepAN]';
-emsParams.CL_scalings  = [     eccentCL,      obliqCL,      precessCL,         insolCL,          iceCL,        tempCL,    stepCL]';
+
+% USE 4 FORCINGS (no Milankovitch)
+emsParams.forcings     = [params.insol_NH, params.iceVolN, params.sTempN,   stepFun];
+emsParams.WT_scalings  = [insolWT,          iceWT,        tempWT,    stepWT]';
+emsParams.WTB_scalings = [insolWTB,         iceWTB,       tempWTB,   stepWTB]';
+emsParams.FF_scalings  = [insolFF,          iceFF,        tempFF,    stepFF]';
+emsParams.BB_scalings  = [insolBB,          iceBB,        tempBB,    stepBB]';
+emsParams.OH_scalings  = [insolOH,          iceOH,        tempOH,    stepOH]';
+emsParams.tau_scalings = [insoltauTS,       icetauTS,     temptauTS, steptauTS]';
+emsParams.AN_scalings  = [insolAN,          iceAN,        tempAN,    stepAN]';
+emsParams.CL_scalings  = [insolCL,          iceCL,        tempCL,    stepCL]';
 emsParams.IC           = params.IC;
 
 
@@ -415,8 +421,9 @@ emsParams.IC           = params.IC;
 fprintf('\n *** RUN THE 2-BOX MODEL WITH PRIOR FLUXES *** \n');
 
 %%% Run the box model
-%out = boxModel_wrapper(params,St,emsParams);
-%plotResults_alt( params, out, obs, add_name, true, false)  % name suffix, plot OH?, plot CO?
+% 
+% out = boxModel_wrapper(params,St,emsParams);
+% plotResults_alt( params, out, obs, add_name, true, false)  % name suffix, plot OH?, plot CO?
 
 %%% Write the prior data
 if save_data
@@ -487,9 +494,9 @@ if do_cmaes
 %     CMAES_opts.MaxIter           = 5000;
 %     CMAES_opts.Restarts          = 6;
 %     % Small
-%     CMAES_opts.StopFunEvals      = 10000;
-%     CMAES_opts.MaxIter           = 200;
-%     CMAES_opts.Restarts          = 2;
+    % CMAES_opts.StopFunEvals      = 10000;
+    % CMAES_opts.MaxIter           = 200;
+    % CMAES_opts.Restarts          = 2;
     % Very small
     CMAES_opts.StopFunEvals      = 1000;
     CMAES_opts.MaxIter           = 200;
@@ -531,11 +538,11 @@ if do_cmaes
     
     %%% Use an old estimate?
     oldName = sprintf('./%s',CMAES_opts.SaveFilename);
-    use_old = true;
+    use_old = false;
     if use_old
         if (exist(oldName,'file') == 2)
             load(oldName);
-            xstart = bestever.x;
+            xstart = bestever.x;  % this has now been overwritten with correct size xstart
 %             if length(xstart) < length(assembleStateVector(emsParams))
 %                 emsParams.oh_scale         = bestever.x(1);
 %                 emsParams.Q10_tropical     = bestever.x(2);
@@ -591,9 +598,10 @@ if do_cmaes
     end
 
     %%% Plot the best one
-    [cmaes_res.emsParams] = disassembleStateVector(bestever.x,emsParams);
+    [cmaes_res.emsParams] = disassembleStateVector(bestever.x,emsParams); % this emsParams might have different stepfun forcing
     emsParams_best = cmaes_res.emsParams;
-    
+    %emsParams_best.forcings(:,end) = params.step(St,emsParams_best.stepChange); 
+        % this compensates for moving this line out of boxmodel_wrapper
     out_best       = boxModel_wrapper(params,St,emsParams_best);
     plotResults_alt( params, out_best, obs, add_name_inv, true, true)
     %load(oldName);close all;plotResults(params,boxModel_wrapper(params,St,disassembleStateVector(bestever.x,emsParams)),obs)
@@ -643,7 +651,7 @@ if do_cmaes
             cov_d14C(i) = corr(sim(ind),meas(ind));
         end
         % Get reduction in R2
-        X_catN  = {'Eccent','Obliq','Precess','Insol NH','iceVol','Temp','StepFun'};
+        X_catN  = {'Insol NH','iceVol','Temp','StepFun'};
         r2_ch4  = cov_ch4.^2;
         r2_d13C = cov_d13C.^2;
         r2_dD   = cov_dD.^2;
@@ -653,7 +661,7 @@ if do_cmaes
                    r2_dD(1)   - r2_dD(2:end),  ...
                    r2_d14C(1) - r2_d14C(2:end)];
         % Re-order the variables
-        ind_order = [5,6,4,3,2,1,7];  % appended 7 here for step func
+        ind_order = [2,3,1,4];  % order is now ice, temp, insol, step.
         X_catN    = X_catN(ind_order);
         r2_res    = r2_res(ind_order,:);
         % Plot
@@ -670,11 +678,6 @@ if do_cmaes
         set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'YMinorTick','on')
         ylabel('Change in R^2','FontSize',20,'FontWeight','bold')
         export_fig(fN,['./output/' add_name_inv 'var_explained_diff.png'],'-png','-m2','-painters','-cmyk');
-
-        % more general goodness of fit of the model:
-        % plot simulated
-
-        % PLOT THE RESIDUALS FOR EACH OF OUR DRIVERS
 
     end
     

@@ -24,6 +24,7 @@ St                = params.pSt;
 xLims             = [St(1) + double(params.spinup)/1000,St(end)];
 dat.t             = St;
 dat.ch4_NH        = out.nh_ch4;
+dat.dD_NH         = out.nh_dD;
 dat.ch4           = out.sh_ch4;
 dat.dch4          = out.ch4(2:end) - out.ch4(1:end-1);
 dat.oh            = out.oh;
@@ -46,7 +47,19 @@ dat.tau_TS        = out.tau_TS;
 dat.tau_ST        = out.tau_TS / 5.7047;
 dat.temp          = params.sTemp;
 
-%%% Get the ice core data
+%%% Get the ice core data -- time in ka
+% NH CH4 (GISP2)
+iceCoreDat = readtable('./data/obs/iceCore/GISP2_ch4.txt');
+iceNHCH4.t = (1950 - table2array(iceCoreDat(:,3)))/1000; % 11ka-0.1ka %something weird here
+iceNHCH4.CH4 = table2array(iceCoreDat(:,2));
+iceNHCH4.sig = 10*ones(size(iceNHCH4.CH4));  % consistent with our estimates in getCH4.
+
+% NH dD from Bock et al
+fdat   = readtable('./data/obs/iceCore/Bock_NGRIP_dD.csv');
+iceNHdD.t = (1950-table2array(fdat(:,3)))/1000;
+iceNHdD.dD = table2array(fdat(:,6));  % "corrected" measurement column
+iceNHdD.sig = 3 * ones(size(table2array(fdat(:,6)))); % guess - slightly larger than max err on the EDC dD.
+
 % CH4
 iceCoreDat = readtable('./data/obs/iceCore/41586_2008_BFnature06950_MOESM33_ESM.xls');
 iceCH4.t   = (1950 - table2array(iceCoreDat(:,2)))/1000;
@@ -289,9 +302,30 @@ unq_d14C(unq_d14C == 0) = NaN;
 % Initialize
 f1 = figure(1);pos = get(f1,'position');set(gcf,'color','w');  % changed set gcf to set f1
 set(f1,'position',[0 pos(2) pos(3)*1.7 pos(4)*2.7]);
-% Methane
 
-h1 = subplot(5,1,1);
+% NH Methane
+h1 = subplot(7,1,1);
+hold on; box on;
+set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on');
+plot(dat.t,dat.ch4_NH,'-','Color',modCol,'LineWidth',3);
+plot(iceNHCH4.t, iceNHCH4.CH4, '.','Color',obsCol);
+%plot(iceNHCH4.t, iceNHCH4.CH4, '-','Color',obsCol);
+ylabel('NH CH_4 (ppb)');
+set(gca,'XTickLabel',{},'YGrid','on');
+xlim(xLims);
+
+% NH dD
+h2 = subplot(7,1,2);
+hold on; box on;
+set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on');
+plot(dat.t,dat.dD_NH,'-','Color',modCol,'LineWidth',3);
+plot(iceNHdD.t, iceNHdD.dD, '.','Color',obsCol);
+ylabel('NH \delta{}D of CH_4 (‰)');  % customize label
+set(gca,'XTickLabel',{},'YGrid','on');
+xlim(xLims);
+
+% Methane
+h3 = subplot(7,1,3);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on')
 for i = 1:nanmax(unq_ch4)
@@ -301,10 +335,7 @@ for i = 1:nanmax(unq_ch4)
     patch(tPatch,uPatch,(1-obsCol)*.6+obsCol,'EdgeColor','none');
 end
 plot(dat.t,dat.ch4,'-','Color',modCol,'LineWidth',3);
-%plot(dat.t,dat.ch4_NH,'-','Color','green','LineWidth',3);  % greenland -- should plot simulated IPD
 plot(St,obs.ch4,'-','Color',obsCol);
-%plot(St,obs.ch4_NH,'-','Color','cyan');  % greenland
-
 plot(iceCH4.t,iceCH4.ch4,'.','Color',obsCol);
 set(gca,'XTickLabel',{},'YGrid','on');
 ylabel('CH_4 (ppb)');YYCol = get(gca,'YColor');
@@ -315,7 +346,7 @@ plot([xLL(2),xLL(1)],[yLL(2),yLL(2)],'-','LineWidth',2,'Color',YYCol);
 plot([xLL(1),xLL(1)],[yLL(2),yLL(1)],'-','LineWidth',2,'Color',YYCol);
 
 % d13C
-h2 = subplot(5,1,2);
+h4 = subplot(7,1,4);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on');
 for i = 1:nanmax(unq_d13C)
@@ -339,7 +370,7 @@ plot([xLL(2),xLL(1)],[yLL(2),yLL(2)],'-','LineWidth',2,'Color',YYCol);
 plot([xLL(1),xLL(1)],[yLL(2),yLL(1)],'-','LineWidth',2,'Color',YYCol);
 
 % dD
-h3 = subplot(5,1,3);
+h5 = subplot(7,1,5);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on')
 for i = 1:nanmax(unq_dD)
@@ -362,7 +393,7 @@ plot([xLL(2),xLL(1)],[yLL(2),yLL(2)],'-','LineWidth',2,'Color',YYCol);
 plot([xLL(1),xLL(1)],[yLL(2),yLL(1)],'-','LineWidth',2,'Color',YYCol);
 
 % d14C
-h4 = subplot(5,1,4);
+h6 = subplot(7,1,6);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on')
 for i = 1:nanmax(unq_d14C)
@@ -385,7 +416,7 @@ plot([xLL(2),xLL(1)],[yLL(2),yLL(2)],'-','LineWidth',2,'Color',YYCol);
 plot([xLL(1),xLL(1)],[yLL(2),yLL(1)],'-','LineWidth',2,'Color',YYCol);
 
 % Emissions
-h5 = subplot(5,1,5);
+h7 = subplot(7,1,7);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on')
 plot(dat.t,dat.ems_animal,'-','Color',emsCol(4,:),'LineWidth',3);
@@ -402,11 +433,16 @@ plot([xLL(2),xLL(1)],[yLL(2),yLL(2)],'-','LineWidth',2,'Color',YYCol);
 plot([xLL(1),xLL(1)],[yLL(2),yLL(1)],'-','LineWidth',2,'Color',YYCol);
 
 % Reposition
-set(h1,'Position',[.13,.82,.7750,.16]);
-set(h2,'Position',[.13,.63,.7750,.16]);
-set(h3,'Position',[.13,.44,.7750,.16]);
-set(h4,'Position',[.13,.25,.7750,.16]);
-set(h5,'Position',[.13,.06,.7750,.16]);
+base = 0.035;
+sep = 0.015;
+len = 0.12;
+set(h1,'Position',[.13,base + 7*sep + 6*len,.7750,.12]);
+set(h2,'Position',[.13,base + 6*sep + 5*len,.7750,.12]);
+set(h3,'Position',[.13,base + 5*sep + 4*len,.7750,.12]);
+set(h4,'Position',[.13,base + 4*sep + 3*len,.7750,.12]);
+set(h5,'Position',[.13,base + 3*sep + 2*len,.7750,.12]);
+set(h6,'Position',[.13,base + 2*sep + 1*len,.7750,.12]);
+set(h7,'Position',[.13,base + sep + 0*len,.7750,.12]);
 
 % Save
 export_fig(f1,['./output/' add_name 'ch4_simulated.png'],'-png','-m2','-painters','-cmyk');
@@ -427,7 +463,6 @@ hold off;
 % export_fig(f_NHSH, ['./output/' add_name 'NHSH.png'], '-png', '-r300');
 
 % plot IPD
-% Create figure with exact size
 f_IPD = figure;
 set(f_IPD, 'Units', 'inches', 'Position', [1, 1, 4, 6]);
 clf(f_IPD);

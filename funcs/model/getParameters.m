@@ -157,6 +157,8 @@ Tspan = St;
 % opts  = odeset('NonNegative',1:length(IC),...% Ensure the result is positive
 %               'OutputFcn',@odetpbar); % Progress Bar
 % clear textprogressbar
+
+% CHANGED HERE
 opts  = odeset('NonNegative',1:length(IC)); % Ensure the result is positive
 
 %%% Load the climate forcings
@@ -189,15 +191,15 @@ sTempN   = interp1(reconstruct.t,reconstruct.sTempN,St);
 iceVol   = interp1(reconstruct.t,reconstruct.iceVol,St);
 iceVolN  = interp1(reconstruct.t,reconstruct.iceVolN,St);
 veg      = interp1(reconstruct.t,reconstruct.veg,St);
-eccent   = interp1(milank.t,milank.eccent,St);
-obliq    = interp1(milank.t,milank.obliq,St);
+% eccent   = interp1(milank.t,milank.eccent,St);
+% obliq    = interp1(milank.t,milank.obliq,St);
 insol_NH = interp1(milank.t,milank.insol_NH,St);
-precess  = interp1(milank.t,milank.precess,St);
+% precess  = interp1(milank.t,milank.precess,St);
 RxNtemp  = sTemp + 270; % K
 % A function to make a step function
 stepFun = @(St,jump) St > jump;
 
-%%% Compute the reaction rate coefficients with this temperature  %% HERE
+%%% Compute the reaction rate coefficients with this temperature
 k_cl_use  = k_cl(RxNtemp)  * DaysToS;   % cm3/molec/day
 k_ch4_use = k_ch4(RxNtemp) * RxNconv;   % Tg/day
 %k_ch4_use = k_ch4(mean(RxNtemp)*ones(size(RxNtemp))) * RxNconv;   % Tg/day
@@ -256,10 +258,10 @@ params.sTempN   = sTempN;
 params.iceVol   = iceVol;
 params.iceVolN  = iceVolN;
 params.veg      = veg;
-params.eccent   = eccent;
-params.obliq    = obliq;
+% params.eccent   = eccent;
+% params.obliq    = obliq;
 params.insol_NH = insol_NH;
-params.precess  = precess;
+% params.precess  = precess;
 params.step     = stepFun;
 % Atmospheric 14CO2
 params.atmos14CO2     = d14c;
