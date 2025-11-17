@@ -32,7 +32,7 @@ emsParams.Q10_tropical     = x(2);
 emsParams.amp_wet_tropical = x(3);
 emsParams.Q10_boreal       = x(4);
 emsParams.amp_wet_boreal   = x(5);
-emsParams.stepChange       = x(6);
+emsParams.stepChange       = x(6);  % update location of step function
 % Baseline emissions
 emsParams.base_WT    = x(7);
 emsParams.base_FF    = x(8);

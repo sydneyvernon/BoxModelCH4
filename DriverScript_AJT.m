@@ -91,7 +91,7 @@ reread.dir   = dataDir;
 
 %%% Which case are we doing?
 % % Case A: Constant Emissions
-% caseName = 'caseAa';   % variable OH
+% caseName = 'caseAa';   % variable 
 % caseName = 'caseAb';   % fixed OH
 % % Case B: Variable Emissions
 % caseName = 'caseBa';   % variable OH
@@ -101,9 +101,9 @@ reread.dir   = dataDir;
 % caseName = 'caseBb';   % fixed OH
 
 %%% My choice
-caseName = 'caseBa';
-add_name = 'newplots'; %[caseName 'newplots'];
-add_name_inv = ['cmaes_best_NHdD' ''];
+caseName = 'caseBa'; % variable OH
+add_name = 'newplots';
+add_name_inv = ['likelichanges_' ''];
 
 %%% Other options and flags
 % General flags
@@ -211,7 +211,7 @@ IC = params.IC;
 emsParams.oh_scale = 0.08;       % OH reaction rate scaling factor
 % Base emissions
 emsParams.base_wet    = 300;     % Baseline tropical wetlands emissions (Tg CH4/yr)
-emsParams.base_wetB   = 0;     % Baseline tropical wetlands emissions (Tg CH4/yr)
+emsParams.base_wetB   = 0;     % Baseline boreal wetlands emissions (Tg CH4/yr)
 emsParams.base_fire   = 15;     % Baseline fire emissions (Tg CH4/yr)
 emsParams.base_fossil = 6;      % Baseline fossil emissions (Tg CH4/yr)
 emsParams.base_ocean  = 54;     % Baseline ocean emissions for CO (Tg CO/yr)
@@ -222,18 +222,13 @@ emsParams.base_cl     = 1650;   % Chlorine abundance to get a lifetime of 1/302 
 emsParams.soilOffset = 24;      % Temperature offset for soils
 emsParams.fireFacCO  = 10;      % 10x Tg/yr for CO compared to methane
 emsParams.base_tauTS = 9.0;     % strat-trop exchange (years)
-emsParams.stepChange = datenum(-45000,1,1); % Onset of megafauna extinction (years)
+emsParams.stepChange = datenum(-45000,1,1); % Onset of megafauna extinction (years) % changed from 45000kya
 stepFun              = params.step(St,emsParams.stepChange);
 % Scale factors for the different sectors
-%emsParams.amp_wet          = 70;      % Wetland scaling factor
 emsParams.Q10_tropical     = 1.3582;  % From regression (previous work used ~2)
 emsParams.Q10_boreal       = 1.3582;  % From regression (previous work used ~2)
 emsParams.amp_wet_tropical = 40;      % Wetland scaling factor
 emsParams.amp_wet_boreal   = 40;      % Wetland scaling factor
-emsParams.amp_fire         = 10;      % Fire temperature scaling factor
-emsParams.amp_fossil       = 8;       % Fossil temperature scaling factor
-emsParams.amp_oh           = 0;       % Vegetation scaling factor
-emsParams.amp_animals      = 0;       % Animal scaling factor
 
 %%% 
 % Tropical Wetlands
@@ -331,87 +326,6 @@ emsParams.AN_scalings  = [insolAN,          iceAN,        tempAN,    stepAN]';
 emsParams.CL_scalings  = [insolCL,          iceCL,        tempCL,    stepCL]';
 emsParams.IC           = params.IC;
 
-
-% % %%% Fitted parameters (fitted without temperature dependence for RxNs)
-% % Wetlands
-% eccentWT  =  1.1829;
-% obliqWT   = -1.2878;
-% precessWT = -0.1796;
-% insolWT   =  0.0333;
-% iceWT     =  0.5131;
-% tempWT    =  1.5753;
-% % Fossil
-% eccentFF  = -0.1070;
-% obliqFF   =  0.0900;
-% precessFF =  0.0859;
-% insolFF   =  0.0311;
-% iceFF     =  8.3244;
-% tempFF    =  0.9923;
-% % Fires
-% eccentBB  =  0.2761;
-% obliqBB   =  0.0001;
-% precessBB =  0.0808;
-% insolBB   =  0.0804;
-% iceBB     =  3.0602;
-% tempBB    = -0.5709;
-% % OH
-% eccentOH  = -0.3818;
-% obliqOH   =  0.9347;
-% precessOH = -0.2962;
-% insolOH   =  1.1644;
-% iceOH     =  1.4802;
-% tempOH    =  0.2198;
-% % Strat-Trop exchange
-% eccenttauTS  = -0.3392;
-% obliqtauTS   = -1.0192;
-% precesstauTS =  0.8555;
-% insoltauTS   =  0.0000;
-% icetauTS     =  1.0467;
-% temptauTS    =  0.8010;
-% steptauTS    =  0;
-% % Animals
-% eccentAN  = 0;
-% obliqAN   = 0;
-% precessAN = 0;
-% insolAN   = 0;
-% iceAN     = 0;
-% tempAN    = 0;
-% stepAN    = 0;
-% % Chlorine
-% eccentCL  = 0;
-% obliqCL   = 0;
-% precessCL = 0;
-% insolCL   = 0;
-% iceCL     = 0;
-% tempCL    = 0;
-% stepCL    = 0;
-% emsParams.oh_scale = 0.2568;  % alex original
-% %emsParams.oh_scale = 0.5; % sv attempt
-% emsParams.Q10_tropical     = .2663;
-% emsParams.Q10_boreal     = 1.0002;
-% emsParams.amp_wet_tropical = 46.8404;
-% emsParams.amp_wet_boreal = 45.1881;
-% emsParams.stepChange = emsParams.stepChange;
-% emsParams.base_WT = 11.1899;
-% emsParams.base_WTB = 0;
-% emsParams.base_FF = -0.1047;
-% emsParams.base_BB = -20.8357;
-% emsParams.base_OH = 908.1101;
-% emsParams.base_tauTS = 7.6618;
-% emsParams.base_AN = 0;
-% emsParams.base_CL = 1650;
-% emsParams.forcings     = [params.eccent, params.obliq, params.precess, params.insol_NH, params.iceVolN, params.sTempN,   stepFun];
-% emsParams.WT_scalings  = [     eccentWT,      obliqWT,      precessWT,         insolWT,          iceWT,        tempWT,    stepWT]';
-% emsParams.WTB_scalings = [    eccentWTB,     obliqWTB,     precessWTB,        insolWTB,         iceWTB,       tempWTB,   stepWTB]';
-% emsParams.FF_scalings  = [     eccentFF,      obliqFF,      precessFF,         insolFF,          iceFF,        tempFF,    stepFF]';
-% emsParams.BB_scalings  = [     eccentBB,      obliqBB,      precessBB,         insolBB,          iceBB,        tempBB,    stepBB]';
-% emsParams.OH_scalings  = [     eccentOH,      obliqOH,      precessOH,         insolOH,          iceOH,        tempOH,    stepOH]';
-% emsParams.tau_scalings = [  eccenttauTS,   obliqtauTS,   precesstauTS,      insoltauTS,       icetauTS,     temptauTS, steptauTS]';
-% emsParams.AN_scalings  = [     eccentAN,      obliqAN,      precessAN,         insolAN,          iceAN,        tempAN,    stepAN]';
-% emsParams.CL_scalings  = [     eccentCL,      obliqCL,      precessCL,         insolCL,          iceCL,        tempCL,    stepCL]';
-% emsParams.IC           = params.IC;
-
-
 %%
 %%% =======================================================================
 %%% 4. Run the 2-box model
@@ -494,13 +408,13 @@ if do_cmaes
 %     CMAES_opts.MaxIter           = 5000;
 %     CMAES_opts.Restarts          = 6;
 %     % Small
-    % CMAES_opts.StopFunEvals      = 10000;
-    % CMAES_opts.MaxIter           = 200;
-    % CMAES_opts.Restarts          = 2;
-    % Very small
-    CMAES_opts.StopFunEvals      = 1000;
+    CMAES_opts.StopFunEvals      = 10000;
     CMAES_opts.MaxIter           = 200;
-    CMAES_opts.Restarts          = 1;
+    CMAES_opts.Restarts          = 2;
+    % Very small
+    % CMAES_opts.StopFunEvals      = 1000;
+    % CMAES_opts.MaxIter           = 200;
+    % CMAES_opts.Restarts          = 1;
 
     %%% Get the starting point and standard deviations
     % Starting point
@@ -537,12 +451,12 @@ if do_cmaes
     insigma(insigma <= 0) = 1e-4; insigma_save = insigma;
     
     %%% Use an old estimate?
-    oldName = sprintf('./%s',CMAES_opts.SaveFilename);
+    oldName = 'hermesout_dDNH/variablescmaes.mat'; % sprintf('./%s',CMAES_opts.SaveFilename);
     use_old = false;
     if use_old
         if (exist(oldName,'file') == 2)
             load(oldName);
-            xstart = bestever.x;  % this has now been overwritten with correct size xstart
+            xstart = bestever.x; 
 %             if length(xstart) < length(assembleStateVector(emsParams))
 %                 emsParams.oh_scale         = bestever.x(1);
 %                 emsParams.Q10_tropical     = bestever.x(2);
@@ -598,12 +512,10 @@ if do_cmaes
     end
 
     %%% Plot the best one
-    [cmaes_res.emsParams] = disassembleStateVector(bestever.x,emsParams); % this emsParams might have different stepfun forcing
+    [cmaes_res.emsParams] = disassembleStateVector(bestever.x,emsParams);
     emsParams_best = cmaes_res.emsParams;
-    %emsParams_best.forcings(:,end) = params.step(St,emsParams_best.stepChange); 
-        % this compensates for moving this line out of boxmodel_wrapper
     out_best       = boxModel_wrapper(params,St,emsParams_best);
-    plotResults_alt( params, out_best, obs, add_name_inv, true, true)
+    plotResults_alt( params, out_best, obs, add_name_inv, false, false)
     %load(oldName);close all;plotResults(params,boxModel_wrapper(params,St,disassembleStateVector(bestever.x,emsParams)),obs)
     %writeData(pSt, out_best, sprintf('%s/%s/',outDir,tRes), caseName);
     
@@ -611,7 +523,7 @@ if do_cmaes
     if true
         eval_param = fun_param;
         testParams = emsParams_best;
-        sim_ch4  = nan(length(out_best.ch4),size(emsParams.forcings,2)+1);
+        sim_ch4  = nan(length(out_best.sh_ch4),size(emsParams.forcings,2)+1); 
         sim_d13C = nan(length(out_best.d13c),size(emsParams.forcings,2)+1);
         sim_dD   = nan(length(out_best.dD),size(emsParams.forcings,2)+1);
         sim_d14C = nan(length(out_best.d14c),size(emsParams.forcings,2)+1);

@@ -68,9 +68,6 @@ if caseB || caseC
     % Emissions
     ems_wet_tropical = emsParams.amp_wet_tropical .* emsParams.Q10_tropical .^ ( (sTemp + emsParams.soilOffset)/10 );
     ems_wet_boreal   = veg .* emsParams.amp_wet_boreal   .* emsParams.Q10_boreal .^ ( (sTemp + emsParams.soilOffset)/10 );
-    %ems_fossil = emsParams.base_fossil + emsParams.amp_fossil .*
-    %params.iceVolN;  % why commented??
-    %ems_fire   = emsParams.base_fire   + emsParams.amp_fire   .* params.veg;
     % Additional perturbations
     e_WT = zeros(length(St),1);
     e_FF = zeros(length(St),1);

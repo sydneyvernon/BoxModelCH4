@@ -58,21 +58,27 @@ prior_cov.amp_wet_boreal   = func(emsParams.amp_wet_boreal);
 % Baseline wetland emissions (normal)
 mu                = prior_state.base_WT;
 sig               = 10.^2;
-func              = @(x) p_normal(x,mu,sig,use_log);
+func              = @(x) p_normal(x,mu,sig,use_log);   % we don't need bounded normal to guarantee >0 here
 prior_cov.base_WT = func(emsParams.base_WT);
-% Baseline fossil emissions (normal)
+% Baseline fossil emissions (bounded normal)
 mu                = prior_state.base_FF;
 sig               = 10.^2;
+xL                = 0;
+xU                = 500;
 func              = @(x) p_normal(x,mu,sig,use_log);
 prior_cov.base_FF = func(emsParams.base_FF);
-% Baseline fire emissions (normal)
+% Baseline fire emissions (bounded normal)
 mu                = prior_state.base_BB;
 sig               = 10.^2;
+xL                = 0;
+xU                = 500;
 func              = @(x) p_normal(x,mu,sig,use_log);
 prior_cov.base_BB = func(emsParams.base_BB);
-% Baseline OH emissions (normal)
+% Baseline OH emissions (bounded normal)
 mu                = prior_state.base_OH;
 sig               = 50.^2;
+xL                = 0;
+xU                = 500;
 func              = @(x) p_normal(x,mu,sig,use_log);
 prior_cov.base_OH = func(emsParams.base_OH);
 % Baseline strat-trop exchange (bounded normal)
@@ -87,7 +93,7 @@ mu                   = prior_state.base_AN;
 sig                  = 5.^2;
 xL                   = 0;
 xU                   = 15;
-func                 = @(x) p_normalB(x,mu,sig,xL,xU,use_log);
+func                 = @(x) p_normal(x,mu,sig,use_log);
 prior_cov.base_AN = func(emsParams.base_AN);
 % Baseline chlorine abundance (bounded normal)
 mu                   = prior_state.base_CL;
@@ -197,7 +203,7 @@ end
 
 end
 
-%%% Distributioins
+%%% Distributions
 function [ p ] = p_lognormal(x,mode,sig,use_log)
 mu = log(mode) + sig.^2;
 if use_log

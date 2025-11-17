@@ -27,22 +27,29 @@ function [ out ] = boxModel_wrapper(params,St,emsParams)
 %%% Get the initial conditions
 IC = emsParams.IC;
 
-%%% Convert ICs to the form needed for the box model
-% not using V... need to correct
-IC(3)  =  IC(1) * (1 +  IC(3)/1000);
-IC(4)  =  IC(2) * (1 +  IC(4)/1000);
-IC(5)  =  IC(1) * (1 +  IC(5)/1000);
-IC(6)  =  IC(2) * (1 +  IC(6)/1000);
-IC(7)  =  IC(1) * (1 +  IC(7)/1000);
-IC(8)  =  IC(2) * (1 +  IC(8)/1000);
+%%% Convert isotopes from delta notation to the form needed for the box model
+% 13CH4
+IC(3)  =  IC(1) * params.R_VPDB * (1 +  IC(3)/1000);
+IC(4)  =  IC(2) * params.R_VPDB * (1 +  IC(4)/1000);
+% 14CH4
+IC(5)  =  IC(1) * params.R_14CH4 * (1 +  IC(5)/1000);
+IC(6)  =  IC(2) * params.R_14CH4 * (1 +  IC(6)/1000);
+% DCH4
+IC(7)  =  IC(1) * params.R_VSMOW * (1 +  IC(7)/1000);
+IC(8)  =  IC(2) * params.R_VSMOW * (1 +  IC(8)/1000);
+% 13CH4 (stratosphere)
+IC(15) = IC(13) * params.R_VPDB * (1 + IC(15)/1000);
+IC(16) = IC(14) * params.R_VPDB * (1 + IC(16)/1000);
+% 14CH4 (stratosphere)
+IC(17) = IC(13) * params.R_14CH4 * (1 + IC(17)/1000);
+IC(18) = IC(14) * params.R_14CH4 * (1 + IC(18)/1000);
+% DCH4 (stratosphere)
+IC(19) = IC(13) * params.R_VSMOW * (1 + IC(19)/1000);
+IC(20) = IC(14) * params.R_VSMOW * (1 + IC(20)/1000);
+
+% Convert OH from molec/cm3 to form for box model
 IC(9)  =  IC(9) / params.n_air*1d9 * 1d5;
 IC(10) = IC(10) / params.n_air*1d9 * 1d5;
-IC(15) = IC(13) * (1 + IC(15)/1000);
-IC(16) = IC(14) * (1 + IC(16)/1000);
-IC(17) = IC(13) * (1 + IC(17)/1000);
-IC(18) = IC(14) * (1 + IC(18)/1000);
-IC(19) = IC(13) * (1 + IC(19)/1000);
-IC(20) = IC(14) * (1 + IC(20)/1000);
 IC(21) = IC(21) / params.n_air*1d9 * 1d5;
 IC(22) = IC(22) / params.n_air*1d9 * 1d5;
 
@@ -228,7 +235,7 @@ out.cl              = cl_conc; % molec/cm3
 out.ch4_ems       = ch4_ems.nh+ch4_ems.sh;
 out.nh_ch4_ems    = ch4_ems.nh;
 out.sh_ch4_ems    = ch4_ems.sh;
-out.ch4c13_ems    = mean([ch4c13_ems.nh,ch4c13_ems.sh],2);
+out.ch4c13_ems    = mean([ch4c13_ems.nh,ch4c13_ems.sh],2); % we don't save these ems for other isotopologues?
 out.nh_ch4c13_ems = ch4c13_ems.nh;
 out.sh_ch4c13_ems = ch4c13_ems.sh;
 out.oh_ems        = oh_ems.nh+oh_ems.sh;

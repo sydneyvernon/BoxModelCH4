@@ -108,20 +108,11 @@ sig = std(obs.dD_NH, "omitmissing"); % scalar
 ind  = ~isnan(y);
 p_dD_unif = p_uniform(y(ind),(mu - 2.5*sig),(mu + 2.5*sig),use_log);
 
-% lightly enforce positivity (mean) for all emissions
+% enforce positivity (mean) for all emissions
 enforce_pos = 1;
-if mean(out.ch4_ems_animal) < 0 ...  % methane ems
-        || mean(out.ch4_ems_fire) < 0 ...
-        || mean(out.ch4_ems_fossil) < 0 ...
-        || mean(out.ch4_ems_wet_boreal) < 0 ...
-        || mean(out.ch4_ems_wet_tropical) < 0 
-    enforce_pos = 0;
-elseif mean(out.co_ems_fire) < 0 ...  % CO ems
-        || mean(out.co_ems_ocean) < 0  
-    enforce_pos = 0;
-elseif mean(out.oh_ems) < 0  % OH ems
-    enforce_pos = 0;
-end
+if mean(out.ch4_ems_animal) < 0
+% CO, CH4, 
+
 
 %%% Construct the full likelihood distribution
 likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, enforce_pos];
