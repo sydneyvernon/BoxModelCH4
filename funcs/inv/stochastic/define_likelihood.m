@@ -88,6 +88,7 @@ sig  = mu/6;
 ind  = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_cl = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 
+
 %%% Manually reject solutions with very poor fits on SH d14-CH4 and
 %%% NH dD-CH4 observations
 
@@ -123,8 +124,12 @@ elseif mean(out.oh_ems) < 0  % OH ems
     enforce_pos = 0;
 end
 
+% enforce OH abundance agreement at final timestep
+% (within 20% of 10^6 ppb)
+p_OH_unif = p_uniform(out.oh(end),0.8 * 1e6,1.2 * 1e6,use_log);
+
 %%% Construct the full likelihood distribution
-likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, enforce_pos];
+likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, enforce_pos, p_OH_unif];
 
 % % Diagnostic
 % if any(isnan(likeli))

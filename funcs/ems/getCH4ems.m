@@ -85,12 +85,12 @@ if caseB || caseC
     ems_FF  = emsParams.base_FF + e_FF;                    ems_fossil = ems_FF;
     ems_AN  = emsParams.base_AN + e_AN;                    ems_animal = ems_AN;
     ems_BB  = emsParams.base_BB + e_BB;                    ems_fire = ems_BB;
-    % Ensure positivity
-    ems_tropical(ems_tropical < 0) = 0;
-    ems_boreal(ems_boreal < 0)     = 0;
-    ems_fossil(ems_fossil < 0)     = 0;
-    ems_animal(ems_animal < 0)     = 0;
-    ems_fire(ems_fire < 0)         = 0;
+    % % Ensure positivity
+    % ems_tropical(ems_tropical < 0) = 0;
+    % ems_boreal(ems_boreal < 0)     = 0;
+    % ems_fossil(ems_fossil < 0)     = 0;
+    % ems_animal(ems_animal < 0)     = 0;
+    % ems_fire(ems_fire < 0)         = 0;
     % Partition Emissions to the hemispheres
     ems_wet_trop_nh = ems_tropical * frac_nh;
     ems_wet_bor_nh  = ems_boreal;
