@@ -109,27 +109,25 @@ sig = std(obs.dD_NH, "omitmissing"); % scalar
 ind  = ~isnan(y);
 p_dD_unif = p_uniform(y(ind),(mu - 2.5*sig),(mu + 2.5*sig),use_log);
 
-% lightly enforce positivity (mean) for all emissions
-enforce_pos = 1;
-if mean(out.ch4_ems_animal) < 0 ...  % methane ems
-        || mean(out.ch4_ems_fire) < 0 ...
-        || mean(out.ch4_ems_fossil) < 0 ...
-        || mean(out.ch4_ems_wet_boreal) < 0 ...
-        || mean(out.ch4_ems_wet_tropical) < 0 
-    enforce_pos = 0;
-elseif mean(out.co_ems_fire) < 0 ...  % CO ems
-        || mean(out.co_ems_ocean) < 0  
-    enforce_pos = 0;
-elseif mean(out.oh_ems) < 0  % OH ems
-    enforce_pos = 0;
-end
-
 % enforce OH abundance agreement at final timestep
-% (within 20% of 10^6 ppb)
+% (within 20% of 10^6 molecules/cm^3)
 p_OH_unif = p_uniform(out.oh(end),0.8 * 1e6,1.2 * 1e6,use_log);
 
+% lightly enforce positivity (mean over time) for all emissions
+enforce_pos_animal = p_uniform(mean(out.ch4_ems_animal),0,Inf,use_log);
+enforce_pos_fire = p_uniform(mean(out.ch4_ems_fire),0,Inf,use_log);
+enforce_pos_fossil = p_uniform(mean(out.ch4_ems_fossil),0,Inf,use_log);
+enforce_pos_wet_boreal = p_uniform(mean(out.ch4_ems_wet_boreal),0,Inf,use_log);
+enforce_pos_wet_tropical = p_uniform(mean(out.ch4_ems_wet_tropical),0,Inf,use_log);
+
+enforce_pos_co_fire = p_uniform(mean(out.co_ems_fire),0,Inf,use_log);
+enforce_pos_co_ocean = p_uniform(mean(out.co_ems_ocean),0,Inf,use_log);
+enforce_pos_oh =  p_uniform(mean(out.oh_ems),0,Inf,use_log);
+
+enforce_pos = [enforce_pos_animal, enforce_pos_fire, enforce_pos_fossil, enforce_pos_wet_boreal, enforce_pos_wet_tropical, enforce_pos_co_fire, enforce_pos_co_ocean, enforce_pos_oh];
+
 %%% Construct the full likelihood distribution
-likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, enforce_pos, p_OH_unif];
+likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, p_OH_unif, enforce_pos];
 
 % % Diagnostic
 % if any(isnan(likeli))
