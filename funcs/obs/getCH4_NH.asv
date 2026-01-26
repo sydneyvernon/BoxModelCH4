@@ -58,7 +58,7 @@ dat.sig.gisp = 10*ones(size(dat.tim.gisp));  % estimate of measurement error? co
 
 iceCoreDat = readtable(sprintf('%s/ngrip_ch4_120-10kyrBP_data.csv',dataDirU));
 dat.tim.ngrip = datenum(1950 - table2array(iceCoreDat(10:end-3,3)),1,1); % exclude non-data rows. check gas age column.
-dat.obs.ngrip = table2array(iceCoreDat(10:end-3,4));
+dat.obs.ngrip = table2array(iceCoreDat(:,4));
 dat.sig.ngrip = 10*ones(size(dat.tim.ngrip));
 
 out.tim.icecore = [dat.tim.gisp;dat.tim.ngrip];

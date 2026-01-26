@@ -58,31 +58,12 @@ out.lat = struct;
 dataDirU = sprintf('%sobs/iceCore',dataDir);
 
 %%% Load the data
-iceCoreDat = readtable(sprintf('%s/41586_2008_BFnature06950_MOESM33_ESM.xls',dataDirU));
+iceCoreDat = readtable(sprintf('%s/EDC_CH4_compilation_CB_03042025.xlsx',dataDirU));
 out.tim.icecore = datenum(1950 - table2array(iceCoreDat(:,2)),1,1);
 out.obs.icecore = table2array(iceCoreDat(:,3));
 out.sig.icecore = 10*ones(size(out.tim.icecore));
-% Add the Yan data?
-iceCoreDat   = readtable(sprintf('%s/AllanHillsCH4.csv',dataDirU));
-yanDat.tim   = datenum(1950 - table2array(iceCoreDat(:,5))*1000,1,1);
-yanDat.ch4   = table2array(iceCoreDat(:,3));
-yanDat.ch4E  = table2array(iceCoreDat(:,4));
-yanDat.sFlag = table2array(iceCoreDat(:,7));
-yanDat.flag  = zeros(size(yanDat.tim));
-for i = 1:length(yanDat.sFlag)
-    yanDat.flag(i) = strcmp('Yes',yanDat.sFlag{i}) || isnan(yanDat.tim(i)) || isnan(yanDat.ch4(i)) || isnan(yanDat.ch4E(i));
-end
-yanDat.tim   = yanDat.tim(~yanDat.flag);
-yanDat.ch4   = yanDat.ch4(~yanDat.flag);
-yanDat.ch4E  = yanDat.ch4E(~yanDat.flag);
-yanDat.sFlag = yanDat.sFlag(~yanDat.flag);
-yanDat.flag  = yanDat.flag(~yanDat.flag);
-% Add the Yan data
-out.tim.icecore = [out.tim.icecore(:);yanDat.tim];
-out.obs.icecore = [out.obs.icecore(:);yanDat.ch4];
-out.sig.icecore = [out.sig.icecore(:);yanDat.ch4E];
 
-% Sort all the data
+% Sort all the data (should be redundant)
 [~,ind]         = sort(out.tim.icecore,'ascend');
 out.tim.icecore = out.tim.icecore(ind);
 out.obs.icecore = out.obs.icecore(ind);

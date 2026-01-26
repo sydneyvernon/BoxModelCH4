@@ -21,7 +21,7 @@
 %%% =  ( 1): out -- A structure containing the observation information.
 %%% =======================================================================
 
-function [ out ] = makeObs( St, tAvg, ch4_NH_obs, dD_NH_obs, ch4_obs, d13c_obs, dD_obs, d14c_obs, reread )
+function [ out ] = makeObs( St, tAvg, ch4_NH_obs, ch4_obs, d13c_obs, dD_obs, d14c_obs, reread )
 
 %%% Diagnostic
 fprintf('\n *** MAKING THE OBSERVATION STRUCTURE *** \n');
@@ -102,47 +102,47 @@ end
     out.ch4_NH_err = eDat;
 
 
-%%% =======================================================================
-%%% dD (NH)
-%%% =======================================================================
-
-%%% Read the observation structure
-fprintf('   * dD_NH\n');
-
-%%% Load the data
-tDatI = dD_NH_obs.tim.icecore;
-yDatI = dD_NH_obs.obs.icecore;
-eDatI = dD_NH_obs.sig.icecore;
-
-%%% Block average
-[tDat, yDat, eDat] = BlockAverage_AltError(tDatI,yDatI,ones(size(tDatI)),fDays);
-
-%%% Put the data on our temporal grid
-oDat = interp1(tDat,yDat,St);
-eDat = interp1(tDat,eDat,St);
-% Force the minimum uncertainty
-min_uncert              = min(eDatI);
-eDat(eDat < min_uncert) = min_uncert;
-eDat(isnan(eDat))       = max(eDatI);
-
-%%% Scale error by factor of 3
-eDat = 3*eDat;
-
-%%% Make sure we didn't lose any data
-indMiss = find(isnan(oDat));
-tDat    = tDat(~isnan(yDat));
-yDat    = yDat(~isnan(yDat));
-for i = 1:length(indMiss)
-    [tOff,~] = min(abs(St(indMiss(i)) - tDat));
-    if tOff < fDays
-        oDat(indMiss(i)) = interp1(tDat,yDat,St(indMiss(i)));
-    end
-end
-
-%%% Put the data in the output structure
-out.dD_NH     = oDat;
-out.dD_NH_err = eDat;
-
+% %%% =======================================================================
+% %%% dD (NH)
+% %%% =======================================================================
+% 
+% %%% Read the observation structure
+% fprintf('   * dD_NH\n');
+% 
+% %%% Load the data
+% tDatI = dD_NH_obs.tim.icecore;
+% yDatI = dD_NH_obs.obs.icecore;
+% eDatI = dD_NH_obs.sig.icecore;
+% 
+% %%% Block average
+% [tDat, yDat, eDat] = BlockAverage_AltError(tDatI,yDatI,ones(size(tDatI)),fDays);
+% 
+% %%% Put the data on our temporal grid
+% oDat = interp1(tDat,yDat,St);
+% eDat = interp1(tDat,eDat,St);
+% % Force the minimum uncertainty
+% min_uncert              = min(eDatI);
+% eDat(eDat < min_uncert) = min_uncert;
+% eDat(isnan(eDat))       = max(eDatI);
+% 
+% %%% Scale error by factor of 3
+% eDat = 3*eDat;
+% 
+% %%% Make sure we didn't lose any data
+% indMiss = find(isnan(oDat));
+% tDat    = tDat(~isnan(yDat));
+% yDat    = yDat(~isnan(yDat));
+% for i = 1:length(indMiss)
+%     [tOff,~] = min(abs(St(indMiss(i)) - tDat));
+%     if tOff < fDays
+%         oDat(indMiss(i)) = interp1(tDat,yDat,St(indMiss(i)));
+%     end
+% end
+% 
+% %%% Put the data in the output structure
+% out.dD_NH     = oDat;
+% out.dD_NH_err = eDat;
+% 
 
 %%% =======================================================================
 %%% CH4 (SH)
