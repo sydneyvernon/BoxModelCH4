@@ -40,11 +40,11 @@ sig   = obs.ch4_NH_err;
 ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_ch4_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % dD NH (normal)
-y     = out.nh_dD;
-mu    = obs.dD_NH;
-sig   = obs.dD_NH_err;
-ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
-p_dD_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
+% y     = out.nh_dD;
+% mu    = obs.dD_NH;
+% sig   = obs.dD_NH_err;
+% ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
+% p_dD_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % CH4 (normal)
 y     = out.sh_ch4;
 mu    = obs.ch4;
@@ -52,19 +52,19 @@ sig   = obs.ch4_err;
 ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_ch4 = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % d13C (normal)
-y      = out.d13c;
+y      = out.sh_d13c;
 mu     = obs.d13c;
 sig    = obs.d13c_err;
 ind    = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_d13c = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % dD (normal)
-y    = out.dD;
+y    = out.sh_dD;
 mu   = obs.dD;
 sig  = obs.dD_err;
 ind  = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_dD = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % 14CH4 (normal)
-y      = out.d14c;
+y      = out.sh_d14c;
 mu     = obs.d14c;
 sig    = obs.d14c_err;
 ind    = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
@@ -93,21 +93,21 @@ p_cl = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 %%% NH dD-CH4 observations
 
 % SH d14-CH4
-y      = out.d14c;
-mu     = obs.d14c;
-sig    = obs.d14c_err;
-ind    = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
-p_d14c_unif = p_uniform(y(ind),(mu(ind) - 2.5*sig(ind)), (mu(ind) + 2.5*sig(ind)), use_log);
+% y      = out.sh_d14c;
+% mu     = obs.d14c;
+% sig    = obs.d14c_err;
+% ind    = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
+% p_d14c_unif = p_uniform(y(ind),(mu(ind) - 2.5*sig(ind)), (mu(ind) + 2.5*sig(ind)), use_log);
 
-% NH dD-CH4
-% our raw data has high variability in a short time period
-% so we assume our simulated values in this period belong to some
-% normal dist
-y = out.nh_dD;
-mu = mean(obs.dD_NH, "omitnan"); % scalar
-sig = std(obs.dD_NH, "omitmissing"); % scalar
-ind  = ~isnan(y);
-p_dD_unif = p_uniform(y(ind),(mu - 2.5*sig),(mu + 2.5*sig),use_log);
+% % NH dD-CH4
+% % our raw data has high variability in a short time period
+% % so we assume our simulated values in this period belong to some
+% % normal dist
+% y = out.nh_dD;
+% mu = mean(obs.dD_NH, "omitnan"); % scalar
+% sig = std(obs.dD_NH, "omitmissing"); % scalar
+% ind  = ~isnan(y);
+% p_dD_unif = p_uniform(y(ind),(mu - 2.5*sig),(mu + 2.5*sig),use_log);
 
 % enforce OH abundance agreement at final timestep
 % (within 20% of 10^6 molecules/cm^3)
@@ -127,7 +127,7 @@ enforce_pos_oh =  p_uniform(mean(out.oh_ems),0,Inf,use_log);
 enforce_pos = [enforce_pos_animal, enforce_pos_fire, enforce_pos_fossil, enforce_pos_wet_boreal, enforce_pos_wet_tropical, enforce_pos_co_fire, enforce_pos_co_ocean, enforce_pos_oh];
 
 %%% Construct the full likelihood distribution
-likeli = [p_ch4_NH, p_dD_NH, p_ch4, p_d13c, p_dD, p_d14c, p_d14c_unif, p_dD_unif, p_OH_unif, enforce_pos];
+likeli = [p_ch4_NH, p_ch4, p_d13c, p_dD, p_d14c, p_OH_unif, enforce_pos];
 
 % % Diagnostic
 % if any(isnan(likeli))

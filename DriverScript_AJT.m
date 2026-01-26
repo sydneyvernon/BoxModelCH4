@@ -81,7 +81,7 @@ do_cmaes         = true;     % Covariance Matrix Adaptation Evolution Strategy
 
 %%% For reading the observations
 % Do we want to reread the raw data?
-reread.flag  = true; %false;
+reread.flag  = true;
 % Other flags for re-reading
 reread.sYear = sYear;
 reread.eYear = eYear;
@@ -89,21 +89,15 @@ reread.tRes  = tRes;
 reread.tAvg  = tAvg;
 reread.dir   = dataDir;
 
-%%% Which case are we doing?
 % % Case A: Constant Emissions
 % caseName = 'caseAa';   % variable 
 % caseName = 'caseAb';   % fixed OH
-% % Case B: Variable Emissions
+% % Case B: Variable CH4, CO, and OH Emissions
 % caseName = 'caseBa';   % variable OH
 % caseName = 'caseBb';   % fixed OH
-% % Case C: Variable CH4, CO, and OH Emissions
-% caseName = 'caseBa';   % variable OH
-% caseName = 'caseBb';   % fixed OH
-
-%%% My choice
-caseName = 'caseBa'; % variable OH
-add_name = 'newplots';
-add_name_inv = ['likelichanges_' ''];
+caseName = 'caseBa';
+add_name = 'january_';
+add_name_inv = ['january_' ''];
 
 %%% Other options and flags
 % General flags
@@ -151,7 +145,6 @@ fprintf('\n *** LOADING THE OBSERVATIONS *** \n');
 % - "lat":  Latitude of the NOAA site
 try % Add a try-catch statement in case the user hasn't downloaded the data
     ch4_NH_obs  = getCH4_NH(dataDir,reread);       % CH4 observations, Greenland (ppb)
-    dD_NH_obs  = getdD_NH(dataDir,reread);       % deltaD observations, Greenland (permil)
     ch4_obs  = getCH4(dataDir,reread);          % CH4 observations, Antarctica (ppb)
     d13c_obs = getd13C(dataDir,reread);         % delta13C observations (permil)
     dD_obs   = getdD(dataDir,reread);           % deltaD observations (permil)
@@ -159,7 +152,6 @@ try % Add a try-catch statement in case the user hasn't downloaded the data
 catch % Some data is missing, set the observation structures to NaN
     try % Try just leaving out d14c
         ch4_NH_obs  = getCH4_NH(dataDir,reread);
-        dD_NH_obs  = getdD_NH(dataDir,reread);
         ch4_obs  = getCH4(dataDir,reread);      % CH4 observations (ppb)
         d13c_obs = getd13C(dataDir,reread);     % delta13C observations (permil)
         dD_obs   = getdD(dataDir,reread);       % deltaD observations (permil)
@@ -167,7 +159,6 @@ catch % Some data is missing, set the observation structures to NaN
     catch
         try % Try leaving out dD and d14C
             ch4_NH_obs  = getCH4_NH(dataDir,reread); 
-            dD_NH_obs  = getdD_NH(dataDir,reread);
             ch4_obs  = getCH4(dataDir,reread);  % CH4 observations (ppb)
             d13c_obs = getd13C(dataDir,reread); % delta13C observations (permil)
             dD_obs   = NaN;
@@ -175,7 +166,6 @@ catch % Some data is missing, set the observation structures to NaN
         catch
             fprintf(' * UNABLE TO READ OBSERVATIONS!\n');
             ch4_NH_obs  = NaN; 
-            dD_NH_obs = NaN;
             ch4_obs  = NaN;
             d13c_obs = NaN;
             dD_obs   = NaN;
@@ -189,7 +179,7 @@ end
 % - NH/SH CH4    obs & err (ppb)
 % - NH/SH CH4C13 obs & err (permil)
 % - NH/SH CO     obs & err (ppb)
-obs = makeObs(St,tAvg,ch4_NH_obs,dD_NH_obs,ch4_obs,d13c_obs,dD_obs,d14c_obs,reread);
+obs = makeObs(St,tAvg,ch4_NH_obs,ch4_obs,d13c_obs,dD_obs,d14c_obs,reread);
 
 %%% Also store these in the params structure
 params.obs = obs;
@@ -408,13 +398,13 @@ if do_cmaes
 %     CMAES_opts.MaxIter           = 5000;
 %     CMAES_opts.Restarts          = 6;
 %     % Small
-    CMAES_opts.StopFunEvals      = 10000;
-    CMAES_opts.MaxIter           = 200;
-    CMAES_opts.Restarts          = 2;
-    % Very small
-    % CMAES_opts.StopFunEvals      = 1000;
+    % CMAES_opts.StopFunEvals      = 10000;
     % CMAES_opts.MaxIter           = 200;
-    % CMAES_opts.Restarts          = 1;
+    % CMAES_opts.Restarts          = 2;
+    % Very small
+    CMAES_opts.StopFunEvals      = 1000;
+    CMAES_opts.MaxIter           = 200;
+    CMAES_opts.Restarts          = 1;
 
     %%% Get the starting point and standard deviations
     % Starting point
