@@ -1,0 +1,7 @@
+﻿Filename:,Summit_2015_Ice_14C.csv,,,,,,,,,,,
+Summary,"Measurements of 14CO and 14CH4 from large volume deep ice samples collecd at Summit, Greenland in May-June 2015.  All measurements corrected for extraneous carbon addition during sample processing and AMS measurment and normalized to sample Delta13C.  Reported measuements for 'C14CO' and 'C14CH4' represents a combination of in situ cosmogenic and paleoatmopsheric 14C, 'C14CH4_cosm_corr' removes the contribution from in situ cosmogenic 14CH4 while 'insitu cosm C14CO' reports the in situ only component of C14CO. Units for all quantities are given in square brackets and all reported errors are ± 1sigma",,,,,,,,,,,
+mid_depth,top_depth,bottom_depth,C14CO,error,C14CO,error,insitu_cosm_C14CO,error,C14CH4,error,C14CH4_cosm_corr,error
+[m],[m],[m],[molecules/mLSTP],[molecules/mLSTP],[molecules/gIce],[molecules/gIce],[molecules/gIce],[molecules/gIce],[pMC],[pMC],[permil Delta14C],[permil Delta14C]
+90.75,85.5,96,67.29,1.79,4.3,0.19,2.55,0.25,89.65,0.86,-107.79,8.84
+101.25,96,106.5,77.3,1.96,5.27,0.21,3.5,0.26,98.76,0.87,-15.57,9.15
+130,124.75,135.25,87.21,2.20,6.08,0.23,4.4,0.28,99.52,1,1.43,10.53

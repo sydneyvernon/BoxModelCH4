@@ -49,53 +49,65 @@ dat.temp          = params.sTemp;
 
 %%% Get the ice core data -- time in ka
 % NH CH4 (GISP2)
-iceCoreDat = readtable('./data/obs/iceCore/GISP2_ch4.txt');
-iceNHCH4.t = (1950 - table2array(iceCoreDat(:,3)))/1000; % 11ka-0.1ka %something weird here
-iceNHCH4.CH4 = table2array(iceCoreDat(:,2));
+iceCoreDat = readtable('./data/obs/iceCore/GISP2_CH4_05052022.csv');
+iceNHCH4.t = (2000 - table2array(iceCoreDat(19:end,2)))/1000;
+iceNHCH4.CH4 = table2array(iceCoreDat(19:end,4)); % corrected column
 iceNHCH4.sig = 10*ones(size(iceNHCH4.CH4));  % consistent with our estimates in getCH4.
 
-% NH dD from Bock et al
-fdat   = readtable('./data/obs/iceCore/Bock_NGRIP_dD.csv');
-iceNHdD.t = (1950-table2array(fdat(:,3)))/1000;
-iceNHdD.dD = table2array(fdat(:,6));  % "corrected" measurement column
-iceNHdD.sig = 3 * ones(size(table2array(fdat(:,6)))); % guess - slightly larger than max err on the EDC dD.
+% NH CH4 (NGRIP)
+iceCoreDat = readtable('./data/obs/iceCore/ngrip_ch4_120-10kyrBP_data.csv');
+iceNHCH4.t = [iceNHCH4.t; (1950 - table2array(iceCoreDat(10:end-3,3)))/1000]; % excludes non-data rows
+iceNHCH4.CH4 = [iceNHCH4.CH4; table2array(iceCoreDat(10:end-3,4))];
+iceNHCH4.sig = 10*ones(size(iceNHCH4.CH4));  % consistent with our estimates in getCH4.
 
 % CH4
-iceCoreDat = readtable('./data/obs/iceCore/41586_2008_BFnature06950_MOESM33_ESM.xls');
-iceCH4.t   = (1950 - table2array(iceCoreDat(:,2)))/1000;
-iceCH4.ch4 = table2array(iceCoreDat(:,3));
+iceCoreDat = readtable('./data/obs/iceCore/EDC_CH4_compilation_CB_03042025.xlsx');
+iceCH4.t = (1950 - table2array(iceCoreDat(:,2)))/1000;
+iceCH4.CH4 = table2array(iceCoreDat(:,3));
+iceCH4.sig = 10*ones(size(iceCH4.t));
+
+% iceCoreDat = readtable(sprintf('%s/EDC_CH4_compilation_CB_03042025.xlsx',dataDirU));
+% out.tim.icecore = datenum(1950 - table2array(iceCoreDat(:,2)),1,1);
+% out.obs.icecore = table2array(iceCoreDat(:,3));
+% out.sig.icecore = 10*ones(size(out.tim.icecore));
+
+% iceCoreDat = readtable('./data/obs/iceCore/41586_2008_BFnature06950_MOESM33_ESM.xls');
+% iceCH4.t   = (1950 - table2array(iceCoreDat(:,2)))/1000;
+% iceCH4.ch4 = table2array(iceCoreDat(:,3));
 % Add the Yan data
-if St(1) < -2000
-    iceCoreDat   = readtable('./data/obs/iceCore/AllanHillsCH4.csv');
-    yanDat.tim   = (1950/1000 - table2array(iceCoreDat(:,5)));
-    yanDat.ch4   = table2array(iceCoreDat(:,3));
-    yanDat.ch4E  = table2array(iceCoreDat(:,4));
-    yanDat.sFlag = table2array(iceCoreDat(:,7));
-    yanDat.flag  = zeros(size(yanDat.tim));
-    for i = 1:length(yanDat.sFlag)
-        yanDat.flag(i) = strcmp('Yes',yanDat.sFlag{i}) || isnan(yanDat.tim(i)) || isnan(yanDat.ch4(i)) || isnan(yanDat.ch4E(i));
-    end
-    yanDat.tim   = yanDat.tim(~yanDat.flag);
-    yanDat.ch4   = yanDat.ch4(~yanDat.flag);
-    yanDat.ch4E  = yanDat.ch4E(~yanDat.flag);
-    yanDat.sFlag = yanDat.sFlag(~yanDat.flag);
-    yanDat.flag  = yanDat.flag(~yanDat.flag);
-    % Combine the records
-    iceCH4.t   = [iceCH4.t;yanDat.tim];
-    iceCH4.ch4 = [iceCH4.ch4;yanDat.ch4];
-end
+% if St(1) < -2000
+%     iceCoreDat   = readtable('./data/obs/iceCore/AllanHillsCH4.csv');
+%     yanDat.tim   = (1950/1000 - table2array(iceCoreDat(:,5)));
+%     yanDat.ch4   = table2array(iceCoreDat(:,3));
+%     yanDat.ch4E  = table2array(iceCoreDat(:,4));
+%     yanDat.sFlag = table2array(iceCoreDat(:,7));
+%     yanDat.flag  = zeros(size(yanDat.tim));
+%     for i = 1:length(yanDat.sFlag)
+%         yanDat.flag(i) = strcmp('Yes',yanDat.sFlag{i}) || isnan(yanDat.tim(i)) || isnan(yanDat.ch4(i)) || isnan(yanDat.ch4E(i));
+%     end
+%     yanDat.tim   = yanDat.tim(~yanDat.flag);
+%     yanDat.ch4   = yanDat.ch4(~yanDat.flag);
+%     yanDat.ch4E  = yanDat.ch4E(~yanDat.flag);
+%     yanDat.sFlag = yanDat.sFlag(~yanDat.flag);
+%     yanDat.flag  = yanDat.flag(~yanDat.flag);
+%     % Combine the records
+%     iceCH4.t   = [iceCH4.t;yanDat.tim];
+%     iceCH4.ch4 = [iceCH4.ch4;yanDat.ch4];
+% end
+
 
 %%% Temperature
-fspec     = '%f %f %f %f %f %f';
-fileID    = fopen('./data/obs/iceCore/edc3deuttemp2007.txt','r');
-fdat      = textscan(fileID,fspec,'HeaderLines',92);
-iceT.t    = (1950 - fdat{3}(:))/1000;
-iceT.temp = fdat{5}(:);
-fclose(fileID);
+% fspec     = '%f %f %f %f %f %f';
+% fileID    = fopen('./data/obs/iceCore/edc3deuttemp2007.txt','r');
+% fdat      = textscan(fileID,fspec,'HeaderLines',92);
+% iceT.t    = (1950 - fdat{3}(:))/1000;
+% iceT.temp = fdat{5}(:);
+% fclose(fileID);
 % % Sync
 % iceCore.t    = dat.t;
 % iceCore.temp = interp1(iceT.t,iceT.temp,iceCore.t,'linear','extrap');
 % iceCore.ch4  = interp1(iceCH4.t,iceCH4.ch4,iceCore.t,'linear','extrap');
+
 
 %%% Read in the Bock et al isotope data (d13C)
 % EDC d13C
@@ -316,27 +328,27 @@ xlim(xLims);
 
 % NH dD
 h2 = subplot(7,1,2);
-hold on; box on;
-set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on');
-plot(dat.t,dat.dD_NH,'-','Color',modCol,'LineWidth',3);
-plot(iceNHdD.t, iceNHdD.dD, '.','Color','red');
-plot(St, obs.dD_NH, '.', 'Color', 'black', 'MarkerSize', 10)  % these are the block averaged data
-ylabel('NH \delta{}D of CH_4 (‰)');  % customize label
-set(gca,'XTickLabel',{},'YGrid','on');
-xlim(xLims);
+% hold on; box on;
+% set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on');
+% plot(dat.t,dat.dD_NH,'-','Color',modCol,'LineWidth',3);
+% plot(iceNHdD.t, iceNHdD.dD, '.','Color','red');
+% plot(St, obs.dD_NH, '.', 'Color', 'black', 'MarkerSize', 10)  % these are the block averaged data
+% ylabel('NH \delta{}D of CH_4 (‰)');  % customize label
+% set(gca,'XTickLabel',{},'YGrid','on');
+% xlim(xLims);
 
 % Methane
 h3 = subplot(7,1,3);
 hold on; box on;
 set(gca,'YDir','normal','FontName','Helvetica','FontSize',16,'TickDir','out','LineWidth',2,'XMinorTick','on','YMinorTick','on')
-for i = 1:nanmax(unq_ch4)
-    iUse   = unq_ch4 == i;
-    tPatch = [St(iUse);flipud(St(iUse))];
-    uPatch = [obs.ch4(iUse) - obs.ch4_err(iUse);flipud(obs.ch4(iUse) + obs.ch4_err(iUse))];
-    patch(tPatch,uPatch,(1-obsCol)*.6+obsCol,'EdgeColor','none');
-end
+% for i = 1:nanmax(unq_ch4)
+%     iUse   = unq_ch4 == i;
+%     tPatch = [St(iUse);flipud(St(iUse))];
+%     uPatch = [obs.ch4(iUse) - obs.ch4_err(iUse);flipud(obs.ch4(iUse) + obs.ch4_err(iUse))];
+%     patch(tPatch,uPatch,(1-obsCol)*.6+obsCol,'EdgeColor','none');
+% end
 plot(dat.t,dat.ch4,'-','Color',modCol,'LineWidth',3);
-plot(iceCH4.t,iceCH4.ch4,'.','Color','red');
+plot(iceCH4.t,iceCH4.CH4,'.','Color','red');
 plot(St,obs.ch4,'.','Color','black', 'MarkerSize', 10);
 set(gca,'XTickLabel',{},'YGrid','on');
 ylabel('CH_4 (ppb)');YYCol = get(gca,'YColor');

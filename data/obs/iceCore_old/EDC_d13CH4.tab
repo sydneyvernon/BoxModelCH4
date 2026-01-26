@@ -1,0 +1,115 @@
+/* DATA DESCRIPTION:
+Citation:	Bock, Michael; Schmitt, Jochen; Beck, Jonas; Seth, Barbara; Chappellaz, Jérôme A; Fischer, Hubertus (2017): Stable isotopic methane (δ¹³CH4) records of ice core EDC. PANGAEA, https://doi.org/10.1594/PANGAEA.873913, 
+	In supplement to: Bock, M et al. (2017): Glacial/interglacial wetland, biomass burning, and geologic methane emissions constrained by dual stable isotopic CH4 ice core records. Proceedings of the National Academy of Sciences, 201613883, https://doi.org/10.1073/pnas.1613883114
+Coverage:	LATITUDE: -75.100000 * LONGITUDE: 123.350000
+	DATE/TIME START: 1993-01-01T00:00:00 * DATE/TIME END: 2004-12-31T00:00:00
+	MINIMUM DEPTH, ice/snow: 509.30 m * MAXIMUM DEPTH, ice/snow: 2805.97 m
+Event(s):	EDC (EPICA Dome C) (URI: https://en.wikipedia.org/wiki/Dome_C) * LATITUDE: -75.100000 * LONGITUDE: 123.350000 * DATE/TIME START: 1993-01-01T00:00:00 * DATE/TIME END: 2004-12-31T00:00:00 * ELEVATION: 3233.0 m * Recovery: 3300 m * LOCATION: Dome C, Antarctica * CAMPAIGN: Dome C * METHOD/DEVICE: Ice drill (ICEDRILL) * COMMENT: Drill site is 56 km from the site of a previous Dome C core that provided records extending into the last glacial period, and 560 km from the site of the Vostok cores. The completion of the Dome C core was delayed when the first drilling became stuck at 788 m in 1999 (EDC96).
+Comment:	d13CH4 data are measured using the system described in:
+	Schmitt, J., B. Seth, M. Bock, H. Fischer, "Online technique for isotope and mixing ratios of CH4, N2O, Xe and mixing ratios of organic trace gases on a single ice core sample", Atmospheric Measurement Techniques, 7/8, 2645-2665, 2014, doi:10.5194/amt-7-2645-2014
+	All data are free of krypton interference during the mass spectrometric analysis. For details see:
+	Schmitt, J., B. Seth, M. Bock, C. van der Veen, L. Möller, C. J. Sapart, M. Prokopiou, T. Sowers, T. Röckmann, H. Fischer, "On the interference of Kr during carbon isotope analysis of methane using continuous-flow combustion-isotope ratio mass spectrometry", Atmospheric Measurement Techniques, 6/1, 1425-1445, 2013, doi:10.5194/amt-6-1425-2013
+Parameter(s):	DEPTH, ice/snow [m] (Depth ice/snow) * GEOCODE * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock)
+	Gas age [ka BP] (Gas age) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * COMMENT: AICC2012, BP = 1950
+	Methane mixing ratio [nmol/mol] (CH4 mix ratio) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: measured
+	Methane mixing ratio, standard deviation [±] (CH4 mix ratio std dev) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: Methane mixing ratio error (1-sigma standard deviation of ice core replicates in nmol/mol)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: measured, with respect to Vienna Pee Dee Belemnite (VPDB)
+	δ13C, methane, standard deviation [±] (δ13C CH4 std dev) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: d13CH4 error (1-sigma standard deviation of ice core replicates in per mil with respect to Vienna Pee Dee Belemnite (VPDB))
+	Gravitational settling [‰] (Grav sett) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: see supporting information of Bock et al. (2017)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: corrected for gravitational settling in the firn, with respect to Vienna Pee Dee Belemnite (VPDB)
+	Diffusive fractionation [‰] (Diff frac) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: see supporting information of Bock et al. (2017)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: corrected for gravitational settling and diffusional fractionation in the firn, with respect to Vienna Pee Dee Belemnite (VPDB)
+License:	Creative Commons Attribution-NoDerivs 3.0 Unported (CC-BY-ND-3.0)
+Size:	810 data points
+*/
+Depth ice/snow [m]	Gas age [ka BP] (AICC2012, BP = 1950)	CH4 mix ratio [nmol/mol] (measured, Determined accordin...)	CH4 mix ratio std dev [±] (Methane mixing ratio error (1...)	δ13C CH4 [‰ PDB] (measured, with respect to Vie...)	δ13C CH4 std dev [±] (d13CH4 error (1-sigma standar...)	Grav sett [‰] (see supporting information of...)	δ13C CH4 [‰ PDB] (corrected for gravitational s...)	Diff frac [‰] (see supporting information of...)	δ13C CH4 [‰ PDB] (corrected for gravitational s...)
+509.30	16.974	450	5	-43.51	0.15	0.44	-43.95	-0.04	-43.92
+1410.84	100.176	557	5	-48.88	0.15	0.46	-49.34	0.02	-49.36
+1454.98	104.346	623	5	-48.11	0.15	0.47	-48.58	0.00	-48.59
+1465.94	105.520	635	5	-47.84	0.15	0.45	-48.29	-0.01	-48.29
+1482.34	106.979	473	5	-48.99	0.15	0.47	-49.46	0.02	-49.48
+1493.34	108.407	524	5	-49.22	0.15	0.46	-49.68	0.00	-49.68
+1509.98	110.524	475	5	-50.54	0.15	0.47	-51.01	-0.02	-51.00
+1520.79	111.827	482	5	-50.77	0.15	0.49	-51.26	0.01	-51.27
+1526.30	112.589	474	5	-51.12	0.15	0.48	-51.60	0.00	-51.60
+1537.34	113.737	478	5	-51.52	0.15	0.51	-52.03	0.00	-52.02
+1554.08	115.464	524	5	-52.19	0.15	0.51	-52.70	0.01	-52.71
+1564.84	116.494	547	5	-51.77	0.15	0.52	-52.29	0.00	-52.30
+1581.29	117.881	572	5	-51.55	0.15	0.52	-52.07	0.00	-52.07
+1581.41	117.894	563	5	-51.58	0.15	0.52	-52.10	0.00	-52.10
+1597.84	119.296	586	5	-51.04	0.15	0.52	-51.56	0.00	-51.56
+1614.34	120.589	596	5	-50.41	0.15	0.52	-50.93	0.01	-50.94
+1625.43	121.481	620	5	-50.43	0.15	0.52	-50.95	0.00	-50.95
+1636.34	122.344	606	5	-50.23	0.15	0.52	-50.75	0.01	-50.75
+1652.93	123.677	623	5	-49.98	0.15	0.51	-50.49	0.01	-50.50
+1674.89	125.337	650	5	-49.84	0.15	0.53	-50.37	0.01	-50.39
+1675.00	125.345	660	5	-49.92	0.15	0.53	-50.45	0.01	-50.46
+1696.80	127.082	679	5	-49.14	0.15	0.54	-49.68	0.03	-49.71
+1724.34	128.884	549	5	-48.36	0.15	0.55	-48.91	-0.18	-48.73
+1762.84	132.050	472	5	-46.79	0.15	0.50	-47.29	-0.02	-47.27
+1793.16	136.520	412	5	-45.15	0.15	0.42	-45.57	0.00	-45.57
+1804.72	138.853	414	5	-45.03	0.15	0.42	-45.45	-0.04	-45.41
+1820.58	142.340	351	5	-45.32	0.15	0.43	-45.75	0.01	-45.76
+1837.03	146.030	384	5	-44.86	0.15	0.45	-45.31	-0.01	-45.30
+1848.17	148.266	404	5	-44.97	0.15	0.45	-45.42	0.00	-45.42
+1859.26	150.573	429	5	-45.20	0.15	0.44	-45.64	0.02	-45.66
+1875.74	153.744	434	5	-44.60	0.15	0.44	-45.04	0.00	-45.03
+1887.21	156.364	401	5	-44.22	0.15	0.44	-44.66	-0.01	-44.64
+1903.94	160.169	416	5	-44.93	0.15	0.44	-45.37	0.00	-45.36
+2659.39	371.459	480	5	-46.72	0.15	0.41	-47.13	0.01	-47.14
+2661.86	372.777	518	5	-46.75	0.15	0.40	-47.15	0.01	-47.16
+2662.97	373.337	525	5	-46.41	0.15	0.40	-46.81	0.02	-46.83
+2665.17	374.467	527	5	-45.85	0.15	0.40	-46.25	-0.06	-46.19
+2668.47	376.375	424	5	-45.99	0.15	0.40	-46.39	0.00	-46.39
+2669.29	376.823	426	5	-46.80	0.15	0.41	-47.21	0.00	-47.21
+2670.67	377.542	449	5	-47.23	0.15	0.42	-47.65	0.01	-47.66
+2675.07	379.749	469	5	-48.14	0.15	0.44	-48.58	0.01	-48.59
+2675.89	380.139	489	5	-48.31	0.15	0.44	-48.75	-0.01	-48.74
+2679.19	381.724	522	5	-48.58	0.15	0.45	-49.03	-0.01	-49.02
+2680.29	382.248	556	5	-48.47	0.15	0.45	-48.92	0.04	-48.96
+2684.69	384.462	524	5	-48.35	0.15	0.46	-48.81	0.04	-48.85
+2686.75	385.506	549	5	-48.62	0.15	0.47	-49.09	0.01	-49.10
+2690.39	387.149	590	5	-48.06	0.15	0.49	-48.55	-0.09	-48.46
+2691.29	387.577	530	5	-48.64	0.15	0.48	-49.12	-0.10	-49.02
+2692.67	388.390	458	5	-49.13	0.15	0.46	-49.59	-0.01	-49.58
+2694.59	389.635	509	5	-49.06	0.15	0.45	-49.51	0.08	-49.59
+2695.62	390.249	523	5	-48.30	0.15	0.46	-48.76	0.01	-48.76
+2697.09	391.066	538	5	-48.33	0.15	0.46	-48.79	-0.02	-48.77
+2698.17	391.641	481	5	-49.52	0.15	0.47	-49.99	-0.02	-49.97
+2701.19	393.183	483	5	-50.55	0.15	0.48	-51.03	-0.02	-51.01
+2702.57	393.827	544	5	-50.25	0.15	0.48	-50.73	0.08	-50.82
+2705.87	395.172	588	5	-50.07	0.15	0.49	-50.56	0.00	-50.56
+2712.47	397.712	622	5	-50.19	0.15	0.51	-50.70	0.00	-50.69
+2714.39	398.434	615	5	-50.13	0.15	0.51	-50.64	0.00	-50.64
+2717.89	399.750	607	5	-50.00	0.15	0.51	-50.51	0.03	-50.54
+2720.17	400.570	629	5	-50.17	0.15	0.51	-50.68	0.06	-50.74
+2725.39	402.274	638	5	-49.66	0.15	0.51	-50.17	0.00	-50.17
+2728.97	403.450	662	5	-49.89	0.15	0.53	-50.42	0.03	-50.45
+2734.19	405.204	677	5	-49.75	0.15	0.52	-50.27	0.00	-50.27
+2738.45	406.638	677	5	-49.83	0.15	0.52	-50.35	-0.01	-50.34
+2741.89	407.798	714	5	-49.73	0.15	0.52	-50.25	-0.04	-50.20
+2750.69	411.072	686	5	-50.10	0.15	0.49	-50.59	-0.01	-50.58
+2753.17	412.112	690	5	-49.95	0.15	0.48	-50.43	0.01	-50.44
+2756.47	413.564	696	5	-50.29	0.15	0.48	-50.77	0.03	-50.80
+2757.29	413.920	655	5	-50.41	0.15	0.48	-50.89	0.02	-50.91
+2758.39	414.391	683	5	-50.36	0.15	0.49	-50.85	-0.01	-50.84
+2760.87	415.497	658	5	-50.53	0.15	0.49	-51.02	0.00	-51.02
+2763.07	416.509	639	5	-50.46	0.15	0.49	-50.95	0.01	-50.96
+2767.19	418.436	648	5	-50.28	0.15	0.49	-50.77	0.02	-50.79
+2768.57	419.118	685	5	-49.98	0.15	0.49	-50.47	0.00	-50.47
+2769.68	419.677	668	5	-49.68	0.15	0.49	-50.17	0.02	-50.19
+2771.87	420.800	688	5	-49.72	0.15	0.49	-50.21	0.00	-50.21
+2772.69	421.249	703	5	-49.57	0.15	0.49	-50.06	0.01	-50.08
+2775.17	422.653	685	5	-49.26	0.15	0.49	-49.75	0.00	-49.75
+2778.19	424.454	656	5	-48.71	0.15	0.49	-49.20	-0.03	-49.17
+2779.57	425.231	599	5	-48.41	0.15	0.49	-48.90	0.02	-48.92
+2780.39	425.688	613	5	-48.20	0.15	0.49	-48.69	-0.03	-48.66
+2785.07	429.000	423	5	-46.06	0.15	0.45	-46.51	-0.06	-46.45
+2786.12	430.021	424	5	-45.40	0.15	0.43	-45.83	0.05	-45.88
+2790.29	435.245	386	5	-43.81	0.15	0.42	-44.23	0.00	-44.22
+2793.74	440.170	390	5	-43.73	0.15	0.41	-44.14	0.00	-44.14
+2794.69	441.538	382	5	-43.72	0.15	0.40	-44.12	0.00	-44.13
+2797.09	444.962	402	5	-44.03	0.15	0.41	-44.44	0.01	-44.45
+2802.54	450.968	418	5	-43.54	0.15	0.43	-43.97	-0.01	-43.96
+2802.67	451.096	418	5	-43.44	0.15	0.43	-43.87	0.01	-43.88
+2805.97	454.221	389	5	-43.56	0.15	0.42	-43.98	0.00	-43.98

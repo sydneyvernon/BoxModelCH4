@@ -1,0 +1,33 @@
+/* DATA DESCRIPTION:
+Citation:	Bock, Michael; Schmitt, Jochen; Beck, Jonas; Seth, Barbara; Chappellaz, Jérôme A; Fischer, Hubertus (2017): Stable isotopic methane (δ¹³CH4) records of ice core Vostok. PANGAEA, https://doi.org/10.1594/PANGAEA.873915, 
+	In supplement to: Bock, M et al. (2017): Glacial/interglacial wetland, biomass burning, and geologic methane emissions constrained by dual stable isotopic CH4 ice core records. Proceedings of the National Academy of Sciences, 201613883, https://doi.org/10.1073/pnas.1613883114
+Coverage:	LATITUDE: -78.464420 * LONGITUDE: 106.837320
+	DATE/TIME START: 1980-01-01T00:00:00 * DATE/TIME END: 1980-01-01T00:00:00
+	MINIMUM DEPTH, ice/snow: 1582.00 m * MAXIMUM DEPTH, ice/snow: 1742.00 m
+Event(s):	Vostok * LATITUDE: -78.464420 * LONGITUDE: 106.837320 * DATE/TIME: 1980-01-01T00:00:00 * ELEVATION: 3488.0 m * Recovery: 2755 m * LOCATION: Antarctica * CAMPAIGN: Ice_core_diverse * BASIS: Sampling/drilling ice * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: annual pressure 624 mbar; mean annual temperature -55.5°C; snow accumulation between 2.2 and
+	22.5 g/cm**2/yr, about 250 ka
+Comment:	d13CH4 data are measured using the system described in:
+	Schmitt, J., B. Seth, M. Bock, H. Fischer, "Online technique for isotope and mixing ratios of CH4, N2O, Xe and mixing ratios of organic trace gases on a single ice core sample", Atmospheric Measurement Techniques, 7/8, 2645-2665, 2014, doi:10.5194/amt-7-2645-2014
+	All data are free of krypton interference during the mass spectrometric analysis. For details see:
+	Schmitt, J., B. Seth, M. Bock, C. van der Veen, L. Möller, C. J. Sapart, M. Prokopiou, T. Sowers, T. Röckmann, H. Fischer, "On the interference of Kr during carbon isotope analysis of methane using continuous-flow combustion-isotope ratio mass spectrometry", Atmospheric Measurement Techniques, 6/1, 1425-1445, 2013, doi:10.5194/amt-6-1425-2013
+Parameter(s):	DEPTH, ice/snow [m] (Depth ice/snow) * GEOCODE * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock)
+	Gas age [ka BP] (Gas age) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * COMMENT: AICC2012, BP = 1950
+	Methane mixing ratio [nmol/mol] (CH4 mix ratio) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: measured
+	Methane mixing ratio, standard deviation [±] (CH4 mix ratio std dev) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: Methane mixing ratio error (1-sigma standard deviation of ice core replicates in nmol/mol)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: measured, with respect to Vienna Pee Dee Belemnite (VPDB)
+	δ13C, methane, standard deviation [±] (δ13C CH4 std dev) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: Determined according to Schmitt et al. (2014) (URI: https://doi.org/10.5194/amt-7-2645-2014) * COMMENT: d13CH4 error (1-sigma standard deviation of ice core replicates in per mil with respect to Vienna Pee Dee Belemnite (VPDB))
+	Gravitational settling [‰] (Grav sett) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: see supporting information of Bock et al. (2017)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: corrected for gravitational settling in the firn, with respect to Vienna Pee Dee Belemnite (VPDB)
+	Diffusive fractionation [‰] (Diff frac) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: see supporting information of Bock et al. (2017)
+	δ13C, methane [‰ PDB] (δ13C CH4) * PI: Bock, Michael (https://orcid.org/0000-0001-5744-3169, bock@climate.unibe.ch, http://www.climate.unibe.ch/about_us/team/personalpages/index_eng.html?id=bock) * METHOD/DEVICE: see Bock et al. (2017) * COMMENT: corrected for gravitational settling and diffusional fractionation in the firn, with respect to Vienna Pee Dee Belemnite (VPDB)
+License:	Creative Commons Attribution-NoDerivs 3.0 Unported (CC-BY-ND-3.0)
+Size:	63 data points
+*/
+Depth ice/snow [m]	Gas age [ka BP] (AICC2012, BP = 1950)	CH4 mix ratio [nmol/mol] (measured, Determined accordin...)	CH4 mix ratio std dev [±] (Methane mixing ratio error (1...)	δ13C CH4 [‰ PDB] (measured, with respect to Vie...)	δ13C CH4 std dev [±] (d13CH4 error (1-sigma standar...)	Grav sett [‰] (see supporting information of...)	δ13C CH4 [‰ PDB] (corrected for gravitational s...)	Diff frac [‰] (see supporting information of...)	δ13C CH4 [‰ PDB] (corrected for gravitational s...)
+1582.00	109.696	489	5	-50.58	0.15	0.40	-50.98	-0.01	-50.97
+1618.00	113.576	486	5	-50.92	0.15	0.38	-51.30	0.00	-51.30
+1635.00	115.068	498	5	-51.41	0.15	0.36	-51.77	0.00	-51.77
+1648.00	115.894	498	5	-52.02	0.15	0.39	-52.41	0.03	-52.44
+1667.00	117.144	552	5	-52.04	0.15	0.39	-52.43	0.00	-52.44
+1676.00	117.741	563	5	-51.43	0.15	0.38	-51.81	0.00	-51.82
+1742.00	121.488	625	5	-50.04	0.15	0.43	-50.47	0.00	-50.47
