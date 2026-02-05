@@ -96,8 +96,8 @@ reread.dir   = dataDir;
 % caseName = 'caseBa';   % variable OH
 % caseName = 'caseBb';   % fixed OH
 caseName = 'caseBa';
-add_name = 'january_';
-add_name_inv = ['january_' ''];
+add_name = 'test_posconstraint_';
+add_name_inv = ['test_posconstraint_' ''];
 
 %%% Other options and flags
 % General flags
@@ -200,13 +200,13 @@ IC = params.IC;
 %%% Parameters for the emissions
 emsParams.oh_scale = 0.08;       % OH reaction rate scaling factor
 % Base emissions
-emsParams.base_wet    = 300;     % Baseline tropical wetlands emissions (Tg CH4/yr)
+emsParams.base_wet    = 300;   % Baseline tropical wetlands emissions (Tg CH4/yr)
 emsParams.base_wetB   = 0;     % Baseline boreal wetlands emissions (Tg CH4/yr)
 emsParams.base_fire   = 15;     % Baseline fire emissions (Tg CH4/yr)
 emsParams.base_fossil = 6;      % Baseline fossil emissions (Tg CH4/yr)
 emsParams.base_ocean  = 54;     % Baseline ocean emissions for CO (Tg CO/yr)
 emsParams.base_oh     = 600;    % Baseline OH production (Tg OH/yr) (Murray et al., 2014 estimate is 540-2000 Tg/yr)
-emsParams.base_animal = 10;     % Baseline animal emissions (Tg CH4/yr)
+emsParams.base_animal =-1; %= 10;     % Baseline animal emissions (Tg CH4/yr)
 emsParams.base_cl     = 1650;   % Chlorine abundance to get a lifetime of 1/302 yr (molec/cm3)
 % Other parameters
 emsParams.soilOffset = 24;      % Temperature offset for soils
@@ -371,15 +371,16 @@ if do_cmaes
     fprintf('\n *** STARTING CMA-ES INVERSION *** \n');
     
     %%% Set the function parameters for the box model
-    fun_param.run_parallel = run_parallel;
-    fun_param.p_prior      = @(emsParams,input_param) define_prior(emsParams,input_param);
-    fun_param.p_like       = @(emsParams,input_param) define_likelihood(emsParams,input_param);
-    fun_param.use_log      = true;
-    fun_param.params       = params;
-    fun_param.St           = St;
-    fun_param.emsParams    = emsParams;
-    fun_param.nT           = nT;
-    fun_param.obs          = obs;
+    fun_param.run_parallel          = run_parallel;
+    fun_param.p_prior               = @(emsParams,input_param) define_prior(emsParams,input_param);
+    fun_param.p_like                = @(emsParams,input_param) define_likelihood(emsParams,input_param);
+    fun_param.use_log               = true;
+    fun_param.params                = params;
+    fun_param.St                    = St;
+    fun_param.emsParams             = emsParams;
+    fun_param.nT                    = nT;
+    fun_param.obs                   = obs;
+    fun_param.positivity_constraint = "normal";  % choices "mean", "strong", "normal"
 
     %%% Set the options for CMAES
     CMAES_opts                   = cmaes;

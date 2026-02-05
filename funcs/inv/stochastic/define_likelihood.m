@@ -21,6 +21,7 @@ function [ p_like ] = define_likelihood( emsParams, input_param )
 obs     = input_param.obs;
 params  = input_param.params;
 use_log = input_param.use_log;
+positivity_constraint = input_param.positivity_constraint;
 
 %%% Run the box model
 out = boxModel_wrapper(params,params.St,emsParams);
@@ -39,12 +40,6 @@ mu    = obs.ch4_NH;
 sig   = obs.ch4_NH_err;
 ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_ch4_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
-% dD NH (normal)
-% y     = out.nh_dD;
-% mu    = obs.dD_NH;
-% sig   = obs.dD_NH_err;
-% ind   = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
-% p_dD_NH = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 % CH4 (normal)
 y     = out.sh_ch4;
 mu    = obs.ch4;
@@ -89,42 +84,43 @@ ind  = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
 p_cl = p_normal(y(ind),mu(ind),diag(sig(ind).^2));
 
 
-%%% Manually reject solutions with very poor fits on SH d14-CH4 and
-%%% NH dD-CH4 observations
-
-% SH d14-CH4
-% y      = out.sh_d14c;
-% mu     = obs.d14c;
-% sig    = obs.d14c_err;
-% ind    = ~isnan(mu) & ~isnan(y) & ~isnan(sig);
-% p_d14c_unif = p_uniform(y(ind),(mu(ind) - 2.5*sig(ind)), (mu(ind) + 2.5*sig(ind)), use_log);
-
-% % NH dD-CH4
-% % our raw data has high variability in a short time period
-% % so we assume our simulated values in this period belong to some
-% % normal dist
-% y = out.nh_dD;
-% mu = mean(obs.dD_NH, "omitnan"); % scalar
-% sig = std(obs.dD_NH, "omitmissing"); % scalar
-% ind  = ~isnan(y);
-% p_dD_unif = p_uniform(y(ind),(mu - 2.5*sig),(mu + 2.5*sig),use_log);
-
 % enforce OH abundance agreement at final timestep
 % (within 20% of 10^6 molecules/cm^3)
 p_OH_unif = p_uniform(out.oh(end),0.8 * 1e6,1.2 * 1e6,use_log);
 
-% lightly enforce positivity (mean over time) for all emissions
-enforce_pos_animal = p_uniform(mean(out.ch4_ems_animal),0,Inf,use_log);
-enforce_pos_fire = p_uniform(mean(out.ch4_ems_fire),0,Inf,use_log);
-enforce_pos_fossil = p_uniform(mean(out.ch4_ems_fossil),0,Inf,use_log);
-enforce_pos_wet_boreal = p_uniform(mean(out.ch4_ems_wet_boreal),0,Inf,use_log);
-enforce_pos_wet_tropical = p_uniform(mean(out.ch4_ems_wet_tropical),0,Inf,use_log);
 
-enforce_pos_co_fire = p_uniform(mean(out.co_ems_fire),0,Inf,use_log);
-enforce_pos_co_ocean = p_uniform(mean(out.co_ems_ocean),0,Inf,use_log);
-enforce_pos_oh =  p_uniform(mean(out.oh_ems),0,Inf,use_log);
+% enforce positivity of emissions
+if positivity_constraint == "mean"  % enforce that mean emissions over time are positive for every source
+    enforce_pos_animal = p_uniform(mean(out.ch4_ems_animal),0,Inf,use_log);
+    enforce_pos_fire = p_uniform(mean(out.ch4_ems_fire),0,Inf,use_log);
+    enforce_pos_fossil = p_uniform(mean(out.ch4_ems_fossil),0,Inf,use_log);
+    enforce_pos_wet_boreal = p_uniform(mean(out.ch4_ems_wet_boreal),0,Inf,use_log);
+    enforce_pos_wet_tropical = p_uniform(mean(out.ch4_ems_wet_tropical),0,Inf,use_log);
 
-enforce_pos = [enforce_pos_animal, enforce_pos_fire, enforce_pos_fossil, enforce_pos_wet_boreal, enforce_pos_wet_tropical, enforce_pos_co_fire, enforce_pos_co_ocean, enforce_pos_oh];
+    enforce_pos_co_fire = p_uniform(mean(out.co_ems_fire),0,Inf,use_log);
+    enforce_pos_co_ocean = p_uniform(mean(out.co_ems_ocean),0,Inf,use_log);
+    enforce_pos_oh =  p_uniform(mean(out.oh_ems),0,Inf,use_log);
+
+    enforce_pos = [enforce_pos_animal, enforce_pos_fire, enforce_pos_fossil, enforce_pos_wet_boreal, enforce_pos_wet_tropical, enforce_pos_co_fire, enforce_pos_co_ocean, enforce_pos_oh];
+
+elseif positivity_constraint == "strong"  % enforce all methane emissions are positive (cutoff)
+    if (sum(out.ch4_ems_animal < 0) + sum(out.ch4_ems_fire < 0) + ...
+            sum(out.ch4_ems_fossil < 0) + sum(out.ch4_ems_wet_boreal < 0) + ...
+            sum(out.ch4_ems_wet_tropical < 0)) > 0 
+        enforce_pos = p_uniform(-1,0,2,use_log);
+    else
+        enforce_pos = p_uniform(1,0,2,use_log);
+    end
+
+elseif positivity_constraint == "normal"  % penalize methane emissions as they become more negative
+    negative_ems = sum(out.ch4_ems_animal(out.ch4_ems_animal < 0)) + ...
+        sum(out.ch4_ems_fire(out.ch4_ems_fire < 0)) + ...
+        sum(out.ch4_ems_fossil(out.ch4_ems_fossil < 0)) + ...
+        sum(out.ch4_ems_wet_boreal(out.ch4_ems_wet_boreal < 0)) + ...
+        sum(out.ch4_ems_wet_tropical(out.ch4_ems_wet_tropical < 0));
+    enforce_pos = p_normal(negative_ems, 0, 1000);
+end
+
 
 %%% Construct the full likelihood distribution
 likeli = [p_ch4_NH, p_ch4, p_d13c, p_dD, p_d14c, p_OH_unif, enforce_pos];
@@ -141,6 +137,7 @@ else
 end
 
 end
+
 
 function [ p ] = p_uniform(x,xL,xU,use_log)
 if any(x < xL) || any(xU < x)

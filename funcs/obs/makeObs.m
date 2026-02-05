@@ -197,7 +197,7 @@ tDatI = d13c_obs.tim.icecore;
 yDatI = d13c_obs.obs.icecore;
 eDatI = d13c_obs.sig.icecore;
 
-%%% Block averave
+%%% Block average
 [tDat, yDat, eDat] = BlockAverage_AltError(tDatI,yDatI,ones(size(tDatI)),fDays);
 
 %%% Put the data on our temporal grid
@@ -250,8 +250,8 @@ min_uncert              = min(eDatI);
 eDat(eDat < min_uncert) = min_uncert;
 eDat(isnan(eDat))       = max(eDatI);
 
-%%% Scale error by factor of 3
-eDat = 3*eDat;
+%%% Scale error by factor of 3 % changed to 2!
+eDat = 2*eDat;
 
 %%% Make sure we didn't lose any data
 indMiss = find(isnan(oDat));
